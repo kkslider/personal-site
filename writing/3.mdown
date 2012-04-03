@@ -1,4 +1,4 @@
-#Development Environment Setup#
+##Development Environment Setup##
 *Monday 2 April 2012*
 
 I need a new development environment.  Actually, I *want* a new development environment, and I *need* a better development workflow.  I code most things by hand and use a variety of text editors to accomplish that:
@@ -40,28 +40,15 @@ Next, let's get Sublime Text to communicate with github.  I already have a githu
 1. Use Sublime Package Control again to install [Sublime Text 2 plugin: git](https://github.com/kemayo/sublime-text-2-git).
 2. Create a repository in github, and configure the local system to communicate with the repository.
 3. Using a file within the local github directory, we can use the Sublime git plugin to interact with the hosted repository.
+4. Select `Git: Add Current File` from the Sublime Command Palette to add the file to the local repository.
+5. Select `Git: Commit` from the Sublime Command Palette to commit to the local repository.
+6. Select `Git: Push` from the Sublime Command Palette to push the changes to the hosted repository.
+7. Check the update on github.
 
+Now I have a text editor that I am reasonably happy with and my work is being saved to github.  I'll still need to do some tweaking on my environment as I work more, and I'm already thinking I'd like to add more plugins to Sublime.  But this is good enough to continue on the project.
 
+##Next Steps##
+*Monday 2 April 2012*
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Feels like the next thing to do is work on the content of the site, starting with reading [*The Elements of Content Strategy* by Erin Kissane](http://www.abookapart.com/products/the-elements-of-content-strategy).
 
