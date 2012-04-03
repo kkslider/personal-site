@@ -1,0 +1,5 @@
+#Welcome#
+
+I find that I learn best through application.  In school, I was always good math, largely, I believe, because of the repetition of problems in the homework sets.  I was able to learn about a topic, and then practice how that topic is applied to problems.  This project, I hope, will give me the opportunity to learn about new ideas in web development, and apply them to a problem.
+
+My goal is to get a job as a front-end developer.  The problem is solving how to demonstrate that I will be valuable to a new organization.  And I will use this project as a way to highlight what I have done in the past, and, probably more importantly, document how I go about solving a problem.
