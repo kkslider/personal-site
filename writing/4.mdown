@@ -1,0 +1,132 @@
+##Ideas from [*The Elements of Content Strategy* by Erin Kissane](http://www.abookapart.com/products/the-elements-of-content-strategy)##
+*Saturday 7 April 2012*
+
+###TL;DR - Applications for My Project###
+
+* Summarizing, good content is appropriate, useful, user-centric, clear, consistent, concise, and supported
+* Content should tell a story, use the three kinds of rhetorical approaches
+* Outlined a good process for determining how to build the content for my site, which I'll implement as the next part of the project
+
+###Introduction###
+
+Content strategy should
+
+* Help companies understand and produce the kind of content their target audiences really need
+* Allow organizations to develop realistic, sustainable, and measurable publishing plans for long term
+* Cut costs by reducing redundant or extraneous publishing efforts while increasing the effectiveness of existing assets
+* Align communication across channels all content is working toward the same goals, in channel-appropriate ways
+* Prevent web projects from being derailed by major delays caused by underestimating the time and effort required to produce great content
+
+###Chapter 1: Basic Principles###
+
+* Good content is appropriate - publish content that is right for the user and for the business
+    * Right for the user and context - we should present content that is exactly what they need, when they need it and in the right form.  Understanding this perfectly is difficult, so always give the option of seeing more information if desired.
+    * Right for the business - content should help accomplish business goals in a sustainable way.
+* Good content is useful - define a clear, specific purpose for each piece of content; evaluate content against this purpose
+    * Greater specificity produces better results, e.g. compare "sell products" to "show how this product helps nurse practitioners"
+* Good content is user-centered - adopt the cognitive frameworks of your users
+* Good content is clear - seek clarity in all things
+* Good content is consistent - mandate consistency, within reason
+* Good content is concise - omit needless content
+    * Decline in quality often due to misunderstanding that "publishing everything" means "publishing everything we can," when it should really mean "publishing everything we've learned that our users really need."
+    * After removing unnecessary content at the site-planning level, continue the practice down to the section, page and sentence level
+* Good content is supported - publish no content without a supported plan
+
+####My Thoughts####
+
+* If I am defining a purpose for each piece of content, maybe I could organize the content around those purposes, e.g. purposes could be "demonstrate initiative through value-adding projects", "demonstrate knowledge of jQuery through completed projects", "demonstrate thinking process through documenting how this site was created"
+* When collecting information for my site, I'll need to collect everything, then reduce it to the most important pieces, and look at the relationships between the pieces to make sure they fit together and don't overlap much
+* Summarizing, good content is appropriate, useful, user-centric, clear, consistent, concise, and supported
+
+###Chapter 2: The Craft of Content Strategy###
+
+* Content strategy, defined as the planning and leadership of content projects and online publishing endeavors
+* Legacies and shared principles from design and development - design should communicate, elegant code is better than sloppy code.
+* Four most influential fields for content strategy - editorial work, curatorial work, marketing and persuasion, and information science
+* Influence 1: The Editor
+    * Editors develop themes and narrative arcs, orchestrate responses to outside events, maintain a balanced variety of content, evaluate and manage content creators, and more.
+    * The reader's interest and attention is the central, precious thing
+    * "Authors know their subject.  Editors specialize in knowing the audience." ~ Authur Plotnik in *The Elements of Editing*
+    * Editors know how to help other people tell the best, most engaging stories they can tell
+        * Inverted pyramid - classic news story structure where all the most important basic information appears at the beginning of the story, and is followed by less important information
+        * 5 Ws and an H - what happened, who is involved, when and where it happened, why it happened and how it happened
+        * Show, don't tell - show results, statistics, case studies, personal narratives and demonstrations of action
+    * Can help teams communicate more effectively using clearly documented editorial workflows, editorial calendars and content custom-tuned for specific channels and audiences
+* Influence 2: The Curator
+    * Plan for the orderly acquisition, cataloging, and practical maintenance of the content
+    * Must balance an understanding of the context in which content is created with an understanding of the context in which it is read and used, and become immersed in both worlds
+    * Consider the user experience of interacting with content - distraction free, readable, accessible
+    * What information about content sources and types should we record to ease future display, reuse, revision and expansion?
+    * How can we ensure that ongoing, distributed revisions fit within a larger communication strategy?
+    * How can we structure our content to promote reuse in interesting ways?
+    * How might we use analytics and other tools to understand which assets we're under-using?
+* Influence 3: The Marketer
+    * We need to do more than inform and entertain, online content is also intended to intrigue, to persuade and to sell
+    * Three kinds of rhetoric according to Aristotle - the rational argument, the emotional appeal, the appeal grounded in the speaker's reputation or character
+    * *Messages* are high-level ideas you want to transmit directly into your users' brains, and they're created by combining *what* you need to say with *how* you need to say it - a rhetorical approach
+    * As an exercise, identify a client and a core idea, then communicate that idea using each of the three kinds of rhetorical appeal
+    * We need to make and execute a solid plan for determining whether or not what you do works
+    * *Distribution channel* and *channel strategy* refer to the method of getting content to its intended audience via the website, blogs, newsletters, social, webcasts, mobile apps, etc.
+* Influence 4: The (Info) Scientist
+    * Work on ways of effectively storing, retrieving and disseminating information, much of which has turned into the modern practice of information architecture
+    * Information architecture is the design of structures for information, including navigational structures and content taxonomies
+    * Deliverables like wireframes, site maps, page diagrams, user flows, after doing a lot of user research
+
+
+####My Thoughts####
+
+* Would be useful to consider what new content I could be adding to the site, and how that would fit in with the current site design and existing content
+* How can I treat my resume / my site as a story?  Telling a story of my accomplishments?
+* Perform the exercise described in Influence 3: The Marketer to write content using each kind of rhetorical appeal
+
+
+###Chapter 3: Tools and Techniques###
+
+* Content strategy varies from project to project and isn't clearly visible at the end of the project.  Common methodologies tend to reflect the specialization.
+    * Marketing communication - focus on branding and messages, effective cross-channel outreach, creation of persuasive content and development of sustainable publishing processes
+    * Information management - technical analysis, data modeling and large-scale content reuse across multiple systems
+    * Web development teams - search, content taxonomies, CMS requirements, and information architecture, for marketing, educational and technical content
+* Work can be categorized into phases of evaluation, design, and execution
+    * Evaluation - happens at beginning and at very end, includes research, usability testing and traffic analysis
+    * Design - high-level communication strategy, proposals for public-facing and back-end features related to content, design of tactical plans for creating and revising content, design of tools and processes for long-term management of content
+    * Execution - writing and revising content, setting up publishing workflows, sourcing and aggregating content, and examples to illustrate recommendations
+* The Things We Make
+    * Include - channel strategy, content production workshops, content style guides, content templates, example content, feature descriptions, metadata recommendations, SEO reviews, success metrics, taxonomies, usability tests, user personas, user scenarios, visual presentation recommendations, wireframes (many references can be found at [http://incisive.nu/elements](http://incisive.nu/elements))
+    * Every deliverable you create and every meeting you lead deals with two kinds of strategy: the one you're developing for the project, and the one you're using to guide your own communication with your colleagues, employers and clients.  These people usually won't be your target audience for the *project*, but they are the audience for your *deliverables*.
+    * When dealing with a team that isn't familiar with content strategy, one good way to begin is with the function or purpose of your content strategy deliverables
+* Project Definition
+    * Take the time to clarify what the project is meant to accomplish
+    * Business goals are the overarching aims that an entire organization tries to achieve, e.g. don't be evil
+    * Tactics are all the detailed, specific requests, e.g. clarify navigation and improve search
+    * Requirements are the project's immovable objects, e.g. launch date, budget, resources
+    * Project objectives are things that can actually be accomplished, below business goals and above tactics, e.g. change our website to reflect our new organizational focus on education
+    * Define success metrics (victory conditions) as something that can be measured
+    * Collect all project definition information in one place
+* Research and Assessment
+    * Purpose of user research is to move beyond assumptions, guesses, and stereotypes to discover what your human readers, viewers, and listeners really want and need
+    * After user research, develop *user proxies*, e.g. personas, user scenarios, use cases, and activity flows
+    * Content inventory - create an extremely detailed site map that represents every piece of existing content, with title, format (text, video, PDF, etc), URL or location, content type (landing page, article, support page, contact page, etc), and owner
+    * Plan to have user research complete and a few personas developed before evaluating content quality - Is it appropriate? Useful and user-centered? Clear, consistent, and concise? Has it been properly supported, or is it outdated and inaccurate?
+    * Once done, write up a short summary describing your process, criteria for evaluation and major findings.
+* Strategy and Design
+    * Now ready to begin the strategy part of content strategy - developing a set of concepts, plans, and guidelines for creating and maintaining content that meets user needs and project goals.
+    * Messages - document the main ideas, which you will convey to your users.  Each separate audience will probably have its own subset of messages that lives under the umbrella of site-wide messages.
+    * Big concepts - introduce big changes as *strategies* with rationale for the proposed change, e.g. shifts in target audience, new content-related features (blogs, podcasts, wikis, etc), changes in voice and tone.  Begin to assemble plans and recommendations for actual contents, e.g. detailed set of guidelines and content needs for each site section and delivery channel or brief written guidelines combined with content templates and examples of good and bad content
+    * Structural design - decide what's going to be on the website and what's going to be included on other channels, often resulting in a sitemap, wireframes, user flows, etc
+    * Site-level content recommendations - messages to be communicated in each section's content, audiences to be served by each section's content, notes on the integration of major new content related features into the site, recommendations on voice and tone, discussion of how each of the site's major audiences will be served by the content, recommendations on delivery channels for the various kinds of content you're working with
+    * Page-level content guidelines - strategies for cross-linking content, content style guide for images and social media, deviations from standard style guide
+    * Content templates - contains information about a specific kind of page
+        * List each piece of information that must be on the page, followed by optional pieces of information
+        * After the name of each chunk of content, note what the content is supposed to accomplish
+        * List your specifications for each piece of content, e.g. ideal word count, capitalization style, list vs paragraph vs heading
+        * Provide example content for each piece of content on the template
+* Planning for Content Creation
+* Planning for Content Management
+
+
+####My Thoughts####
+* My site would be categorized as marketing communication, and as part of a (solo) web development team
+* I should take a step back and identify high-level goals for the project, explicitly listed
+* Possible success metrics for this project: job offer received before May 31, 0 requests from potential employers for a standard document resume, this site is discussed in 100% of job interviews
+* I can do user research by reading job posts to understand what potential employers are looking for
+* I'm now rethinking the approach of writing up book notes and documenting my thoughts on the sections.  Perhaps a better approach would be to have a documentation area of the site to collect all these artifacts in a more structured format, rather than a series of blog posts.
