@@ -1,0 +1,81 @@
+##Research and Assessment##
+
+###User Research###
+
+[The Guerrilla Guide to Interviewing (version 3.0)](http://www.joelonsoftware.com/articles/GuerrillaInterviewing3.html)
+
+* Employers are looking for people who are smart and get things done
+* Candidate should demonstrate passion, be able to explain things well, and show leadership roles in team projects
+
+[Sorting Resumes](http://www.joelonsoftware.com/articles/SortingResumes.html)
+
+* Passion - early experience with programming, extra-curricular activities, exploring new technologies
+* Pickiness - cover letter should demonstrate that the applicant really wants to work for the company applied to, specifically
+* English - neatness, orderliness, no grammar or spelling errors
+* Brains - high GPAs, high test scores, honor societies
+* Selectivity - evidence that applicant has passed a highly selective process in the past
+* Hard-core - difficulty of projects listed
+* Diversity - applicant will bring new ideas and new ways of thinking to the existing team
+
+[How to get a job with a small company](http://sethgodin.typepad.com/seths_blog/2011/10/how-to-get-a-job-with-a-small-company.html)
+
+* Learn to sell
+* Learn to write
+* Learn to produce extraordinary video and multimedia
+* Demonstrate that you can contribute far more than you cost
+
+[Are You Ready For A Web Design Challenge?](http://www.smashingmagazine.com/2011/09/21/are-you-ready-for-a-web-design-challenge/)
+
+* The challenge - write a blog post justifying the design approach you took to one of your websites. Then, encourage other Web designers to provide feedback and ask questions.
+
+Some of the common requirements listed on [37signals Job Board](http://jobs.37signals.com/) for front-end developer positions:
+
+* Knowledge and understanding of JavaScript
+* Experience with JavaScript/CSS frameworks and libraries
+* Experience with git and github
+* Experience in templating languages
+* Clean and maintainable code, values quality
+* Up to date with web standards and best practices, and what technologies can be used now
+* Mobile web development experience
+* Experience with agile development
+* Examples of work - portfolio, side projects, open source contributions, personal sites
+* Responsive and adaptive design
+* Front-end testing frameworks
+* Resolve cross-browser issues
+* Focus on performance, knowledgeable about techniques to increase performance
+* Communicate effectively and clearly, collaborate with team and users
+* Typography, layout, design skills
+* Understanding of UI/UX best practices and patterns, appreciation of usability
+
+###User Proxies###
+
+Ultimately, my user is someone who works for a company that needs a front-end developer and who has the power to hire a new employee.  But as I will be joining a team, a employee of the new organization is also an important user to consider.
+
+Tina is a lead designer at ACME and has been overworked recently due to the recent success of their web app.  She has been talking with her manager about bringing a new developer to the team so they can handle the extra work and continue to build an amazing product.  She is looking for someone she can trust to finish tasks on time and up to their high quality standards.  She is busy doing work during the day, and relaxes in the evening, often browsing the web on her iPhone and iPad.
+
+Jeff is a manager of a web development shop that does client work.  Recently, there have been a couple projects Jeff has had to turn down due to lack of time for his current team.  He is looking to bring on a new developer so the company can accept more client projects and expand into larger projects.  Jeff needs someone who can understand client needs and communicate well with clients, while meeting deadlines and often working on multiple projects concurrently.  Jeff has set aside some time during his work day to find a new developer, and is having trouble finding a good one.
+
+###Content Inventory###
+
+For artifacts, my [resume](#), prior to starting this project, and [content inventory](#) are available.  There is enough content to cut the less important items, and maintain variety and depth.  Most content could be improved through a rewrite once a clear message to convey is determined, like asking "how does this item demonstrate value to an organization?"
+
+###Process###
+
+In [*The Elements of Content Strategy* by Erin Kissane](http://www.abookapart.com/products/the-elements-of-content-strategy), Erin describes two sections of research and assessment that I'll use for this project.
+
+####User Research####
+
+Erin explains that the purpose of user research is to discover what your readers really want and need.  My users are potential employers looking for front-end web developers, preferably those with consumers as their end users (versus working on a line-of-business web app), and who value design and user experience.
+
+There are plenty of articles about what employers are looking for and how they process resumes, which should still be relevant whether the resume is a PDF or a website.  For more specific user research, I researched job postings to see what is commonly requested.  While this won't help me so much in the content itself, it did provide hints on how the content should be presented and what should be highlighted.
+
+Using this research, Erin recommends developing user proxies for the main users, so I wrote personas for the two main users of my site - someone who can hire me and someone who would be working with me after I start.
+
+And I'll need to continue doing user research as I apply to jobs and get feedback from interviews, or lack of responses when applying.
+
+####Content Inventory####
+
+A content inventory is a detailed list of all existing content, with some meta data on each piece.  Once content is collected, it should then be assessed for quality by answering questions like - Is it appropriate? Useful and user-centered?  Clear, consistent, and concise?  Has it been properly supported, or is it outdated and inaccurate?
+
+My current inventory is my existing resume and a few items that I have done since the last time I updated it.  I copied the resume content into a spreadsheet, added some columns for meta data, and then assessed each item.
+

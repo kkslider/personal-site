@@ -1,0 +1,42 @@
+##Project Definition##
+
+###Introduction###
+
+I find that I learn best through application.  In school, I was always good math, largely, I believe, because of the repetition of problems in the homework sets.  I was able to learn about a topic, and then practice how that topic is applied to problems.  This project, I hope, will give me the opportunity to learn about new ideas in web development, and apply them to a problem.
+
+My goal is to get a job as a front-end developer.  The problem is solving how to demonstrate that I will be valuable to an organization.  I will use this project as a way to highlight what I have done in the past, and, possibly more importantly, document how I go about solving a problem.
+
+###Project Goals###
+
+* Get a job as a front-end developer in the Bay Area
+* Build a website to highlight my projects and accomplishments
+* Learn about new ideas and technologies in web development
+* Demonstrate how I can provide value to a new organization
+
+###Project Objectives###
+
+* Update my resume content to show my accomplishments and projects in an interesting format
+* Build a website to replace the need for a traditional paginated resume
+* Provide an outlet for continued writing and projects
+* Demonstrate my understanding of new ideas and technologies in web development
+* Document the way I think about solving problems and completing projects
+
+###Victory Conditions###
+
+* Accepted a job offer as a front-end web developer by June 1, 2012
+* Zero requests from potential employers for a standard document resume because my site does not communicate the necessary information
+* This website is discussed in 100% of my job interviews with potential employers
+
+###Requirements###
+
+* Launch by April 15, 2012 so I may start applying to jobs
+* Accept a job offer by June 1, 2012 so I may move to the Bay Area by July 1, 2012
+* I will complete the website on my own
+* The website will need to be completed during nights and weekends while I continue working in my present position
+
+###Process###
+
+The suggestion to develop a project definition, and what information should be included in the document, came from [*The Elements of Content Strategy* by Erin Kissane](http://www.abookapart.com/products/the-elements-of-content-strategy).  When I first started this project, I wrote a short post about what I wanted to do and how I wanted to do it, much of which was edited into this document.
+
+Erin suggested that the project planning documents should be collected in a central location, which made me realized that a blog post (my first blog post, which would be at the very end if sorted chronologically), probably isn't the best way to document that information.  So I decided to create a better structured way to present the planning information.
+

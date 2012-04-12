@@ -1,0 +1,27 @@
+##Mobile Strategy##
+
+###Constraints###
+
+As screen space, and often the user's time and attention, are reduced on mobile devices, the content displayed should be the most important for the user know and for the site to communicate.  Focus on the most important pieces, while not removing content from the mobile experience.  Consider the possibility of limited bandwidth on mobile devices and implement strategies for improved performance like image sprites, bundle and minify CSS and JavaScript, limit dependencies on heavy CSS frameworks and JavaScript libraries, and use CSS3 properties to reduce the need for images.
+
+###Organization###
+
+
+
+
+###Process###
+
+My mobile strategy was inspired by [*Mobile First* by Luke Wroblewski](http://www.abookapart.com/products/mobile-first) and sections in this document match the chapters from his book.
+
+###Implementation Checklist###
+
+* Focus on most important content while not removing content for the mobile experience
+* Bundle and minify CSS and JavaScript
+* Limit dependencies on heavy CSS frameworks and JavaScript libraries
+* Use CSS3 properties with acceptable fall backs
+* 
+
+
+
+
+
