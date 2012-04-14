@@ -129,3 +129,6 @@ Placeholders exist for each content piece already, as they were retrieved from t
 
 The site could launch with only the first task completed, but it would be ideal to complete the second task as well.  The third task, while important, provides less value and can be prioritized with other project tasks.
 
+###References###
+
+[*The Elements of Content Strategy* by Erin Kissane](http://www.abookapart.com/products/the-elements-of-content-strategy) for explaining the benefits of defining a content strategy and for direction on what to think about in during process.

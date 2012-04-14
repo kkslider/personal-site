@@ -1,0 +1,64 @@
+/* Set custom styles for the style tile
+-----------------------------------------------------------------------------*/
+h1 {
+  font: normal 40px/1.2 "Helvetica", sans-serif;
+}
+
+h2 {
+  font: normal 28px/1.2 "Helvetica", sans-serif;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font: normal 24px/1.2 "Helvetica", sans-serif;
+  margin-bottom: 8px;
+}
+
+p {
+  font: normal 16px/1.5 "Helvetica", sans-serif;
+  margin-bottom: 8px;
+}
+
+p + h3 {
+  margin-top: 24px;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 12px;
+  text-indent: -12px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+li > ul {
+  margin-top: 4px;
+}
+
+li:before {
+  content: "\00BB \0020";
+}
+
+.container {
+  background: #fff;
+  border: 1px solid #a1a1a1;
+  margin: 10px auto 20px;
+  padding: 20px;
+  width: 442px;
+}
+
+.tile { background: #fff; }
+
+div.color-1 { background: #a1a1a1; }
+div.color-2 { background: #a1a1a1; }
+div.color-3 { background: #a1a1a1; }
+div.color-4 { background: #a1a1a1; }
+div.color-5 { background: #a1a1a1; }
+div.color-6 { background: #a1a1a1; }
+
+div.pattern-1 { background: url(http://subtlepatterns.com/patterns/furley_bg.png) 0 0; }
+div.pattern-2 { background: #a1a1a1; }
+div.pattern-3 { background: #a1a1a1; }
+div.pattern-4 { background: #a1a1a1; }

@@ -34,9 +34,6 @@ My goal is to get a job as a front-end developer.  The problem is solving how to
 * I will complete the website on my own
 * The website will need to be completed during nights and weekends while I continue working in my present position
 
-###Process###
-
-The suggestion to develop a project definition, and what information should be included in the document, came from [*The Elements of Content Strategy* by Erin Kissane](http://www.abookapart.com/products/the-elements-of-content-strategy).  When I first started this project, I wrote a short post about what I wanted to do and how I wanted to do it, much of which was edited into this document.
-
-Erin suggested that the project planning documents should be collected in a central location, which made me realized that a blog post (my first blog post, which would be at the very end if sorted chronologically), probably isn't the best way to document that information.  So I decided to create a better structured way to present the planning information.
+###References###
+[*The Elements of Content Strategy* by Erin Kissane](http://www.abookapart.com/products/the-elements-of-content-strategy) for the ideas on how to structure project planning information.
 

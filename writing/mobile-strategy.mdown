@@ -2,12 +2,35 @@
 
 ###Constraints###
 
-As screen space, and often the user's time and attention, are reduced on mobile devices, the content displayed should be the most important for the user know and for the site to communicate.  Focus on the most important pieces, while not removing content from the mobile experience.  Consider the possibility of limited bandwidth on mobile devices and implement strategies for improved performance like image sprites, bundle and minify CSS and JavaScript, limit dependencies on heavy CSS frameworks and JavaScript libraries, and use CSS3 properties to reduce the need for images.
+As screen space is reduced on mobile devices, the content displayed should be the most important for the user to know and for the site to communicate.  Often the user's time and attention are limited in mobile situations, but given the common saying that traditional resumes have about 30 seconds to make an impression, competing for the user's focus is already accepted.
+
+Focus on the most important pieces, while not removing content from the mobile experience.  Consider the possibility of limited bandwidth on mobile devices and implement strategies for improved performance like image sprites, bundle and minify CSS and JavaScript, limit dependencies on heavy CSS frameworks and JavaScript libraries, and use CSS3 properties to reduce the need for images.
 
 ###Organization###
 
+Collecting all experience on a single page will make the content the focus of the site.  Clear separation between the experience section and the project documentation will keep relevant content together and allow for exploration within each section.
 
+User interaction with mobile devices generally falls into one of four categories:
 
+* Lookup / find - need an answer to something now
+* Explore / play - have some time to kill
+* Check in / status - stay on top of updating information
+* Edit / create - need something done now
+
+These interaction types should be handled with the following site features:
+
+* Lookup / find - site header has clear contact information, objective and experience summary to provide a quick overview
+* Explore / play - highlighted resume content should tease content and provide more details when desired
+* Check in / status - the main experience content won't be changing too often, but updating information could come in the form of updates to github, new blog posts, and recent tweets
+* Edit / create - ideally the user needs to contact me immediately to discuss an opportunity with their company, so I should make this really easy to do
+
+###Layout###
+
+Design the mobile experience first and strive for the minimum amount necessary to communicate the desired messages.  Then progressively enhance the layout using responsive web design.  While all content should be accessible regardless of device used, layout rules can reposition elements, increase image sizes, and toggle initial visibility of content.
+
+Some work will be needed to handle responsive images, both in terms of size and resolution.  Appropriate images can be determined and served using CSS3 media queries, JavaScript and server side solutions.  Each image should have multiple sizes and multiple resolutions.
+
+Develop a working prototype early and start testing how it behaves.  Start testing the mobile experience early to evaluate how it meets the desired goals and consider how a user would interact with it in real world situations.  Expect multiple iterations on the design to get something optimal.
 
 ###Process###
 
@@ -19,8 +42,14 @@ My mobile strategy was inspired by [*Mobile First* by Luke Wroblewski](http://ww
 * Bundle and minify CSS and JavaScript
 * Limit dependencies on heavy CSS frameworks and JavaScript libraries
 * Use CSS3 properties with acceptable fall backs
-* 
-
+* Site header with clear contact information, objective and experience summary to provide a quick overview
+* Highlighted resume content should tease content and provide more details when desired
+* Links to github, new blog posts, recent tweets
+* Easy to contact me
+* Design mobile experience first
+* Images in multiple sizes and for multiple resolutions
+* Responsive design to reposition elements, increase image sizes, and toggle initial visibility of content
+* Prototype early and often, and document solutions during the process
 
 
 

@@ -1,0 +1,212 @@
+/* Set custom styles for the style tile
+-----------------------------------------------------------------------------*/
+h2, h3 {
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+p + h3 {
+  margin-top: 24px;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 12px;
+  text-indent: -12px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+li > ul {
+  margin-top: 4px;
+}
+
+li:before {
+  content: "\00BB \0020";
+}
+
+.container {
+  background: url(http://subtlepatterns.com/patterns/furley_bg.png) 0 0;
+  border: 1px solid #0052a5;
+  box-shadow: 0 0 4px 1px #10b6ff;
+  margin: 10px auto 20px;
+  padding: 20px;
+  width: 442px;
+}
+
+.container img {
+  box-shadow: 0 0 0 4px #fff, 0 0 4px 4px #696969;
+}
+
+.tile { background: url(http://subtlepatterns.com/patterns/grid_noise.png) 0 0; }
+
+div.color-1 { background: #0052a5; }
+div.color-2 { background: #0b76a5; }
+div.color-3 { background: #10b6ff; }
+div.color-4 { background: #a5540b; }
+div.color-5 { background: #e6f344; }
+div.color-6 { background: #696969; }
+
+div.pattern-1 { background: url(http://subtlepatterns.com/patterns/furley_bg.png) 0 0; }
+div.pattern-2 { background: url(http://subtlepatterns.com/patterns/tex2res3.png) 0 0; }
+div.pattern-3 { background: url(http://subtlepatterns.com/patterns/light_wool.png) 0 0; }
+div.pattern-4 { background: url(http://subtlepatterns.com/patterns/grid_noise.png) 0 0; }
+
+/*
+div.pattern-1 { background: url(http://subtlepatterns.com/patterns/cross_scratches.png) 0 0; }
+div.pattern-2 { background: url(http://subtlepatterns.com/patterns/light_alu.png) 0 0; }
+div.pattern-3 { background: url(http://subtlepatterns.com/patterns/project_papper.png) 0 0; }
+div.pattern-4 { background: url(http://subtlepatterns.com/patterns/whitey.png) 0 0; }
+*/
+
+/*
+div.pattern-1 { background: url(http://subtlepatterns.com/patterns/45degree_fabric.png) 0 0; }
+div.pattern-2 { background: url(http://subtlepatterns.com/patterns/paper_1.png) 0 0; }
+div.pattern-3 { background: url(http://subtlepatterns.com/patterns/paper_2.png) 0 0; }
+div.pattern-4 { background: url(http://subtlepatterns.com/patterns/church.png) 0 0; }
+*/
+
+
+
+
+
+body { font: 300 normal 16px/1.5 "Open Sans"; }
+strong { font: 600 normal 16px/1.5 "Open Sans"; }
+em { font: 300 italic 16px/1.5 "Open Sans"; }
+h1 { font: 700 normal 40px/1.2 "Open Sans Condensed"; }
+h2 { font: 700 normal 28px/1.2 "Open Sans Condensed"; }
+h3 { font: 700 normal 24px/1.2 "Open Sans Condensed"; }
+
+p, li { color: #696969;}
+a { color: #10b6ff; }
+h1 { color: #0b76a5;}
+h2 { color: #0b76a5;}
+h3 { color: #0b76a5;}
+
+/*
+
+body {
+  font: 400 normal 16px/1.5 "PT Sans";
+}
+
+strong {
+  font: 700 normal 16px/1.5 "PT Sans";
+}
+
+em {
+  font: 400 italic 16px/1.5 "PT Sans";
+}
+
+h1 {
+  font: 700 normal 40px/1.2 "PT Sans Caption";
+}
+
+h2 {
+  font: 400 normal 28px/1.2 "PT Serif Caption";
+}
+
+h3 {
+  font: 400 normal 24px/1.2 "PT Serif Caption";
+}
+
+
+body {
+  font: 400 normal 16px/1.5 "Cabin";
+}
+
+strong {
+  font: 600 normal 16px/1.5 "Cabin";
+}
+
+em {
+  font: 400 italic 16px/1.5 "Cabin";
+}
+
+h1 {
+  font: 400 normal 40px/1.2 "Francois One";
+}
+
+h2 {
+  font: 400 normal 28px/1.2 "Francois One";
+}
+
+h3 {
+  font: 400 normal 24px/1.2 "Francois One";
+}
+
+
+body {
+  font: 400 normal 16px/1.5 "Asap";
+}
+
+strong {
+  font: 700 normal 16px/1.5 "Asap";
+}
+
+em {
+  font: 400 italic 16px/1.5 "Asap";
+}
+
+h1 {
+  font: 700 normal 40px/1.2 "Nobile";
+}
+
+h2 {
+  font: 700 normal 28px/1.2 "Nobile";
+}
+
+h3 {
+  font: 700 normal 24px/1.2 "Nobile";
+}
+
+
+body {
+  font: 400 normal 16px/1.5 "Lato";
+}
+
+strong {
+  font: 700 normal 16px/1.5 "Lato";
+}
+
+em {
+  font: 400 italic 16px/1.5 "Lato";
+}
+
+h1 {
+  font: 700 normal 40px/1.2 "Bitter";
+}
+
+h2 {
+  font: 700 normal 28px/1.2 "Bitter";
+}
+
+h3 {
+  font: 700 normal 24px/1.2 "Bitter";
+}
+*/
+
+/*
+
+font-family: 'Bitter', serif; // 400, 700
+font-family: 'Lato', sans-serif; // 300, 400, 700
+
+font-family: 'Nobile', sans-serif; // 400, 700
+font-family: 'Asap', sans-serif; // 400, 700
+
+font-family: 'Francois One', sans-serif; // 400
+font-family: 'Cabin', sans-serif; // 400, 500, 600, 700
+
+font-family: 'PT Serif', serif; // 400, 700
+font-family: 'PT Serif Caption', serif; // 400
+font-family: 'PT Sans', sans-serif; // 400, 700
+font-family: 'PT Sans Caption', sans-serif; // 400, 700
+
+font-family: 'Open Sans Condensed', sans-serif; // 700
+font-family: 'Open Sans', sans-serif; // 300, 400, 600, 700
+
+*/

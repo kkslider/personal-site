@@ -1,0 +1,60 @@
+##Style Tiles##
+
+###Design in a Responsive Workflow###
+
+Style Tiles are a way to communicate the visual design of a site without locking into a particular page layout.  As the layout for a responsive website will change as the device width changes, we need a new way to communicate design that is separated from the layout.
+
+A [generic Style Tile template](#) has been developed, which will be used to communicate the desired design of the site.
+
+###Design Themes###
+
+The visual design of the site should complement the site messages:
+
+* Provide value, solve problems, deliver results
+* Trust, reliability
+* Contribution, ability, action
+* Diversity, passion
+* Easy to read, distraction free
+* Focus on content
+* Lighthearted, show personality
+* Clear organization
+
+The elements of design can be applied to communicate the desired messages.
+
+* Line
+    * Straight and thin lines tend to be more refined and smart
+    * Horizontal lines suggest rest, vertical lines suggest grandeur, diagonal lines suggest movement
+    * Combining horizontal and vertical lines communicates stability
+* Color
+    * Brown to suggest stability
+    * Light yellow to suggest intellect and freshness
+    * Light blue to suggest health and understanding
+    * Dark blue to suggest knowledge, trust and integrity
+    * White to suggest safety and cleanliness
+    * Black to suggest seriousness, power, formality
+    * Grey to suggest security and practicality
+* Shape
+    * Squares communicate security and stability
+    * Curving shapes are more feminine
+* Space
+    * White space can give breathing room for the eyes
+    * Less white space can give feelings of claustrophobia
+    * Too much white space can signify unfinished work
+Texture
+    * Textures can bring realism and add visual interest
+
+###Iterating on the Design###
+
+
+###References###
+
+I first heard about using Style Tiles from [Samantha Warren](http://badassideas.com/about/).  She has a great explanation of the process in her blog post [Style Tiles as a Web Design Process Tool](http://badassideas.com/style-tiles-as-a-web-design-process-tool), and built a [site](http://styletil.es/) explaining the process.
+
+
+[Color Wheel Pro - See Color Theory in Action](http://www.color-wheel-pro.com/color-meaning.html)
+
+[What to know how to design? Learn The Basics.](http://justcreative.com/2008/06/13/how-to-design-learn-the-basics/)
+
+[Principles of Design](http://char.txa.cornell.edu/language/principl/principl.htm)
+
+

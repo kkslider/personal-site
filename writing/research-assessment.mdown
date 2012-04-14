@@ -2,13 +2,12 @@
 
 ###User Research###
 
-[The Guerrilla Guide to Interviewing (version 3.0)](http://www.joelonsoftware.com/articles/GuerrillaInterviewing3.html)
+Erin explains that the purpose of user research is to discover what your readers really want and need.  My users are potential employers looking for front-end web developers, preferably those with consumers as their end users (versus working on a line-of-business web app), and who value design and user experience.
+
+The purpose of doing user research is to discover what your users really want and need.  There are many blog posts from someone with hiring power discussing the job application and interviewing process.  Some common ideas are:
 
 * Employers are looking for people who are smart and get things done
 * Candidate should demonstrate passion, be able to explain things well, and show leadership roles in team projects
-
-[Sorting Resumes](http://www.joelonsoftware.com/articles/SortingResumes.html)
-
 * Passion - early experience with programming, extra-curricular activities, exploring new technologies
 * Pickiness - cover letter should demonstrate that the applicant really wants to work for the company applied to, specifically
 * English - neatness, orderliness, no grammar or spelling errors
@@ -16,19 +15,10 @@
 * Selectivity - evidence that applicant has passed a highly selective process in the past
 * Hard-core - difficulty of projects listed
 * Diversity - applicant will bring new ideas and new ways of thinking to the existing team
-
-[How to get a job with a small company](http://sethgodin.typepad.com/seths_blog/2011/10/how-to-get-a-job-with-a-small-company.html)
-
-* Learn to sell
-* Learn to write
-* Learn to produce extraordinary video and multimedia
+* Learn to sell, learn to write, learn to produce extraordinary video and multimedia
 * Demonstrate that you can contribute far more than you cost
 
-[Are You Ready For A Web Design Challenge?](http://www.smashingmagazine.com/2011/09/21/are-you-ready-for-a-web-design-challenge/)
-
-* The challenge - write a blog post justifying the design approach you took to one of your websites. Then, encourage other Web designers to provide feedback and ask questions.
-
-Some of the common requirements listed on [37signals Job Board](http://jobs.37signals.com/) for front-end developer positions:
+A review of recent job postings shows some of the common requirements listed for front-end developer positions are:
 
 * Knowledge and understanding of JavaScript
 * Experience with JavaScript/CSS frameworks and libraries
@@ -47,6 +37,8 @@ Some of the common requirements listed on [37signals Job Board](http://jobs.37si
 * Typography, layout, design skills
 * Understanding of UI/UX best practices and patterns, appreciation of usability
 
+And the continual feedback from the applying and interviewing process should be used to improve the site and content.
+
 ###User Proxies###
 
 Ultimately, my user is someone who works for a company that needs a front-end developer and who has the power to hire a new employee.  But as I will be joining a team, a employee of the new organization is also an important user to consider.
@@ -57,25 +49,17 @@ Jeff is a manager of a web development shop that does client work.  Recently, th
 
 ###Content Inventory###
 
-For artifacts, my [resume](#), prior to starting this project, and [content inventory](#) are available.  There is enough content to cut the less important items, and maintain variety and depth.  Most content could be improved through a rewrite once a clear message to convey is determined, like asking "how does this item demonstrate value to an organization?"
-
-###Process###
-
-In [*The Elements of Content Strategy* by Erin Kissane](http://www.abookapart.com/products/the-elements-of-content-strategy), Erin describes two sections of research and assessment that I'll use for this project.
-
-####User Research####
-
-Erin explains that the purpose of user research is to discover what your readers really want and need.  My users are potential employers looking for front-end web developers, preferably those with consumers as their end users (versus working on a line-of-business web app), and who value design and user experience.
-
-There are plenty of articles about what employers are looking for and how they process resumes, which should still be relevant whether the resume is a PDF or a website.  For more specific user research, I researched job postings to see what is commonly requested.  While this won't help me so much in the content itself, it did provide hints on how the content should be presented and what should be highlighted.
-
-Using this research, Erin recommends developing user proxies for the main users, so I wrote personas for the two main users of my site - someone who can hire me and someone who would be working with me after I start.
-
-And I'll need to continue doing user research as I apply to jobs and get feedback from interviews, or lack of responses when applying.
-
-####Content Inventory####
-
 A content inventory is a detailed list of all existing content, with some meta data on each piece.  Once content is collected, it should then be assessed for quality by answering questions like - Is it appropriate? Useful and user-centered?  Clear, consistent, and concise?  Has it been properly supported, or is it outdated and inaccurate?
 
-My current inventory is my existing resume and a few items that I have done since the last time I updated it.  I copied the resume content into a spreadsheet, added some columns for meta data, and then assessed each item.
+At the start of the project, all existing content was contained within my [resume](#).  The bullet points have been pulled out of the document and added to a [content inventory](#) spreadsheet for better organization, meta data collection, and assessment.
+
+There is enough content to cut the less important items, and maintain variety and depth.  Most content could be improved through a rewrite once a clear message to convey is determined, like asking "how does this item demonstrate value to an organization?"
+
+###References###
+
+[*The Elements of Content Strategy* by Erin Kissane](http://www.abookapart.com/products/the-elements-of-content-strategy) for direction on understanding users and assessing content.
+
+[The Guerrilla Guide to Interviewing (version 3.0)](http://www.joelonsoftware.com/articles/GuerrillaInterviewing3.html), [Sorting Resumes](http://www.joelonsoftware.com/articles/SortingResumes.html), and [How to get a job with a small company](http://sethgodin.typepad.com/seths_blog/2011/10/how-to-get-a-job-with-a-small-company.html) for contributions on how an applicant should earn a position.
+
+[37signals Job Board](http://jobs.37signals.com/) for collecting many relevant job postings into one place.
 

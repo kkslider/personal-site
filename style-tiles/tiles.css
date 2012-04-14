@@ -1,0 +1,102 @@
+/* Define default styles for the style tile, these shouldn't be changed
+-----------------------------------------------------------------------------*/
+/* apply a natural box layout model to all elements */
+/* http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e6e6e6;
+  margin: 40px auto;
+  width: 962px;
+}
+
+h4 {
+  color: #a1a1a1;
+  font: normal 18px/1.2 "Helvetica", sans-serif;
+}
+
+header {
+  border-bottom: 1px solid #a1a1a1;
+}
+
+header .title {
+  float: left;
+  padding: 10px;
+  width: 800px;
+}
+
+.info {
+  color: #a1a1a1;
+  float: left;
+  font-size: 14px;
+  padding: 10px;
+  text-align: right;
+  width: 160px;
+}
+
+.info em {
+  font: italic 14px/1.5 "Helvetica", sans-serif;
+}
+
+.info a {
+  color: #a1a1a1;
+  font: normal 14px/1.2 "Helvetica", sans-serif;
+}
+
+.tile {
+  border: 1px solid #a1a1a1;
+}
+
+.text, .swatches {
+  float: left;
+  padding: 10px;
+}
+
+.text {
+  margin-right: 20px;  
+  width: 440px;
+}
+
+.swatches {
+  width: 500px;
+}
+
+.color, .pattern {
+  border: 1px solid #a1a1a1;
+  box-shadow: 0 0 0 3px #fff, 0 0 4px 4px #a1a1a1;
+  float: left;
+  margin: 10px;
+}
+
+.color {
+  height: 60px;
+  width: 60px;
+}
+
+.pattern {
+  height: 100px;
+  width: 100px;
+}
+
+footer {
+  border-top: 1px solid #a1a1a1;
+  padding: 10px;
+}
+
+footer span {
+  color: #a1a1a1;
+  font-size: 14px;
+}
+
+h4 {
+  margin-top: 10px;
+}
+
+footer h4:first-child {
+  margin-top: 0;
+}
+
