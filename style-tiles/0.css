@@ -44,21 +44,21 @@ li:before {
 .container {
   background: #fff;
   border: 1px solid #a1a1a1;
-  margin: 10px auto 20px;
+  margin: 20px 0 20px 10px;
   padding: 20px;
   width: 442px;
 }
 
 .tile { background: #fff; }
 
-div.color-1 { background: #a1a1a1; }
-div.color-2 { background: #a1a1a1; }
-div.color-3 { background: #a1a1a1; }
-div.color-4 { background: #a1a1a1; }
-div.color-5 { background: #a1a1a1; }
-div.color-6 { background: #a1a1a1; }
+div.swatch-0 { background: #a1a1a1; }
+div.swatch-1 { background: #a1a1a1; }
+div.swatch-2 { background: #a1a1a1; }
+div.swatch-3 { background: #a1a1a1; }
+div.swatch-4 { background: #a1a1a1; }
 
-div.pattern-1 { background: url(http://subtlepatterns.com/patterns/furley_bg.png) 0 0; }
-div.pattern-2 { background: #a1a1a1; }
-div.pattern-3 { background: #a1a1a1; }
-div.pattern-4 { background: #a1a1a1; }
+div.swatch-5 { background: #a1a1a1; }
+div.swatch-6 { background: #a1a1a1; }
+div.swatch-7 { background: #a1a1a1; }
+div.swatch-8 { background: #a1a1a1; }
+div.swatch-9 { background: #a1a1a1; }

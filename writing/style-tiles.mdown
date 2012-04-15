@@ -45,16 +45,12 @@ Texture
 
 ###Iterating on the Design###
 
+Three style tiles were developed from the generic template and compared for how they communicate the site messages, [style tile 1](#), [style tile 2](#) and [style tile 3](#).  The bright colors and light font weight in the [first style tile](#) makes it feel too playful to communicate value and reliability.  The [second style tile](#) goes too far in the other direction, feeling too formal and almost legal-like.  The [third style tile](#) introduced some of the lighter colors from the first one, but with a heavier paragraph font weight.  Icons were introduced in the third one, which makes it look more interesting.  But the header font weights look overwhelming.
+
+I switched the header fonts from the second style tile with those in the third tile and I'm pretty happy with [style tile 4](#).
 
 ###References###
 
 I first heard about using Style Tiles from [Samantha Warren](http://badassideas.com/about/).  She has a great explanation of the process in her blog post [Style Tiles as a Web Design Process Tool](http://badassideas.com/style-tiles-as-a-web-design-process-tool), and built a [site](http://styletil.es/) explaining the process.
 
-
-[Color Wheel Pro - See Color Theory in Action](http://www.color-wheel-pro.com/color-meaning.html)
-
-[What to know how to design? Learn The Basics.](http://justcreative.com/2008/06/13/how-to-design-learn-the-basics/)
-
-[Principles of Design](http://char.txa.cornell.edu/language/principl/principl.htm)
-
-
+I learned a bit about design from [Color Wheel Pro - See Color Theory in Action](http://www.color-wheel-pro.com/color-meaning.html), [What to know how to design? Learn The Basics.](http://justcreative.com/2008/06/13/how-to-design-learn-the-basics/) and [Principles of Design](http://char.txa.cornell.edu/language/principl/principl.htm).

@@ -32,25 +32,8 @@ Some work will be needed to handle responsive images, both in terms of size and 
 
 Develop a working prototype early and start testing how it behaves.  Start testing the mobile experience early to evaluate how it meets the desired goals and consider how a user would interact with it in real world situations.  Expect multiple iterations on the design to get something optimal.
 
-###Process###
+###References###
 
-My mobile strategy was inspired by [*Mobile First* by Luke Wroblewski](http://www.abookapart.com/products/mobile-first) and sections in this document match the chapters from his book.
-
-###Implementation Checklist###
-
-* Focus on most important content while not removing content for the mobile experience
-* Bundle and minify CSS and JavaScript
-* Limit dependencies on heavy CSS frameworks and JavaScript libraries
-* Use CSS3 properties with acceptable fall backs
-* Site header with clear contact information, objective and experience summary to provide a quick overview
-* Highlighted resume content should tease content and provide more details when desired
-* Links to github, new blog posts, recent tweets
-* Easy to contact me
-* Design mobile experience first
-* Images in multiple sizes and for multiple resolutions
-* Responsive design to reposition elements, increase image sizes, and toggle initial visibility of content
-* Prototype early and often, and document solutions during the process
-
-
+[*Mobile First* by Luke Wroblewski](http://www.abookapart.com/products/mobile-first) for explaining the importance of mobile and how it should affect our design process.
 
 

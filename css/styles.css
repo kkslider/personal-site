@@ -1,0 +1,233 @@
+/* TYPOGRAPHY */
+/* Cabin 700, 500, 400, 400italic */
+/* PT Serif Caption 400, 400italic */
+body, button, input, select, textarea, .slogan {
+  font: 400 normal 100%/1.5 "Cabin", "Century Gothic", AppleGothic, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, dt {
+  font-family: "PT Serif Caption", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+}
+pre, code, kbd, samp {
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, monospace
+}
+.slogan {
+  font-size: 1.3125em;
+  font-weight: 500;
+}
+strong {
+  font-weight: 700;
+}
+
+/* COLORS AND BACKGROUNDS */
+body {
+  background: url(../images/background.png) 0 0;
+  color: #1f111d;
+}
+a {
+  color: #64a1fe;
+}
+a:active, .slogan {
+  color: #737c87;
+}
+h1, .separator h3, .slogan strong {
+  color: #48698d;
+}
+h2, h3, h4, h5, h6 {
+  color: #325b87;
+}
+.tag {
+  color: #8d7873;
+}
+mark, ins, ::-moz-selection, ::selection {
+  background: #8d7873;
+}
+
+/* TOP AND BOTTOM */
+nav, footer {
+  padding-top: 0.4em;
+  text-align: center;
+}
+
+nav p, footer p {
+  margin-bottom: 0;
+}
+
+nav a {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.3em;
+  margin: 1em 0;
+  padding: 0 5%;
+  width: 22%;
+}
+
+footer {
+  padding-bottom: 3em;
+}
+
+/* EXPERIENCE */
+.separator {
+  text-align: center;
+}
+.line, .separator h3 {
+  display: inline-block;
+}
+
+.line {
+  background: #737c87;
+  height: .14em;
+  margin: 0 4% .666666666666667em;
+
+  /* let javascript figure out the width then fade in the lines */
+  opacity: 0;
+  width: 1px;
+  transition: opacity .3s linear;
+   -o-transition: opacity .3s linear;
+   -moz-transition: opacity .3s linear;
+   -webkit-transition: opacity .3s linear;
+}
+
+.experience {
+  background: #fff;
+  box-shadow: 0 0 0.4em 0.1em #fbe977;
+  margin: 0 2% 2em;
+  padding: 0.6em;
+  width: 92%;
+}
+
+.experience img {
+  box-shadow: 0 0 0 .2em #fff, 0 0 .1em .2em #737c87;
+  margin-bottom: 0;
+  display: none;
+}
+
+/* TAGS */
+ul.tags {
+  float: left;
+  list-style: none;
+  margin-top: -1em;
+  width: 50%;
+}
+
+.tags li {
+  line-height: 2.3;
+}
+
+p.tags {
+  margin-bottom: -2%;
+  text-align: right;
+}
+
+.tag {
+  color: #8d7873;
+  display: inline-block;
+  font: normal 2em/1em "Pictos Custom";
+  margin-left: 8px;
+  vertical-align: bottom;
+  width: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.resize {
+  font-size: 2.7em;
+  line-height: 0.66em;
+  width: 0.78em;
+}
+
+
+
+/* DEFAULT MOBILE STYLE */
+body { width: 92%; margin: 0 auto} /* Center page without wrapper */
+/* column grid */
+.g1,.g2,.g3,.g4{display: block; position: relative; margin-left: 1%; margin-right: 1%}
+/* 1 column grid */
+.g1,.g2,.g3,.g4{width:98.0%}
+header h1 { font-size: 2.2em; text-align: center; }
+
+
+/* MEDIA QUERIES
+
+FOLDING FLUID GRID
+  < 767px         - 1-Column Fluid Grid
+  768px - 1023px  - 2-Column Fluid Grid
+  > 1024px        - 4-Column Fluid Grid
+------------------------------------------- */
+
+/* MOBILE PORTRAIT */
+@media only screen and (min-width: 320px) {
+  body {
+    
+  }
+}
+
+/* MOBILE LANDSCAPE */
+@media only screen and (min-width: 480px) {
+  body {
+    
+  }
+  
+  /* Responsive Styles */
+  header h1 { font-size: 3em; }
+  nav a { padding: 0 2%; width: 28%; }
+}
+
+/* SMALL TABLET */
+@media only screen and (min-width: 600px) {
+  body {
+    
+  }
+  
+  /* Responsive Styles */
+  header h1 { font-size: 3.75em; }
+}
+
+/* TABLET/NETBOOK */
+@media only screen and (min-width: 768px) { 
+  body {
+    
+  }
+  
+  /* COLUMN GRID */
+  .g1,.g2,.g3,.g4 { display: inline; float: left; }
+
+  /* Responsive Styles */
+  .experience { height: 18em; }
+  p.tags { bottom: 0.6em; margin-bottom: 1.5em; position: absolute; right: 0.6em; text-align: left; }
+  p.tags .resize { margin-right: 0.14em; }
+
+  /* 2 COLUMN GRID */
+  .g1 { width: 48.0% }
+  .g2 { width: 48.0% }
+  .g3 { width: 98.0% }
+  .g4 { width: 98.0% }
+}
+
+/* LANDSCAPE TABLET/NETBOOK/LAPTOP */
+@media only screen and (min-width: 1024px) { 
+  body {
+
+  }
+
+  /* Responsive Styles */
+  .experience { height: 16em; }
+  p.tags { right: 0em; }
+  
+  /* 4 COLUMN GRID */
+  .g1 { width: 23.0%; }
+  .g2 { width: 48.0%; }
+  .g3 { width: 73.0%; }
+  .g4 { width: 98.0%; }
+}
+
+@media only screen and (min-width: 1280px) { 
+/* DESKTOP */
+    body {
+
+  }
+}
+
+/* WIDESCREEN */
+/* Increased body size for legibility */
+@media only screen and (min-width: 1400px) { 
+  body { font-size: 116.75%; max-width: 1440px; } /* 18.5px / 28px */
+}

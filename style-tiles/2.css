@@ -13,6 +13,7 @@ p + h3 {
 }
 
 ul {
+  list-style: disc inside;
   margin-left: 0;
   padding-left: 12px;
   text-indent: -12px;
@@ -26,164 +27,65 @@ li > ul {
   margin-top: 4px;
 }
 
-li:before {
-  content: "\00BB \0020";
-}
+.tile { background: #f2f1e7; }
 
 .container {
-  background: url(http://subtlepatterns.com/patterns/furley_bg.png) 0 0;
-  border: 1px solid #2c5a72;
+  background: url(http://subtlepatterns.com/patterns/grid_noise.png) 0 0;
   box-shadow: 0 0 4px 1px #83827e;
-  margin: 10px auto 20px;
+  margin: 20px auto;
   padding: 20px;
   width: 442px;
 }
 
+.tile,
+.swatch,
 .container img {
   box-shadow: 0 0 0 4px #fff, 0 0 4px 4px #83827e;
 }
 
-.tile { background: #f2f1e7; }
+.period {
+  margin-top: 20px;
+  text-align: center;
+}
 
-div.color-1 { background: #f2f1e7; }
-div.color-2 { background: #27729a; }
-div.color-3 { background: #2c5a72; }
-div.color-4 { background: #193a3f; }
-div.color-5 { background: #83827e; }
-div.color-6 { background: #0c1a37; }
+.tags {
+  margin-bottom: 0;
+  text-align: right;
+}
 
-div.pattern-1 { background: url(http://subtlepatterns.com/patterns/furley_bg.png) 0 0; }
-div.pattern-2 { background: url(http://subtlepatterns.com/patterns/tex2res3.png) 0 0; }
-div.pattern-3 { background: url(http://subtlepatterns.com/patterns/light_wool.png) 0 0; }
-div.pattern-4 { background: url(http://subtlepatterns.com/patterns/grid_noise.png) 0 0; }
+div.swatch-0 { background: #f2f1e7; }
+div.swatch-1 { background: #27729a; }
+div.swatch-2 { background: #2c5a72; }
+div.swatch-3 { background: #193a3f; }
+div.swatch-4 { background: #83827e; }
+
+div.swatch-5 { background: #0c1a37; }
+div.swatch-6 { background: #ffffff; }
+div.swatch-7 { background: url(http://subtlepatterns.com/patterns/grid_noise.png) 0 0; }
+div.swatch-8 { background: #ffffff; }
+div.swatch-9 { background: #ffffff; }
 
 /*
-div.pattern-1 { background: url(http://subtlepatterns.com/patterns/cross_scratches.png) 0 0; }
-div.pattern-2 { background: url(http://subtlepatterns.com/patterns/light_alu.png) 0 0; }
-div.pattern-3 { background: url(http://subtlepatterns.com/patterns/project_papper.png) 0 0; }
-div.pattern-4 { background: url(http://subtlepatterns.com/patterns/whitey.png) 0 0; }
-*/
-
-/*
-div.pattern-1 { background: url(http://subtlepatterns.com/patterns/45degree_fabric.png) 0 0; }
-div.pattern-2 { background: url(http://subtlepatterns.com/patterns/paper_1.png) 0 0; }
-div.pattern-3 { background: url(http://subtlepatterns.com/patterns/paper_2.png) 0 0; }
-div.pattern-4 { background: url(http://subtlepatterns.com/patterns/church.png) 0 0; }
-*/
-
-
-
-
-
-body { font: 400 normal 16px/1.5 "PT Sans"; }
-strong { font: 700 normal 16px/1.5 "PT Sans"; }
-em { font: 400 italic 16px/1.5 "PT Sans"; }
-h1 { font: 700 normal 40px/1.2 "PT Sans Caption"; }
-h2 { font: 400 normal 28px/1.2 "PT Serif Caption"; }
-h3 { font: 400 normal 24px/1.2 "PT Serif Caption"; }
-
-p, li { color: #0c1a37;}
-a { color: #27729a; }
-h1 { color: #27729a;}
-h2 { color: #27729a;}
-h3 { color: #27729a;}
-
-/*
-
-
-
-body {
-  font: 400 normal 16px/1.5 "Cabin";
-}
-
-strong {
-  font: 600 normal 16px/1.5 "Cabin";
-}
-
-em {
-  font: 400 italic 16px/1.5 "Cabin";
-}
-
-h1 {
-  font: 400 normal 40px/1.2 "Francois One";
-}
-
-h2 {
-  font: 400 normal 28px/1.2 "Francois One";
-}
-
-h3 {
-  font: 400 normal 24px/1.2 "Francois One";
-}
-
-
-body {
-  font: 400 normal 16px/1.5 "Asap";
-}
-
-strong {
-  font: 700 normal 16px/1.5 "Asap";
-}
-
-em {
-  font: 400 italic 16px/1.5 "Asap";
-}
-
-h1 {
-  font: 700 normal 40px/1.2 "Nobile";
-}
-
-h2 {
-  font: 700 normal 28px/1.2 "Nobile";
-}
-
-h3 {
-  font: 700 normal 24px/1.2 "Nobile";
-}
-
-
-body {
-  font: 400 normal 16px/1.5 "Lato";
-}
-
-strong {
-  font: 700 normal 16px/1.5 "Lato";
-}
-
-em {
-  font: 400 italic 16px/1.5 "Lato";
-}
-
-h1 {
-  font: 700 normal 40px/1.2 "Bitter";
-}
-
-h2 {
-  font: 700 normal 28px/1.2 "Bitter";
-}
-
-h3 {
-  font: 700 normal 24px/1.2 "Bitter";
-}
-*/
-
-/*
-
-font-family: 'Bitter', serif; // 400, 700
-font-family: 'Lato', sans-serif; // 300, 400, 700
-
-font-family: 'Nobile', sans-serif; // 400, 700
-font-family: 'Asap', sans-serif; // 400, 700
-
-font-family: 'Francois One', sans-serif; // 400
-font-family: 'Cabin', sans-serif; // 400, 500, 600, 700
-
 font-family: 'PT Serif', serif; // 400, 700
 font-family: 'PT Serif Caption', serif; // 400
 font-family: 'PT Sans', sans-serif; // 400, 700
 font-family: 'PT Sans Caption', sans-serif; // 400, 700
-
-font-family: 'Open Sans Condensed', sans-serif; // 700
-font-family: 'Open Sans', sans-serif; // 300, 400, 600, 700
-
 */
+
+body { font: 400 normal 16px/1.5 "PT Sans"; }
+strong { font: 700 normal 16px/1.5 "PT Sans"; }
+em { font: 400 italic 16px/1.5 "PT Sans"; }
+h1 { font: 700 normal 40px/1.2 "PT Serif Caption"; }
+h2 { font: 400 normal 28px/1.2 "PT Serif Caption"; }
+h3 { font: 400 normal 24px/1.2 "PT Serif Caption"; }
+.tags { font: 400 normal 12px/1.2 "PT Serif Caption"; }
+.period { font: 400 normal 30px/1.2 "PT Serif Caption"; }
+.slogan p { font: 700 normal 20px/1.2 "PT Sans Caption"; }
+
+p, li { color: #0c1a37;}
+a { color: #27729a; }
+h1 { color: #2c5a72;}
+h2 { color: #193a3f;}
+h3 { color: #193a3f;}
+.tags { color: #27729a; }
+.period { color: #27729a; }

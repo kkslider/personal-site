@@ -1,0 +1,106 @@
+/* Set custom styles for the style tile
+-----------------------------------------------------------------------------*/
+h2, h3, p, ul {
+  margin-bottom: 8px;
+}
+
+p + h3 {
+  margin-top: 24px;
+}
+
+ul {
+  list-style: circle inside;
+  margin-left: 0;
+  padding-left: 12px;
+  text-indent: -12px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+li > ul {
+  margin: 4px 0;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #64a1fe;
+}
+
+.tile { background: url(http://subtlepatterns.com/patterns/cross_scratches.png) 0 0; }
+
+.container {
+  background: #fff;
+  box-shadow: 0 0 4px 1px #fbe977;
+  margin: 20px auto;
+  padding: 20px;
+  width: 442px;
+}
+
+.tile,
+.swatch,
+.container img {
+  box-shadow: 0 0 0 4px #fff, 0 0 2px 4px #737c87;
+}
+
+.line, .period {
+  display: inline-block;
+}
+
+.line {
+  background: #737c87;
+  height: 2px;
+  margin-bottom: 12px;
+  width: 178px;
+}
+
+.period {
+  margin: 0 14px;
+}
+
+.tags {
+  margin-bottom: -8px;
+  text-align: right;
+}
+
+/*
+background: url(http://subtlepatterns.com/patterns/whitey.png) 0 0; }
+background: url(http://subtlepatterns.com/patterns/light_wool.png) 0 0; }
+*/
+
+div.swatch-0 { background: #325b87; }
+div.swatch-1 { background: #48698d; }
+div.swatch-2 { background: #64a1fe; }
+div.swatch-3 { background: #fbe977; }
+div.swatch-4 { background: #8d7873; }
+
+div.swatch-5 { background: #1f111d; }
+div.swatch-6 { background: #737c87; }
+div.swatch-7 { background: #ffffff; }
+div.swatch-8 { background: url(http://subtlepatterns.com/patterns/cross_scratches.png) 0 0; }
+div.swatch-9 { background: #ffffff; }
+
+/*
+font-family: 'Bitter', serif; // 400, 700
+font-family: 'Cabin', sans-serif; // 400, 500, 600, 700
+*/
+
+body { font: 400 normal 16px/1.5 "Cabin"; }
+strong { font: 700 normal 16px/1.5 "Cabin"; }
+em { font: 400 italic 16px/1.5 "Cabin"; }
+h1 { font: 700 normal 40px/1.2 "Bitter"; }
+h2 { font: 700 normal 28px/1.2 "Bitter"; }
+h3 { font: 400 normal 22px/1.2 "Bitter"; }
+.tags { font: normal 30px/1.0 "Pictos Custom"; -webkit-font-smoothing: antialiased; }
+.slogan p { font: 500 normal 22px/1.5 "Cabin"; }
+.period { font: 700 normal 40px/1.2 "Bitter"; }
+
+p, li { color: #1f111d;}
+a { color: #64a1fe; }
+h1 { color: #48698d; }
+h2 { color: #325b87; }
+h3 { color: #325b87; }
+.tags { color: #8d7873; }
+.slogan p { color: #737c87; }
+.period { color: #48698d; }

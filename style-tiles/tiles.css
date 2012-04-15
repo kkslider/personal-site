@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #e6e6e6;
+  background: #fff;
   margin: 40px auto;
   width: 962px;
 }
@@ -17,10 +17,6 @@ body {
 h4 {
   color: #a1a1a1;
   font: normal 18px/1.2 "Helvetica", sans-serif;
-}
-
-header {
-  border-bottom: 1px solid #a1a1a1;
 }
 
 header .title {
@@ -45,10 +41,8 @@ header .title {
 .info a {
   color: #a1a1a1;
   font: normal 14px/1.2 "Helvetica", sans-serif;
-}
-
-.tile {
-  border: 1px solid #a1a1a1;
+  border-bottom: none;
+  text-decoration: underline;
 }
 
 .text, .swatches {
@@ -65,38 +59,21 @@ header .title {
   width: 500px;
 }
 
-.color, .pattern {
-  border: 1px solid #a1a1a1;
-  box-shadow: 0 0 0 3px #fff, 0 0 4px 4px #a1a1a1;
+.color, .swatch {
   float: left;
   margin: 10px;
 }
 
 .color {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
 }
 
-.pattern {
-  height: 100px;
-  width: 100px;
-}
-
-footer {
-  border-top: 1px solid #a1a1a1;
-  padding: 10px;
-}
-
-footer span {
-  color: #a1a1a1;
-  font-size: 14px;
+.swatch {
+  height: 75px;
+  width: 75px;
 }
 
 h4 {
   margin-top: 10px;
 }
-
-footer h4:first-child {
-  margin-top: 0;
-}
-
