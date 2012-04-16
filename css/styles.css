@@ -134,6 +134,10 @@ p.tags {
   width: 0.78em;
 }
 
+/* PROJECT */
+ul.project {
+  margin-top: -1em;
+}
 
 
 /* DEFAULT MOBILE STYLE */
@@ -179,6 +183,12 @@ FOLDING FLUID GRID
   
   /* Responsive Styles */
   header h1 { font-size: 3.75em; }
+  ul.project { list-style: none; text-align: center; }
+  ul.project li { display: inline; padding: 0 2%; }
+  ul.project a { display: inline-block; font-weight: 700; line-height: 1.3em; margin: 1em 0; padding: 0 2%; width: 12%; }
+  ul.project a:first-child { padding-left: 0; }
+  ul.project a:last-child { padding-right: 0; }
+
 }
 
 /* TABLET/NETBOOK */
@@ -191,7 +201,7 @@ FOLDING FLUID GRID
   .g1,.g2,.g3,.g4 { display: inline; float: left; }
 
   /* Responsive Styles */
-  .experience { height: 18em; }
+  .experience { /* without image - */ height: 7em; /* with image - height: 18em; */ }
   p.tags { bottom: 0.6em; margin-bottom: 1.5em; position: absolute; right: 0.6em; text-align: left; }
   p.tags .resize { margin-right: 0.14em; }
 
@@ -209,7 +219,7 @@ FOLDING FLUID GRID
   }
 
   /* Responsive Styles */
-  .experience { height: 16em; }
+  .experience { /* without image - */ height: 10em; /* with image - height: 16em; */ }
   p.tags { right: 0em; }
   
   /* 4 COLUMN GRID */

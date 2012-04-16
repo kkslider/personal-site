@@ -2,7 +2,7 @@
 
 <html>
 <head>
-  <title>Project Definition - Tom Stapleton</title>
+  <title>Mobile First - Tom Stapleton</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="description" content="Tom Stapleton is an interface designer and front-end developer on a journey to establish the importance of design in enterprise applications. Because even though our users have to use our applications, it doesn't mean that they shouldn't want to also." />
@@ -48,45 +48,37 @@
   </div>
   <div class="g4">
     <div class="separator">
-      <div class="line">&nbsp;</div><h3>Project Definition</h3><div class="line">&nbsp;</div>
+      <div class="line">&nbsp;</div><h3>Mobile First</h3><div class="line">&nbsp;</div>
     </div>
   </div>
   <div class="g2">
-    <h4>Introduction</h4>
-    <p>I find that I learn best through application.  In school, I was always good math, largely, I believe, because of the repetition of problems in the homework sets.  I was able to learn about a topic, and then practice how that topic is applied to problems.  This project, I hope, will give me the opportunity to learn about new ideas in web development, and apply them to a problem.</p>
-    <p>My goal is to get a job as a front-end developer.  The problem is solving how to demonstrate that I will be valuable to an organization.  I will use this project as a way to highlight what I have done in the past, and, possibly more importantly, document how I go about solving a problem.</p>
-    <h4>Project Goals</h4>
+    <h4>Constraints</h4>
+    <p>As screen space is reduced on mobile devices, the content displayed should be the most important for the user to know and for the site to communicate.  Often the user's time and attention are limited in mobile situations, but given the common saying that traditional resumes have about 30 seconds to make an impression, competing for the user's focus is already accepted.</p>
+    <p>Focus on the most important pieces, while not removing content from the mobile experience.  Consider the possibility of limited bandwidth on mobile devices and implement strategies for improved performance like image sprites, bundle and minify CSS and JavaScript, limit dependencies on heavy CSS frameworks and JavaScript libraries, and use CSS3 properties to reduce the need for images.</p>
+    <h4>Organization</h4>
+    <p>Collecting all experience on a single page will make the content the focus of the site.  Clear separation between the experience section and the project documentation will keep relevant content together and allow for exploration within each section.</p>
+    <p>User interaction with mobile devices generally falls into one of four categories:</p>
     <ul>
-      <li>Get a job as a front-end developer in the Bay Area</li>
-      <li>Build a website to highlight my projects and accomplishments</li>
-      <li>Learn about new ideas and technologies in web development</li>
-      <li>Demonstrate how I can provide value to a new organization</li>
+      <li>Lookup / find - need an answer to something now</li>
+      <li>Explore / play - have some time to kill</li>
+      <li>Check in / status - stay on top of updating information</li>
+      <li>Edit / create - need something done now</li>
     </ul>
-    <h4>Project Objectives</h4>
+    <p>These interaction types should be handled with the following site features:</p>
     <ul>
-      <li>Update my resume content to show my accomplishments and projects in an interesting format</li>
-      <li>Build a website to replace the need for a traditional paginated resume</li>
-      <li>Provide an outlet for continued writing and projects</li>
-      <li>Demonstrate my understanding of new ideas and technologies in web development</li>
-      <li>Document the way I think about solving problems and completing projects</li>
+      <li>Lookup / find - site header has clear contact information, objective and experience summary to provide a quick overview</li>
+      <li>Explore / play - highlighted resume content should tease content and provide more details when desired</li>
+      <li>Check in / status - the main experience content won't be changing too often, but updating information could come in the form of updates to github, new blog posts, and recent tweets</li>
+      <li>Edit / create - ideally the user needs to contact me immediately to discuss an opportunity with their company, so I should make this really easy to do</li>
     </ul>
   </div>
   <div class="g2">
-    <h4>Victory Conditions</h4>
-    <ul>
-      <li>Accepted a job offer as a front-end web developer by June 1, 2012</li>
-      <li>Zero requests from potential employers for a standard document resume because my site does not communicate the necessary information</li>
-      <li>This website is discussed in 100% of my job interviews with potential employers</li>
-    </ul>
-    <h4>Requirements</h4>
-    <ul>
-      <li>Launch by April 15, 2012 so I may start applying to jobs</li>
-      <li>Accept a job offer by June 1, 2012 so I may move to the Bay Area by July 1, 2012</li>
-      <li>I will complete the website on my own</li>
-      <li>The website will need to be completed during nights and weekends while I continue working in my present position</li>
-    </ul>
+    <h4>Layout</h4>
+    <p>Design the mobile experience first and strive for the minimum amount necessary to communicate the desired messages.  Then progressively enhance the layout using responsive web design.  While all content should be accessible regardless of device used, layout rules can reposition elements, increase image sizes, and toggle initial visibility of content.</p>
+    <p>Some work will be needed to handle responsive images, both in terms of size and resolution.  Appropriate images can be determined and served using CSS3 media queries, JavaScript and server side solutions.  Each image should have multiple sizes and multiple resolutions.</p>
+    <p>Develop a working prototype early and start testing how it behaves.  Start testing the mobile experience early to evaluate how it meets the desired goals and consider how a user would interact with it in real world situations.  Expect multiple iterations on the design to get something optimal.</p>
     <h4>References</h4>
-    <p><a href="http://www.abookapart.com/products/the-elements-of-content-strategy"><em>The Elements of Content Strategy</em></a> by Erin Kissane for the ideas on how to structure project planning information.</p>
+    <p><a href="http://www.abookapart.com/products/mobile-first"><em>Mobile First</em> by Luke Wroblewski</a> for explaining the importance of mobile and how it should affect our design process.</p>
   </div>
   <footer class="g4 cf">
     <nav>
