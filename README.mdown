@@ -1,5 +1,31 @@
-#Welcome#
+##Welcome##
 
 I find that I learn best through application.  In school, I was always good math, largely, I believe, because of the repetition of problems in the homework sets.  I was able to learn about a topic, and then practice how that topic is applied to problems.  This project, I hope, will give me the opportunity to learn about new ideas in web development, and apply them to a problem.
 
 My goal is to get a job as a front-end developer.  The problem is solving how to demonstrate that I will be valuable to a new organization.  And I will use this project as a way to highlight what I have done in the past, and, probably more importantly, document how I go about solving a problem.
+
+##To Do##
+
+Content
+
+* Write descriptions for content
+* Collect links and images for content
+* Give another proof read
+* Write more about implementing the responsive framework
+
+Implementation
+
+* Develop feature to view more content, possibly hide content initially on mobile
+* Develop feature to track changelog on project page
+* Find way to bundle and minify css and javascript automatically
+* Develop solution for responsive images
+* Validate CSS and HTML
+* Section lines have minor left offset
+* Section lines resize as device width changes
+* Maybe add a contact form
+* Design better way to visualize summary, maybe as a timeline
+
+Deployment
+
+* More browser and device testing
+* Setup Google Analytics

@@ -1,3 +1,15 @@
+/* BASE STYLES */
+
+ul, ol {
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+ul {
+  list-style: circle inside;
+}
+
 /* TYPOGRAPHY */
 /* Cabin 700, 500, 400, 400italic */
 /* PT Serif Caption 400, 400italic */
@@ -106,7 +118,9 @@ ul.tags {
   float: left;
   list-style: none;
   margin-top: -1em;
-  width: 50%;
+  padding-left: 0;
+  text-indent: 0;
+  width: 40%;
 }
 
 .tags li {
@@ -137,6 +151,18 @@ p.tags {
 /* PROJECT */
 ul.project {
   margin-top: -1em;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+table, th, td {
+  border: 0.1em solid #48698d;
+  margin: 0 auto 1.5em;
+}
+
+tr, th, td {
+  padding: 0.2em 1.5em;
+  text-align: center;
 }
 
 
