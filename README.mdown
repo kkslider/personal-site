@@ -18,11 +18,11 @@ Implementation
 * Develop feature to view more content, possibly hide content initially on mobile
 * Develop feature to track changelog on project page
 * Find way to bundle and minify css and javascript automatically
-* Develop solution for responsive images
-* Validate CSS and HTML
+* Develop solution for responsive images, current images are 423px by 846px and resized
 * Maybe add a contact form
 * Design better way to visualize summary, maybe as a timeline
 * Implement a template system, probably handlebars.js
+* Figure out why icons from pictos sometimes don't load
 
 Deployment
 
