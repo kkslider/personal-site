@@ -13,18 +13,19 @@ ul {
 /* TYPOGRAPHY */
 /* Cabin 700, 500, 400, 400italic */
 /* PT Serif Caption 400, 400italic */
+/* Lato 700, 400, 400italic */
 body, button, input, select, textarea, .slogan {
-  font: 400 normal 100%/1.5 "Cabin", "Century Gothic", AppleGothic, sans-serif;
+  font: 400 normal 100%/1.5 "Lato", "Helvetica", "Trebuchet MS", sans-serif;
 }
 h1, h2, h3, h4, h5, h6, dt {
-  font-family: "PT Serif Caption", Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+  font-family: "Lato", "Helvetica", "Trebuchet MS", sans-serif;
+  font-weight: 700;
 }
 pre, code, kbd, samp {
   font-family: Menlo, Consolas, 'DejaVu Sans Mono', Monaco, monospace
 }
 .slogan {
   font-size: 1.3125em;
-  font-weight: 500;
 }
 strong {
   font-weight: 700;
@@ -33,25 +34,22 @@ strong {
 /* COLORS AND BACKGROUNDS */
 body {
   background: url(../images/background.png) 0 0;
-  color: #1f111d;
+  color: #131c26;
 }
 a {
-  color: #64a1fe;
+  color: #6b9bd1;
 }
 a:active, .slogan {
-  color: #737c87;
+  color: #7b8da1;
 }
-h1, .separator h3, .slogan strong {
-  color: #48698d;
-}
-h2, h3, h4, h5, h6 {
-  color: #325b87;
+h1, h2, h3, h4, h5, h6, .slogan strong {
+  color: #3c5775;
 }
 .tag {
-  color: #8d7873;
+  color: #42687b;
 }
 mark, ins, ::-moz-selection, ::selection {
-  background: #8d7873;
+  background: #58756e;
 }
 
 /* TOP AND BOTTOM */
@@ -81,37 +79,58 @@ footer {
 .separator {
   text-align: center;
 }
-.line, .separator h3 {
+
+.separator h3 {
+  background: url(../images/background.png) 0 0;
   display: inline-block;
+  padding: 0 0.6em;
+  position: relative;
 }
 
-.line {
-  background: #737c87;
+.separator hr {
+  background: #7b8da1;
+  border: 0;
   height: .14em;
-  margin: 0 4% .666666666666667em;
+  margin: 0;
+  position: relative;
+  top: 1.7em;
 
-  /* let javascript figure out the width then fade in the lines */
+  /* let javascript fade in the lines */
   opacity: 0;
-  width: 1px;
-  transition: opacity .3s linear;
-   -o-transition: opacity .3s linear;
-   -moz-transition: opacity .3s linear;
-   -webkit-transition: opacity .3s linear;
+  -o-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
 }
 
 .experience {
-  background: #fff;
-  box-shadow: 0 0 0.4em 0.1em #fbe977;
+  background: #f8f9fa;
+  /* box-shadow: 0 0 0.4em 0.1em #fbe977; */
+  /* box-shadow: 0 0 0.4em 0.1em #48698d; */
+  box-shadow: 0 0 0.2em 0.1em #3c5775;
+  
   margin: 0 2% 2em;
   padding: 0.6em;
   width: 92%;
 }
 
 .experience img {
-  box-shadow: 0 0 0 .2em #fff, 0 0 .1em .2em #737c87;
+  box-shadow: 0 0 0 .2em #f8f9fa, 0 0 .1em .2em #7b8da1;
   margin-bottom: 0;
   display: none;
 }
+
+.experience.image img {
+  display: block;
+  margin-bottom: 0.6em;
+}
+
+.more {
+  bottom: -1em;
+  left: 1.4em;
+  position: absolute;
+}
+
 
 /* TAGS */
 ul.tags {
@@ -120,7 +139,7 @@ ul.tags {
   margin-top: -1em;
   padding-left: 0;
   text-indent: 0;
-  width: 40%;
+  width: 50%;
 }
 
 .tags li {
@@ -133,7 +152,6 @@ p.tags {
 }
 
 .tag {
-  color: #8d7873;
   display: inline-block;
   font: normal 2em/1em "Pictos Custom";
   margin-left: 8px;
@@ -227,9 +245,12 @@ FOLDING FLUID GRID
   .g1,.g2,.g3,.g4 { display: inline; float: left; }
 
   /* Responsive Styles */
-  .experience { /* without image - */ height: 7em; /* with image - height: 18em; */ }
+  .experience { /* without image - */ min-height: 8em; /* with image - height: 18em; */ }
+  .experience.image { min-height: 18em; }
   p.tags { bottom: 0.6em; margin-bottom: 1.5em; position: absolute; right: 0.6em; text-align: left; }
   p.tags .resize { margin-right: 0.14em; }
+  .more { bottom: 1em; left: 1em; }
+  .details { margin-bottom: 3.4em; }
 
   /* 2 COLUMN GRID */
   .g1 { width: 48.0% }
@@ -245,7 +266,8 @@ FOLDING FLUID GRID
   }
 
   /* Responsive Styles */
-  .experience { /* without image - */ height: 10em; /* with image - height: 16em; */ }
+  .experience { /* without image - */ min-height: 10em; /* with image - height: 16em; */ }
+  .experience.image { min-height: 16em; }
   p.tags { right: 0em; }
   
   /* 4 COLUMN GRID */
