@@ -6,7 +6,7 @@ My goal is to get a job as a front-end developer.  The problem is solving how to
 
 ##Why##
 
-Seth Godin explains the idea well.
+[Seth Godin](http://sethgodin.typepad.com/seths_blog/2012/02/can-i-see-your-body-of-work.html) explains the idea well.
 
 > Few people are interested in your resume any more. Plenty are interested in what you've done.
 > 
