@@ -4,27 +4,16 @@ I find that I learn best through application.  In school, I was always good math
 
 My goal is to get a job as a front-end developer.  The problem is solving how to demonstrate that I will be valuable to a new organization.  And I will use this project as a way to highlight what I have done in the past, and, probably more importantly, document how I go about solving a problem.
 
-##To Do##
+##Why##
 
-Content
+Seth Godin explains the idea well.
 
-* Write descriptions for content
-* Collect links and images for content
-* Give another proof read
-* Write more about implementing the responsive framework
+> Few people are interested in your resume any more. Plenty are interested in what you've done.
+> 
+> The second thing you'll need to do is regularly note what you produce in a log or find some other way to keep track.
+> 
+> The first thing is more difficult: If the work you do isn't worth collating and highlighting, you probably need to be doing better work.
 
-Implementation
 
-* Develop feature to view more content, possibly hide content initially on mobile
-* Develop feature to track changelog on project page
-* Find way to bundle and minify css and javascript automatically
-* Develop solution for responsive images, current images are 423px by 846px and resized
-* Maybe add a contact form
-* Design better way to visualize summary, maybe as a timeline
-* Implement a template system, probably handlebars.js
-* Figure out why icons from pictos sometimes don't load
 
-Deployment
 
-* More browser and device testing
-* Setup Google Analytics
