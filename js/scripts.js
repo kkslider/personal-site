@@ -11,18 +11,18 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
   }
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('.separator hr').css('opacity', 1);
   $('.details').hide();
-  
-  $('.more a').click(function(e) {
+
+  $('.more a').click(function (e) {
     var $this = $(this);
     $this.parent().siblings('.details').toggle();
-    $this.text($this.text() == 'More' ? 'Less' : 'More');
+    $this.text($this.text() === 'More' ? 'Less' : 'More');
     e.preventDefault();
   });
-  
-  $('ul.tags a').click(function(e) {
+
+  $('ul.tags a').click(function (e) {
     $(this).siblings('.details').toggle();
     e.preventDefault();
   });
