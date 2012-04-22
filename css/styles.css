@@ -1,4 +1,8 @@
 /* BASE STYLES */
+html {
+  border-top: 0.2em solid #7b8da1;
+}
+
 
 ul, ol {
   margin-left: 0;
@@ -35,6 +39,7 @@ strong {
 body {
   background: url(../images/background.png) 0 0;
   color: #131c26;
+  padding-top: 1em;
 }
 a {
   color: #6b9bd1;
@@ -53,13 +58,43 @@ mark, ins, ::-moz-selection, ::selection {
 }
 
 /* TOP AND BOTTOM */
+.action {
+  margin: 2em 0 1.6em;
+  text-align: center;
+}
+.action a {
+  background: #58756E;
+  box-shadow: 0 0 0.1em 0 #3C5775;
+  color: #F8F9FA;
+  padding: 0.3em 1em 0.34em;
+  text-shadow: 0 0 0.6em #3C5775;
+}
+.action a:hover {
+  text-decoration: none;
+  text-shadow: 0 0 0.6em #6B9BD1;
+}
+.action a:active {
+  text-decoration: none;
+  box-shadow: 0 0 0.1em 0.03em #6B9BD1;
+  text-shadow: 0 0 0.6em #6B9BD1;
+}
+.areas {
+  margin: 0.4em 0 0.2em;
+}
+
+.key {
+  display: inline-block;
+  height: 2.2em;
+  width: 48%;
+}
+
 nav, footer {
   padding-top: 0.4em;
   text-align: center;
 }
 
 nav p, footer p {
-  margin-bottom: 0;
+  margin-bottom: 0.4em;
 }
 
 nav a {
@@ -76,6 +111,10 @@ footer {
 }
 
 /* EXPERIENCE */
+#content {
+  display: none;
+}
+
 .separator {
   text-align: center;
 }
@@ -192,6 +231,7 @@ body { width: 92%; margin: 0 auto} /* Center page without wrapper */
 /* 1 column grid */
 .g1,.g2,.g3,.g4{width:98.0%}
 header h1 { font-size: 2.2em; text-align: center; }
+.action a { font-size: 1.4em; }
 
 
 /* MEDIA QUERIES
@@ -218,6 +258,7 @@ FOLDING FLUID GRID
   /* Responsive Styles */
   header h1 { font-size: 3em; }
   nav a { padding: 0 2%; width: 28%; }
+  .action a { font-size: 2.0em; }
 }
 
 /* SMALL TABLET */
@@ -227,7 +268,8 @@ FOLDING FLUID GRID
   }
   
   /* Responsive Styles */
-  header h1 { font-size: 3.75em; }
+  header h1 { font-size: 3.25em; }
+  .action a { font-size: 2.2em; }
   ul.project { list-style: none; text-align: center; }
   ul.project li { display: inline; padding: 0 2%; }
   ul.project a { display: inline-block; font-weight: 700; line-height: 1.3em; margin: 1em 0; padding: 0 2%; width: 12%; }
@@ -252,6 +294,7 @@ FOLDING FLUID GRID
   p.tags .resize { margin-right: 0.14em; }
   .more { bottom: 1em; left: 1em; }
   .details { margin-bottom: 3.4em; }
+  .action { margin-top: 1.5em; }
 
   /* 2 COLUMN GRID */
   .g1 { width: 48.0% }

@@ -32,19 +32,29 @@
     <div id="content">
 
         <header>
-            <div class="g4">
+            <div class="g2">
                 <h1>{{header.name}}</h1>
             </div>
+            <div class="g2">
+                <p class="action">{{{header.action}}}</p>
+            </div>
+            <div class="cf"></div>
             <div class="g2">
                 <h5 class="slogan">{{{header.slogan}}}</h5>
             </div>
             <div class="g2">
-                <p>{{header.areas.intro}}</p>
+                <p class="areas">{{header.areas.intro}}</p>
                 {{#header.areas.items}}
-                    <ul class="tags">
-                        <li><span class="tag">{{id}}</span> {{name}}</li>
-                    </ul>
+                    <span class="key"><span class="tag">{{id}}</span> {{name}}</span>
                 {{/header.areas.items}}
+
+                <!--
+                <ul class="tags">
+                    {{#header.areas.items}}
+                        <li><span class="tag">{{id}}</span> {{name}}</li>
+                    {{/header.areas.items}}
+                </ul>
+            -->
             </div>
         </header>
 
@@ -58,7 +68,12 @@
                 </div>
                 <ul>
                     {{#items}}
-                        <li><strong>{{position}}</strong> for {{company}}, {{period}}</li>
+                        {{#degrees}}
+                            <li>{{{degrees}}} from the {{company}}, graduated {{period}}</li>
+                        {{/degrees}}
+                        {{#position}}
+                            <li><strong>{{position}}</strong> for {{company}}, {{period}}</li>
+                        {{/position}}
                     {{/items}}
                 </ul>
             </div>
@@ -95,6 +110,10 @@
         {{/content.section}}
 
         <footer class="g4 cf">
+            <p class="action">{{{header.action}}}</p>
+            
+            <div class="cf"></div>
+
             {{#footer.items}}
                 <p><small>{{{.}}}</small></p>
             {{/footer.items}}

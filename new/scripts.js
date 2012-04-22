@@ -6,6 +6,7 @@ $(document).ready(function () {
 
     header = {
         name: 'Tom Stapleton',
+        action: '<a href="mailto:tstapleton@gmail.com">Email Me</a>',
         slogan: '...is an interface designer and front-end developer on a journey to establish the importance of design in enterprise applications.  Because even though our users <strong>have</strong> to use our applications, it doesn\'t mean that they shouldn\'t <strong>want</strong> to also.',
         areas: {
             intro: 'I\'m proud to have experience with:',
@@ -48,6 +49,7 @@ $(document).ready(function () {
 
     footer = {
         items: [
+            'Elsewhere on the web at <a href="https://github.com/tstapleton">GitHub</a>, <a href="http://www.linkedin.com/in/thomasstapleton">LinkedIn</a>, and <a href="https://twitter.com/thomasstapleton">Twitter</a>.',
             'Kicking it old school?  Here\'s a PDF version of my <a href="/files/Tom-Stapleton-Resume.pdf">resume</a>.',
             'Built with the <a href="http://fluidbaselinegrid.com/">Fluid Baseline Grid</a>, icons from <a href="http://pictos.cc/">Pictos</a>, and the <a href="http://www.google.com/webfonts/specimen/Lato">Lato</a> font family.  Site hosted at <a href="http://macminicolo.net/">Mac Mini Colo</a> and source code available at <a href="https://github.com/tstapleton/personal-site">GitHub</a>.'
         ]
@@ -99,12 +101,12 @@ $(document).ready(function () {
                 title: 'Education',
                 items: [
                     {
-                        degrees: ['Computer Science', 'Finance', 'Applied Mathematics'],
+                        degrees: 'Bachelor degrees in <strong>Computer Science</strong> and <strong>Finance</strong> with a minor in <strong>Applied Mathematics</strong>',
                         company: 'University of Colorado at Boulder',
                         period: 'May 2007'
                     },
                     {
-                        position: ['President', ' Vice President', ' Treasurer', ' Member'],
+                        position: 'President, Vice President, Treasurer, Member',
                         company: 'Phi Kappa Psi',
                         period: 'August 2002 - May 2007'
                     },
@@ -320,6 +322,6 @@ $(document).ready(function () {
 
     template = $('#content').html();
     html = Mustache.to_html(template, data);
-    $('#content').html(html);
+    $('#content').html(html).show();
 
 });
