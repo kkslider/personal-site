@@ -30,9 +30,4 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-    $('.tag').each(function () {
-        if ($(this).text() === '4') {
-            $(this).addClass('resize');
-        }
-    });
 });
