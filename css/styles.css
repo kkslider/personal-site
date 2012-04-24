@@ -193,11 +193,15 @@ p.tags {
 
 .tag {
   display: inline-block;
-  font: normal 2em/1em "Pictos Custom";
+  font: normal 2em/0.6em "Pictos Custom";
   margin-left: 8px;
   vertical-align: bottom;
   width: 1em;
   -webkit-font-smoothing: antialiased;
+}
+
+.key .tag {
+  line-height: 0.6em;
 }
 
 .resize {

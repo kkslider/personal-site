@@ -9,7 +9,7 @@ $(document).ready(function () {
         action: '<a href="mailto:tstapleton@gmail.com">Email Me</a>',
         slogan: '...is an interface designer and front-end developer on a journey to establish the importance of design in enterprise applications.  Because even though our users <strong>have</strong> to use our applications, it doesn\'t mean that they shouldn\'t <strong>want</strong> to also.',
         areas: {
-            intro: 'I\'m proud to have experience with:',
+            intro: 'I have experience with:',
             items: [
                 {
                     id: 2,
