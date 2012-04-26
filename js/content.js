@@ -2,7 +2,13 @@ $(document).ready(function () {
     // http://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
     'use strict';
 
-    var data = {}, header = {}, summary = {}, content = {}, footer = {}, template, html;
+    var data = {}, header = {}, summary = {}, content = {}, footer = {}, imageSize, template, html;
+
+    // define image size to load based on screen size
+    // phone sizes should get small for narrow 1 column, screen.width <= 500 - 414
+    // narrow tablets could get larger image to account for wide 1 column, screen.width > 500 && screen.width < 768 - 633
+    // large screen should get small for 2 or 4 columns, screen.width >= 768 - 414px
+    imageSize = (screen.width > 500 && screen.width < 768) ? '_large.jpg' : '_small.jpg';
 
     header = {
         name: 'Tom Stapleton',
@@ -12,35 +18,35 @@ $(document).ready(function () {
             intro: 'I have experience with:',
             items: [
                 {
-                    id: 2,
+                    id: 'B',
                     name: 'Education'
                 },
                 {
-                    id: 5,
+                    id: 'U',
                     name: 'Data Analysis'
                 },
                 {
-                    id: 6,
+                    id: 'w',
                     name: 'Design'
                 },
                 {
-                    id: 7,
+                    id: 'G',
                     name: 'Development'
                 },
                 {
-                    id: 8,
+                    id: 'Y',
                     name: 'Drupal'
                 },
                 {
-                    id: 3,
+                    id: 'f',
                     name: 'Leadership'
                 },
                 {
-                    id: 1,
+                    id: 't',
                     name: 'Shopify'
                 },
                 {
-                    id: 4,
+                    id: 'b',
                     name: 'Teaching'
                 }
             ]
@@ -160,9 +166,9 @@ $(document).ready(function () {
                 title: '2012',
                 items: [
                     {
-                        image: 'images/resume.png',
+                        image: 'images/resume' + imageSize,
                         teaser: 'Created a project to learn new ideas in web development and build a website that highlights my experiences',
-                        tags: [2, 6, 7],
+                        tags: ['B', 'w', 'G'],
                         more: true,
                         details: [
                             'I built this website to highlight my accomplishments in a more interesting way than a traditional resume',
@@ -171,9 +177,9 @@ $(document).ready(function () {
                         ]
                     },
                     {
-                        image: 'images/mockup.png',
+                        image: 'images/mockup' + imageSize,
                         teaser: 'Identified the need for a user interface designer and took the role',
-                        tags: [6, 7, 3, 4],
+                        tags: ['w', 'G', 'f', 'b'],
                         more: true,
                         details: [
                             'Identified the lack of user interface design in our current processes and the issues it was causing like gaps between what the business wanted and the solution developed, and inconsistent interface patterns throughout the application',
@@ -182,9 +188,9 @@ $(document).ready(function () {
                         ]
                     },
                     {
-                        image: 'images/burndown.png',
+                        image: 'images/burndown' + imageSize,
                         teaser: 'Advocated for the adoption of agile processes and quickly became scrum master',
-                        tags: [3, 4],
+                        tags: ['f', 'b'],
                         more: true,
                         details: [
                             'Reading <a href="http://www.amazon.com/User-Stories-Applied-Software-Development/dp/0321205685"><em>User Stories Applied</em> by Mike Cohn</a> a couple years ago was eye-opening and convinced me of the benefits of agile software development and user stories',
@@ -194,9 +200,9 @@ $(document).ready(function () {
                         ]
                     },
                     {
-                        image: 'images/cbm.png',
+                        image: 'images/cbm' + imageSize,
                         teaser: 'Redesigned a complex process by simplifying input and introducing result visualization',
-                        tags: [6, 7, 3, 5],
+                        tags: ['w', 'G', 'f', 'U'],
                         more: true,
                         details: [
                             'Condition based maintenance is a way to recommend maintenance on equipment based on the environment the equipment was used in, e.g. a tool used in a high temperature, high pressure environment needs more maintenance than one used in a low temperature, low pressure environment',
@@ -213,28 +219,28 @@ $(document).ready(function () {
                     {
                         image: '',
                         teaser: 'Designed and developed our website to showcase projects and attract new clients',
-                        tags: [6, 7, 8],
+                        tags: ['w', 'G', 'Y'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Developed a mapping site to visualize travel schedules for better planning and communication',
-                        tags: [6, 7, 8, 3, 5],
+                        tags: ['w', 'G', 'Y', 'f', 'U'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Built a website that allows a retail store to expand their business and easily manage their complex product categorizations',
-                        tags: [6, 7, 1],
+                        tags: ['w', 'G', 't'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Setup a team wiki to start building a knowledge base for better communication and sharing',
-                        tags: [2, 7, 3, 4],
+                        tags: ['B', 'G', 'f', 'b'],
                         more: false,
                         details: []
                     }
@@ -246,28 +252,28 @@ $(document).ready(function () {
                     {
                         image: '',
                         teaser: 'Built a website focused on detail and clarity to match the spiritual traditions represented by the products',
-                        tags: [6, 7, 1],
+                        tags: ['w', 'G', 't'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Organized and delivered education classes and application deployments in Europe, Asia, Africa and North America',
-                        tags: [4],
+                        tags: ['b'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Developed an influencer marketing solution that allows industry pioneers to communicate the brand’s message',
-                        tags: [6, 7, 8, 4],
+                        tags: ['w', 'G', 'Y', 'b'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Designed reusable educational materials to enable teachers to assess student learning in real-time',
-                        tags: [7, 3, 4],
+                        tags: ['G', 'f', 'b'],
                         more: false,
                         details: []
                     }
@@ -279,28 +285,28 @@ $(document).ready(function () {
                     {
                         image: '',
                         teaser: 'Earned bachelor degrees in computer science and finance, and a minor in applied mathematics from the University of Colorado',
-                        tags: [2, 7, 5],
+                        tags: ['B', 'G', 'U'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Earned a certificate in quantitative finance, a program focused on analytical problem solving across disciplines',
-                        tags: [2, 5],
+                        tags: ['B', 'U'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Implemented a peer-to-peer file distribution system with a centralized server',
-                        tags: [2, 7, 3, 4],
+                        tags: ['B', 'G', 'f', 'b'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Used support vector machines to predict future stock market movements',
-                        tags: [2, 7, 5],
+                        tags: ['B', 'G', 'U'],
                         more: false,
                         details: []
                     }
@@ -312,28 +318,28 @@ $(document).ready(function () {
                     {
                         image: '',
                         teaser: 'Managed the student union’s $400,000 yearly budget',
-                        tags: [3, 4],
+                        tags: ['f', 'b'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Led 60 brothers in defining and adopting Expectations of Membership to turn around a struggling Chapter',
-                        tags: [3, 4],
+                        tags: ['f', 'b'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Introduced accounting transparency of the $100,000 yearly budget to double collection rates and pay off debt',
-                        tags: [3, 5],
+                        tags: ['f', 'U'],
                         more: false,
                         details: []
                     },
                     {
                         image: '',
                         teaser: 'Created a business plan, marketing materials and a website for my first entrepreneurial project',
-                        tags: [2, 6],
+                        tags: ['B', 'w'],
                         more: false,
                         details: []
                     }
@@ -349,8 +355,8 @@ $(document).ready(function () {
         footer: footer
     };
 
-    template = $('#content').html();
+    template = $('#template').html();
     html = Mustache.to_html(template, data);
-    $('#content').html(html).show();
+    $('#content').append().html(html).show();
 
 });

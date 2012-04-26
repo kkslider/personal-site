@@ -84,7 +84,7 @@ mark, ins, ::-moz-selection, ::selection {
 
 .key {
   display: inline-block;
-  height: 2.2em;
+  height: 2.4em;
   width: 48%;
 }
 
@@ -187,27 +187,16 @@ ul.tags {
 }
 
 p.tags {
-  margin-bottom: -2%;
+  margin-bottom: 0;
   text-align: right;
 }
 
 .tag {
   display: inline-block;
-  font: normal 2em/1em "Pictos Custom";
-  margin-left: 8px;
+  font: normal 2em/1em "HeydingsCommonIconsRegular", sans-serif;
   vertical-align: bottom;
   width: 1em;
   -webkit-font-smoothing: antialiased;
-}
-
-.key .tag {
-  line-height: 0.6em;
-}
-
-.resize {
-  font-size: 2.7em;
-  line-height: 0.66em;
-  width: 0.78em;
 }
 
 /* PROJECT */
@@ -225,6 +214,17 @@ table, th, td {
 tr, th, td {
   padding: 0.2em 1.5em;
   text-align: center;
+}
+
+@font-face {
+  font-family: 'HeydingsCommonIconsRegular';
+  src: url('../fonts/heydings_icons-webfont.eot');
+  src: url('../fonts/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/heydings_icons-webfont.woff') format('woff'),
+       url('../fonts/heydings_icons-webfont.ttf') format('truetype'),
+       url('../fonts/heydings_icons-webfont.svg#HeydingsCommonIconsRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
@@ -293,9 +293,8 @@ FOLDING FLUID GRID
 
   /* Responsive Styles */
   .experience { /* without image - */ min-height: 8em; /* with image - height: 18em; */ }
-  .experience.image { min-height: 18em; }
-  p.tags { bottom: 0.6em; margin-bottom: 1.5em; position: absolute; right: 0.6em; text-align: left; }
-  p.tags .resize { margin-right: 0.14em; }
+  .experience.image { min-height: 19em; }
+  p.tags { bottom: 0.9em; margin-bottom: 1.5em; position: absolute; right: 0.8em; text-align: left; }
   .more { bottom: 1em; left: 1em; }
   .details { margin-bottom: 3.4em; }
   .action { margin-top: 1.5em; }
@@ -316,7 +315,7 @@ FOLDING FLUID GRID
   /* Responsive Styles */
   .experience { /* without image - */ min-height: 10em; /* with image - height: 16em; */ }
   .experience.image { min-height: 16em; }
-  p.tags { right: 0em; }
+  p.tags { right: 0.2em; }
   
   /* 4 COLUMN GRID */
   .g1 { width: 23.0%; }
