@@ -182,9 +182,9 @@ $(document).ready(function () {
                         tags: ['w', 'G', 'f', 'b'],
                         more: true,
                         details: [
-                            'Identified the lack of user interface design in our current processes and the issues it was causing like gaps between what the business wanted and the solution developed, and inconsistent interface patterns throughout the application',
-                            'Set the expectation that screen mockups should be developed and approved by the business prior to development so a common understanding could be established early',
-                            'Started developing a front-end pattern library to establish standard and reusable ways of interacting with the application'
+                            'I identified the lack of user interface design in our current processes and the issues it was causing like gaps between what the business wanted and the solution developed, and inconsistent interface patterns throughout the application',
+                            'I set the expectation that screen mockups should be developed and approved by the business prior to development so a common understanding could be established early',
+                            'I started developing a front-end pattern library to establish standard and reusable ways of interacting with the application'
                         ]
                     },
                     {
@@ -217,32 +217,50 @@ $(document).ready(function () {
                 title: '2011',
                 items: [
                     {
-                        image: '',
+                        image: 'images/studio' + imageSize,
                         teaser: 'Designed and developed our website to showcase projects and attract new clients',
                         tags: ['w', 'G', 'Y'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            'After completing a number of client projects, our digital design studio, <a href="http://3pointzero.org">3.ZERO</a>, needed a new website to host our portfolio and explain our new focus',
+                            'The site was built on Drupal 7 with the Context, Feeds, Nodequeue, Services, Views, and Webform modules, and a custom subtheme based on Omega',
+                            'It was a great opportunity to learn about iterative development, project management, content organization for effective communication and continued management, and the new Drupal core and modules'
+                        ]
                     },
                     {
-                        image: '',
+                        image: 'images/deployment' + imageSize,
                         teaser: 'Developed a mapping site to visualize travel schedules for better planning and communication',
                         tags: ['w', 'G', 'Y', 'f', 'U'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            'As a lead on the deployment team for an enterprise application, I was helping to plan the global travel schedules for our educators for the upcoming year',
+                            'We compiled the geographical information into a spreadsheet, assigned educators and deployment dates to each location, and setup filters on the columns to try to make sense of the plan',
+                            'After struggling to really understand the data as a series of rows, I decided that a map would be a better way to visual the plans',
+                            'I used Drupal 6 with OpenLayers, Feeds, Taxonomy Views and Better Exposed Filters to create a site where we could import our planning spreadsheet and visualize the schedule on a world map across many educators, dates, regions and product lines',
+                            'The map allowed us to better review our schedule and communicate the plans to external teams'
+                        ]
                     },
                     {
-                        image: '',
+                        image: 'images/bettylin' + imageSize,
                         teaser: 'Built a website that allows a retail store to expand their business and easily manage their complex product categorizations',
                         tags: ['w', 'G', 't'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            'We had built a few Shopify themes before we started working with <a href="http://bettylinseattle.com">Betty Lin</a> and we knew right away that the project was going to require a lot of smart customizations and setup to make their store easy to manage long-term',
+                            'I led the discovery phase and helped them plan their product taxonomy from the start so we could provide their users with many ways to find the perfect item while reducing manual product management as much as possible',
+                            'The theme relies heavily on the Liquid template language and JavaScript to build the navigation, breadcrumbs, pagination and various product viewing features'
+                        ]
                     },
                     {
-                        image: '',
+                        image: 'images/wiki' + imageSize,
                         teaser: 'Setup a team wiki to start building a knowledge base for better communication and sharing',
                         tags: ['B', 'G', 'f', 'b'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            'When I switched from the process team to the development team, it quickly became apparent that there wasn\'t a central place to store team knowledge, which made on-boarding a new developer very difficult and knowledge sharing not repeatable',
+                            'I tested a few open source wiki solutions and settled on <a href="http://www.dokuwiki.org/dokuwiki">DokuWiki</a>, then applied some custom styles, configured LDAP for user access, and set up a navigation hierarchy with tagging conventions',
+                            'I started adding content to the site as I learned something new, and we eventually used the wiki to define and store team coding standards, collect useful code snippets, publish accepted procedures, and store meeting notes'
+                        ]
                     }
                 ]
             },
@@ -250,32 +268,50 @@ $(document).ready(function () {
                 title: '2008 - 2010',
                 items: [
                     {
-                        image: '',
+                        image: 'images/prettybird' + imageSize,
                         teaser: 'Built a website focused on detail and clarity to match the spiritual traditions represented by the products',
                         tags: ['w', 'G', 't'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            '<a href="http://www.hereprettybird.com">Pretty Bird</a> offers spiritual, hand-made jewelry and needed a Shopify theme built that would communicate the same messages as their products',
+                            'The clean lines, shades of light gray, use of white space, and touches of color combine to put the focus on the products and give the site a calming feel',
+                            'I collaborated with the designer to produce the final PSDs, then implemented the theme using HTML, CSS, JavaScript and the Liquid template language'
+                        ]
                     },
                     {
-                        image: '',
+                        image: 'images/map' + imageSize,
                         teaser: 'Organized and delivered education classes and application deployments in Europe, Asia, Africa and North America',
                         tags: ['b'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            'In the first month at my new position, I learned all I could about our asset tracking application and enough about the oil and gas industry and the company\'s workshop procedures to put everything in context',
+                            'Then I was off to Norway to give my first training class and implement the application into their workflow, while shadowing from an existing educator',
+                            'A couple weeks after that, I was on my own, contacting locations across the globe to convince them of the benefits of the application, schedule implementation dates, conduct the classes and provide continued support',
+                            'The most challenging part was encouraging change to a resistant audience who had years of experience working with physical documents and local procedures'
+                        ]
                     },
                     {
-                        image: '',
+                        image: 'images/pioneers' + imageSize,
                         teaser: 'Developed an influencer marketing solution that allows industry pioneers to communicate the brand’s message',
                         tags: ['w', 'G', 'Y', 'b'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            'Topo Ranch wanted to drive more traffic and revenue to their existing online store while communicating their brand story',
+                            'We developed a solution where Topo Ranch could identify leaders in the art, fine food, music and green communities, and provide them with a place to tell their own story, released as <a href="http://pioneers.toporanch.com">Topo Ranch Pioneers</a>',
+                            'The site delivered authentic storytelling and entertainment from the industry pioneer to the customer, and naturally integrated Topo Ranch\'s products to built traffic to their online store'
+                        ]
                     },
                     {
-                        image: '',
+                        image: 'images/lego' + imageSize,
                         teaser: 'Designed reusable educational materials to enable teachers to assess student learning in real-time',
                         tags: ['G', 'f', 'b'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            'Between deployments, I continually updated the educational materials based on what I learned from teaching the classes and researching about how people learn',
+                            'Setup for the classes was difficult because I was always digging around the application to find good data examples for the students to perform exercises on, which varied from student to student',
+                            'I designed a set of training examples that demonstrated everything I wanted to teach, created a unique and repeatable numbering scheme to sandbox each student\'s examples, and wrote SQL scripts to reset the data after each class so each student could start from the same place',
+                            'I made an assumption that most workshop technicians were kinesthetic learners since they work with their hands all day, and I bought LEGO blocks for each student that would mirror the application exercises in the class with something physically manipulatable'
+                        ]
                     }
                 ]
             },
@@ -283,32 +319,51 @@ $(document).ready(function () {
                 title: '2007',
                 items: [
                     {
-                        image: '',
+                        image: 'images/graduation' + imageSize,
                         teaser: 'Earned bachelor degrees in computer science and finance, and a minor in applied mathematics from the University of Colorado',
                         tags: ['B', 'G', 'U'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            'I began college pursuing a major in computer science and quickly realized that business classes would be valuable, so I decided to pursue a minor in business administration during the summers',
+                            'I was highly successful and interested in Introduction to Accounting and Introduction to Finance, so I decided to purse a dual major in computer science and finance',
+                            'The Quantitative Finance Certificate program was introduced in my junior year, and to fulfill those requirements, I would have been 1 class short of a minor in applied mathematics, so I decided to take the extra class as well',
+                            'In the end, I earned dual bachelor degrees in computer science and finance with a minor in applied mathematics, and graduated with a cumulative GPA of 3.44'
+                        ]
                     },
                     {
-                        image: '',
+                        image: 'images/quant' + imageSize,
                         teaser: 'Earned a certificate in quantitative finance, a program focused on analytical problem solving across disciplines',
                         tags: ['B', 'U'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            '<a href="http://www.colorado.edu/asqf/">The Actuarial Studies and Quantitative Finance Certificate Program</a> was designed to bridge the gap between quantitative studies and finance, with a focus on learning the ability to perform complex financial analysis',
+                            'The curriculum combined advanced classes in applied mathematics, finance and economics, and prepared "some of the top students at the University" for a variety of industries',
+                            'I was lucky to have naturally been taking the necessary classes when the program was introduced, then earned the certificate and graduated with a GPA of 3.712 for the relevant coursework'
+                        ]
                     },
                     {
-                        image: '',
+                        image: 'images/distribustream' + imageSize,
                         teaser: 'Implemented a peer-to-peer file distribution system with a centralized server',
                         tags: ['B', 'G', 'f', 'b'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            'As a team senior project for computer science, we worked with a Boulder-based startup focused on the syndicated distribution of on-demand media',
+                            'The company wanted to reduce bandwidth costs and increase scalability by moving from a traditional network model of many clients streaming data off a single server to a peer-to-peer distribution system',
+                            'We designed and implemented a solution, <a href="https://github.com/tarcieri/DistribuStream">DistribuStream</a>, that behaves like a P2P network with a centralized server where file transfer speeds and file availability increase as the number of clients increase, while maintaining control of content distribution by the server',
+                            'My role for the project was team lead where I focused on requirements, team management, testing and project delivery'
+                        ]
                     },
                     {
-                        image: '',
+                        image: 'images/svm' + imageSize,
                         teaser: 'Used support vector machines to predict future stock market movements',
                         tags: ['B', 'G', 'U'],
-                        more: false,
-                        details: []
+                        more: true,
+                        details: [
+                            'The aim of the project was to research support vector machines and build a program in Matlab to use SVMs in financial time-series forecasting',
+                            'Historical financial data of major stock market indexes was collected and divided into 6 overlapping training-validation-testing data sets',
+                            'After a first attempt using actual weekly closing prices failed, decided to reclassify data and use percent change in weekly closing prices and a classifier to represent positive or negative direction change',
+                            'In the end, even predicting the direction of change from one week to another proved difficult as demonstrated with the testing accuracy ranging from 35.8% to 61.5%'
+                        ]
                     }
                 ]
             },
@@ -316,28 +371,28 @@ $(document).ready(function () {
                 title: '2003 - 2006',
                 items: [
                     {
-                        image: '',
+                        image: 'images/ucsu' + imageSize,
                         teaser: 'Managed the student union’s $400,000 yearly budget',
                         tags: ['f', 'b'],
                         more: false,
                         details: []
                     },
                     {
-                        image: '',
+                        image: 'images/president' + imageSize,
                         teaser: 'Led 60 brothers in defining and adopting Expectations of Membership to turn around a struggling Chapter',
                         tags: ['f', 'b'],
                         more: false,
                         details: []
                     },
                     {
-                        image: '',
+                        image: 'images/treasurer' + imageSize,
                         teaser: 'Introduced accounting transparency of the $100,000 yearly budget to double collection rates and pay off debt',
                         tags: ['f', 'U'],
                         more: false,
                         details: []
                     },
                     {
-                        image: '',
+                        image: 'images/studentsolutions' + imageSize,
                         teaser: 'Created a business plan, marketing materials and a website for my first entrepreneurial project',
                         tags: ['B', 'w'],
                         more: false,
