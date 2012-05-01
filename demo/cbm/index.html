@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>CBM Setup</title>
+		
+		<!-- include jquery and plugins -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/jquery.jeditable.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery.zclip.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/TableTools.min.js"></script>
+    <script type="text/javascript" src="js/ZeroClipboard.js"></script>
+    
+    <!-- add styles to make it look pretty -->
+    <link type="text/css" href="css/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    <link type="text/css" href="css/styles.css" rel="stylesheet" />
+    
+	</head>
+	<body>
+    <div class="help">
+      <p class="ac">Click on the green text to edit the values then hit enter to save the new value.<br />Adjust the sliders to change how much each measurement affects the total points.<br />Chart will update automatically.</p>
+    </div>
+    
+    <div id="container">
+    
+      <div id="group" class="section">
+        <h2 class="ac">Define the Condition Based Maintenance Group</h2>
+        <p class="ac">Specify how the condition based maintenance group should be configured.</p>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">CBM Type</th>
+              <th scope="col">Point Aggregation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="groupName" class="editable">Sample Group A</td>
+              <td id="groupDescription" class="editable">This is a sample group for tinkering with CBM values</td>
+              <td>
+                <!-- need to add functionality to allow for other CBM types -->
+                <select id="groupCBMType" disabled="disabled">
+                  <option value="Calibration">Calibration</option>
+                  <option value="Inspection">Inspection</option>
+                  <option value="Preventative Maintenance" selected="selected">Preventative Maintenance</option>
+                </select>
+              </td>
+              <td>
+                <!-- need to add functionality to allow for other point aggregation types -->
+                <select id="groupPointAggregationType" disabled="disabled">
+                  <option value="Use Maximum Value">Use Maximum Value</option>
+                  <option value="Sum Up All Values" selected="selected">Sum Up All Values</option>
+                </select>
+              </td>
+            </tr>
+              
+          
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="section">
+        <h2 class="ac">Define Trigger Levels and Run Measurements</h2>
+        <p class="ac">Provide measurements for various environments to determine resulting maintenance triggered.</p>
+        <div class="tableWrapper">
+          <table id="levels">
+            <thead>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <th scope="col">Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Level 1</th>
+                <td class="editable">1000</td>
+              </tr>
+              <tr>
+                <th scope="row">Level 2</th>
+                <td class="editable">1000</td>
+              </tr>
+              <tr>
+                <th scope="row">Level 3</th>
+                <td class="editable">1000</td>
+              </tr>
+              <tr>
+                <th scope="row">Level 4</th>
+                <td class="editable">3000</td>
+              </tr>
+              <tr>
+                <th scope="row">Scrap</th>
+                <td class="editable">0</td>
+              </tr>
+             </tbody>
+          </table>
+        </div>
+        
+        <div class="tableWrapper">
+          <table id="runs">
+            <thead>
+              <tr>
+                <td scope="col" class="header">Measurement (units)</td>
+                <th scope="col">Run 1</th>
+                <th scope="col">Run 2</th>
+                <th scope="col">Run 3</th>
+                <th scope="col">Run 4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="cm editable">Circulating Time (hrs)</th>
+                <td class="editable">100</td>
+                <td class="editable">150</td>
+                <td class="editable">0</td>
+                <td class="editable">0</td>
+              </tr>
+              <tr>
+                <th scope="row" class="cm editable">Maximum Temperature (deg C)</th>
+                <td class="editable">300</td>
+                <td class="editable">0</td>
+                <td class="editable">500</td>
+                <td class="editable">0</td>
+              </tr>
+              <tr>
+                <th scope="row" class="cm editable">Time (days)</th>
+                <td class="editable">15</td>
+                <td class="editable">0</td>
+                <td class="editable">0</td>
+                <td class="editable">30</td>
+              </tr>
+              <tr>
+                <th scope="row" class="cm editable">n/a</th>
+                <td class="editable">0</td>
+                <td class="editable">0</td>
+                <td class="editable">0</td>
+                <td class="editable">0</td>
+              </tr>
+              <tr>
+                <th scope="row" class="cm editable">n/a</th>
+                <td class="editable">0</td>
+                <td class="editable">0</td>
+                <td class="editable">0</td>
+                <td class="editable">0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> <!-- end section -->
+      <hr class="clear" />
+
+      <h2 class="ac">Maintenance Recommended from Sample Runs</h2>
+      
+      <!-- 3. Add the container -->
+      <div id="chart"></div>
+      <hr class="clear" />
+      
+      <div id="controls">
+        <div class="section">
+          <h2 class="ac">Configure Normalization Factors and Offsets</h2>
+          <p class="ac">The resulting formula will be points = (factor * measurement) + offset.</p>
+          <div class="tableWrapper">
+            <table id="normalization">
+              <thead>
+                <tr>
+                  <th scope="col">Measurement</td>
+                  <th scope="col">Factor</td>
+                  <th scope="col">Offset</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">&nbsp;</th>
+                  <td class="normalization">7</td>
+                  <td class="offset editable">0</td>
+                </tr>
+                <tr>
+                  <th scope="row">&nbsp;</th>
+                  <td class="normalization">2.1</td>
+                  <td class="offset editable">0</td>
+                </tr>
+                <tr>
+                  <th scope="row">&nbsp;</th>
+                  <td class="normalization">34.5</td>
+                  <td class="offset editable">0</td>
+                </tr>
+                <tr>
+                  <th scope="row">&nbsp;</th>
+                  <td class="normalization">0</td>
+                  <td class="offset editable">0</td>
+                </tr>
+                <tr>
+                  <th scope="row">&nbsp;</th>
+                  <td class="normalization">0</td>
+                  <td class="offset editable">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tableWrapper">
+            <table id="adjustNormalizations">
+              <thead>
+                <tr>
+                  <th scope="col">Lower Bound</th>
+                  <th scope="col">Adjust Normalization</th>
+                  <th scope="col">Upper Bound</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="lower">0</td>
+                  <td><div id="slider1"></div></td>
+                  <td class="editableRange upper">10</td>
+                </tr>
+                <tr>
+                  <td class="lower">0</td>
+                  <td><div id="slider2"></div></td>
+                  <td class="editableRange upper">5</td>
+                </tr>
+                <tr>
+                  <td class="lower">0</td>
+                  <td><div id="slider3"></div></td>
+                  <td class="editableRange upper">50</td>
+                </tr>
+                <tr>
+                  <td class="lower">0</td>
+                  <td><div id="slider4"></div></td>
+                  <td class="editableRange upper">1</td>
+                </tr>
+                <tr>
+                  <td class="lower">0</td>
+                  <td><div id="slider5"></div></td>
+                  <td class="editableRange upper">1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        <hr class="clear" />
+        
+        <div id="results" class="section">
+          <h2 class="ac">Output Results to Save</h2>
+          <p class="ac">When you are happy with the results, click the create button to produce a report of the configuration.<br />Then click the copy button to copy the table to paste into the CBM Setup Excel workbook.<br />Reset the form to configure a new CBM Group.</p>
+          <div class="ac">
+            <input id="ready" type="button" value="Create" />
+            <input id="reset" type="button" value="Reset" />
+          </div>
+            <div id="configuration">
+              <table>
+                <thead>
+                  <th scope="col">Group Property</th>
+                  <th scope="col">Group Value</th>
+                  <th scope="col">Measurement</th>
+                  <th scope="col">Factor</th>
+                  <th scope="col">Offset</th>
+                  <th scope="col">Level</th>
+                  <th scope="col">Points</th>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+        </div>
+        <hr class="clear" />
+
+    </div>
+	</body>
+</html>

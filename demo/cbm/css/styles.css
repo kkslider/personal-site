@@ -1,0 +1,211 @@
+body { 
+  font-family: "Segoe UI", Frutiger, Tahoma, Helvetica, "Helvetica Neue", Arial, sans-serif;
+  margin: 0 0 40px 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.ac {
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  margin: 20px 15px;
+  background: #fff;
+}
+td, th {
+  border: 1px solid #ddd;
+  color: #000;
+  height: 34px;
+  padding: 8px 12px;
+  text-align: center; 
+}
+td.input {
+  padding: 0;
+  position: relative;
+}
+td.editable {
+  width: 80px;
+}
+.editable, .editableRange {
+  color: #003802;
+  height: 34px;
+}
+.editableInput {
+  /* text-align: center; */
+  width: 60px;
+  height: 14px;
+}
+.editableInput input {
+  background: #fff;
+  border: 1px solid blue;
+  display: block;
+  font-family: "Segoe UI", Frutiger, Tahoma, Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  margin: -2px 0 0 0;
+  /* set margin specifically for IE8 and below */
+  margin: -2px 0 0 -26px\9;
+  padding: 8px 0;
+  position: absolute;
+  text-align: center;
+  width: 60px;
+}
+/* IE just doesn't like styling these correctly :( */
+th .editableInput input {
+  margin: -2px 0 0 -100px\9;
+}
+/* for some reason the inputs in this table display to the right, in IE8 only of course */
+#adjustNormalizations .editableInput input {
+  margin-left: -37px\9;
+}
+#group #groupName .editableInput input {
+  margin-left: -87px\9;
+}
+#group #groupDescription .editableInput input {
+  margin-left: -136px\9;
+}
+/* commenting this out to hide the GO button since the user can hit enter to submit
+.editableInput button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin: 4px 0 0 54px;
+}
+*/
+.hidden {
+  display: none;
+}
+.header {
+  font-weight: bold;
+}
+.section {
+  background: #e5e5e5;
+  padding: 10px;
+  margin-bottom: 30px;
+  height: 450px;
+}
+.help {
+  background: #000;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 1px 0;
+  margin-top: 0;
+}
+.help p {
+  color: #fff;
+  font-weight: bold;
+}
+.tableWrapper {
+  float: left;
+  vertical-align: top;
+}
+hr.clear {
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+#container {
+  margin: 0 auto;
+  width: 1000px;
+}
+#controls {
+  margin-top: 40px;
+}
+
+#slider1, #slider2, #slider3, #slider4, #slider5 {
+  margin: 0 10px;
+}
+#slider1.ui-widget-content {
+  background: #4572A7;
+}
+#slider2.ui-widget-content {
+  background: #AA4643;
+}
+#slider3.ui-widget-content {
+  background: #89A54E;
+}
+#slider4.ui-widget-content {
+  background: #80699B;
+}
+#slider5.ui-widget-content {
+  background: #3D96AE;
+}
+#slider1 a.ui-state-default,
+#slider2 a.ui-state-default,
+#slider3 a.ui-state-default,
+#slider4 a.ui-state-default,
+#slider5 a.ui-state-default {
+  background: #003802;
+}
+
+button.DTTT_button,
+input#ready,
+input#reset {
+    background-color: #f5f5f5;
+    border: 1px solid #bbb;
+    color: #666;
+    cursor: pointer;
+    font: normal normal bold 12px/28px 'Verdana', 'Helvetica Neue', 'Arial', sans-serif;
+    height: 36px;
+    margin: 12px 6px 12px 0;
+    outline: 0;
+    padding: 3px 10px 0;
+    text-align: center;
+    width: auto;
+}
+
+input#ready:active,
+input#ready:focus,
+input#ready:hover,
+input#reset:active,
+input#reset:focus,
+input#reset:hover,
+button.DTTT_button:active,
+button.DTTT_button:focus,
+button.DTTT_button:hover,
+.DTTT_button_copy_hover {
+    border-color: #666;
+    color: #000;
+}
+
+button.DTTT_button_copy[disabled],
+input[disabled],
+button.DTTT_button_copy[disabled]:hover,
+input[disabled]:hover {
+    border-color: #ddd;
+    color: #ddd;
+    cursor: default;
+}
+
+input#ready {
+  margin-right: 64px;
+  margin-right: 90px\9;
+}
+
+button.DTTT_button_copy,
+button.DTTT_button_copy_hover {
+  float: left;
+  margin: -68px 0 0 464px;
+  /* position for IE */
+  display: block\9;
+  float: right\9;
+  margin-top: -48px\9;
+  margin-right: -16px\9;
+}
+
+/* not floating the table in the group and results sections so the height can adjust */
+#group,  #results {
+  height: auto;
+}
+#group .tableWrapper,
+#results .tableWrapper {
+  display: inline;
+}
+
+#group td#groupName {
+  width: 200px;
+}
+
+#group td#groupDescription {
+  width: 300px;
+}
