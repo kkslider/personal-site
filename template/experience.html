@@ -1,0 +1,29 @@
+{{#content.section}}
+    <div class="g4 separator">
+        <hr />
+        <h3>{{title}}</h3>
+    </div>
+    {{#items}}
+        <div class="g1">
+            <div class="experience {{#image}}image{{/image}}">
+                {{#image}}<img src="{{image}}" />{{/image}}
+                <p>{{teaser}}</p>
+                {{#more}}
+                    <p class="more"><a href="#">More</a></p>
+                    <div class="details">
+                        <ul>
+                            {{#details}}
+                                <li>{{{.}}}</li>
+                            {{/details}}
+                        </ul>
+                    </div>
+                {{/more}}
+                <p class="tags">
+                    {{#tags}}
+                        <span class="tag">{{.}}</span>
+                    {{/tags}}
+                </p>
+            </div>
+        </div>
+    {{/items}}
+{{/content.section}}

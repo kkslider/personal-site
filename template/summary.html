@@ -1,0 +1,18 @@
+{{#summary.section}}
+    <div class="g2">
+        <div class="separator">
+            <hr />
+            <h3>{{title}}</h3>
+        </div>
+        <ul>
+            {{#items}}
+                {{#degrees}}
+                    <li>{{{degrees}}} from the {{company}}, graduated {{period}}</li>
+                {{/degrees}}
+                {{#position}}
+                    <li><strong>{{position}}</strong> for {{company}}, {{period}}</li>
+                {{/position}}
+            {{/items}}
+        </ul>
+    </div>
+{{/summary.section}}

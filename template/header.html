@@ -1,0 +1,18 @@
+<div class="g2">
+    <h1><a href="/">{{header.name}}</a></h1>
+</div>
+<div class="g2">
+    <p class="action">{{{header.action}}}</p>
+</div>
+<div class="cf"></div>
+<div class="g2">
+    <h5 class="slogan">{{{header.slogan}}}</h5>
+</div>
+<div class="g2">
+    <p class="areas">{{header.areas.intro}}</p>
+    {{#header.areas.items}}
+        <span class="key"><span class="tag">{{id}}</span> {{name}}</span>
+    {{/header.areas.items}}
+</div>
+
+<div class="cf"></div>

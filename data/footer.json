@@ -1,0 +1,7 @@
+footer = {
+  items: [
+      'Elsewhere on the web at <a href="https://github.com/tstapleton">GitHub</a>, <a href="http://www.linkedin.com/in/thomasstapleton">LinkedIn</a>, <a href="https://twitter.com/thomasstapleton">Twitter</a>, and <a href="https://alpha.app.net/tstapleton">App.net</a>.',
+      'Kicking it old school?  Here\'s a PDF version of my <a href="/files/Tom-Stapleton-Resume.pdf">resume</a>.',
+      'Built with the <a href="http://fluidbaselinegrid.com/">Fluid Baseline Grid</a>, icons from <a href="http://pictos.cc/">Pictos</a>, and the <a href="http://www.google.com/webfonts/specimen/Lato">Lato</a> font family.  Site hosted at <a href="http://macminicolo.net/">Mac Mini Colo</a> and source code available at <a href="https://github.com/tstapleton/personal-site">GitHub</a>.'
+  ]
+};
