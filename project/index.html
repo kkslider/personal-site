@@ -21,26 +21,8 @@
 
 <body>
     <div id="content">
-        <header>
-            <div class="g2">
-                <h1>{{header.name}}</h1>
-            </div>
-            <div class="g2">
-                <p class="action">{{{header.action}}}</p>
-            </div>
-            <div class="cf"></div>
-            <div class="g2">
-                <h5 class="slogan">{{{header.slogan}}}</h5>
-            </div>
-            <div class="g2">
-                <p class="areas">{{header.toc.intro}}</p>
-                {{#header.toc.items}}
-                    <span class="key"><a href="{{url}}">{{name}}</a></span>
-                {{/header.toc.items}}
-            </div>
-        </header>
-
-        <div class="cf"></div>
+        <section id="toc"></section>
+        
         <div class="g4 separator"><hr /><h3>Project Definition</h3></div>
         <div class="g2">
             <h4>Introduction</h4>
@@ -80,26 +62,18 @@
             <p><a href="http://www.abookapart.com/products/the-elements-of-content-strategy"><em>The Elements of Content Strategy</em></a> by Erin Kissane for the ideas on how to structure project planning information.</p>
         </div>
 
-        <footer class="g4 cf">
-            <p class="action">{{{header.action}}}</p>
-            
-            <div class="cf"></div>
-
-            {{#footer.items}}
-                <p><small>{{{.}}}</small></p>
-            {{/footer.items}}
-        </footer>
+        <footer class="g4 cf"></footer>
 
     </div>
 
     <!-- Minimized jQuery from Google CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
     <!-- Custom Script -->
     <script src="../js/scripts.js"></script>
 
     <!-- Mustache Templates -->
-    <script src="http://github.com/janl/mustache.js/raw/master/mustache.js"></script>
+    <script src="../js/mustache.js"></script>
     <script src="../js/content.js"></script>
 
     <!-- HTML5 IE Enabling Script -->

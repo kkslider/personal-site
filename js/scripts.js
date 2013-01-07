@@ -1,3 +1,6 @@
+/*jslint browser: true*/
+/*global $, jQuery, Mustache, navigator, console*/
+
 // page doesn't respond correctly when device rotated on iPhone and iPad
 // http://css-tricks.com/forums/discussion/15236/solved-ipad-zoom-problems
 if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
@@ -15,19 +18,14 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 $(document).ready(function () {
     'use strict';
 
-    $('.separator hr').css('opacity', 1);
-    $('.details').hide();
-
-    $('.more a').click(function (e) {
+    $('#experience').on('click', '.more a', function (e) {
+        e.preventDefault();
         var $this = $(this);
         $this.parent().siblings('.details').toggle();
         $this.text($this.text() === 'More' ? 'Less' : 'More');
-        e.preventDefault();
-    });
-
-    $('ul.tags a').click(function (e) {
-        $(this).siblings('.details').toggle();
-        e.preventDefault();
     });
 
 });
+
+
+

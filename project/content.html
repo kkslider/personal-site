@@ -14,33 +14,15 @@
 
     <!-- Make it look awesome -->
     <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
-    <link href="css/base.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
 
 </head>
 
 <body>
     <div id="content">
-        <header>
-            <div class="g2">
-                <h1>{{header.name}}</h1>
-            </div>
-            <div class="g2">
-                <p class="action">{{{header.action}}}</p>
-            </div>
-            <div class="cf"></div>
-            <div class="g2">
-                <h5 class="slogan">{{{header.slogan}}}</h5>
-            </div>
-            <div class="g2">
-                <p class="areas">{{header.toc.intro}}</p>
-                {{#header.toc.items}}
-                    <span class="key"><a href="{{url}}">{{name}}</a></span>
-                {{/header.toc.items}}
-            </div>
-        </header>
+        <section id="toc"></section>
 
-        <div class="cf"></div>
         <div class="g4 separator"><hr /><h3>Content Strategy</h3></div>
         <div class="g2">
             <h4>Messages</h4>
@@ -158,26 +140,18 @@
             <p><a href="http://www.abookapart.com/products/the-elements-of-content-strategy"><em>The Elements of Content Strategy</em></a> by Erin Kissane for explaining the benefits of defining a content strategy and for direction on what to think about in during process.</p>
         </div>
 
-        <footer class="g4 cf">
-            <p class="action">{{{header.action}}}</p>
-            
-            <div class="cf"></div>
-
-            {{#footer.items}}
-                <p><small>{{{.}}}</small></p>
-            {{/footer.items}}
-        </footer>
+        <footer class="g4 cf"></footer>
 
     </div>
 
     <!-- Minimized jQuery from Google CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
     <!-- Custom Script -->
     <script src="../js/scripts.js"></script>
 
     <!-- Mustache Templates -->
-    <script src="http://github.com/janl/mustache.js/raw/master/mustache.js"></script>
+    <script src="../js/mustache.js"></script>
     <script src="../js/content.js"></script>
 
     <!-- HTML5 IE Enabling Script -->

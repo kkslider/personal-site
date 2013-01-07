@@ -47,7 +47,11 @@ a {
 a:active, .slogan {
   color: #7b8da1;
 }
-h1, h2, h3, h4, h5, h6, .slogan strong {
+a:hover {
+  color: #58756e;
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, .slogan strong, h1 a {
   color: #3c5775;
 }
 .tag {
@@ -111,10 +115,6 @@ footer {
 }
 
 /* EXPERIENCE */
-#content {
-  display: none;
-}
-
 .separator {
   text-align: center;
 }
@@ -169,6 +169,10 @@ footer {
   bottom: -1em;
   left: 1.4em;
   position: absolute;
+}
+
+.details {
+  display: none;
 }
 
 
@@ -234,7 +238,7 @@ body { width: 92%; margin: 0 auto} /* Center page without wrapper */
 .g1,.g2,.g3,.g4{display: block; position: relative; margin-left: 1%; margin-right: 1%}
 /* 1 column grid */
 .g1,.g2,.g3,.g4{width:98.0%}
-header h1 { font-size: 2.2em; text-align: center; }
+header h1, section h1 { font-size: 2.2em; text-align: center; }
 .action a { font-size: 1.4em; }
 
 
@@ -260,7 +264,7 @@ FOLDING FLUID GRID
   }
   
   /* Responsive Styles */
-  header h1 { font-size: 3em; }
+  header h1, section h1 { font-size: 3em; }
   nav a { padding: 0 2%; width: 28%; }
   .action a { font-size: 2.0em; }
 }
@@ -272,7 +276,7 @@ FOLDING FLUID GRID
   }
   
   /* Responsive Styles */
-  header h1 { font-size: 3.25em; }
+  header h1, section h1 { font-size: 3.25em; }
   .action a { font-size: 2.2em; }
   ul.project { list-style: none; text-align: center; }
   ul.project li { display: inline; padding: 0 2%; }

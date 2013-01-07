@@ -20,96 +20,21 @@
 </head>
 <body>
 
-    <div id="content"></div>
+    <div id="content">
+        <header></header>
 
-    <script id="template" type="text/x-mustache-template">
-        <header>
-            <div class="g2">
-                <h1>{{header.name}}</h1>
-            </div>
-            <div class="g2">
-                <p class="action">{{{header.action}}}</p>
-            </div>
-            <div class="cf"></div>
-            <div class="g2">
-                <h5 class="slogan">{{{header.slogan}}}</h5>
-            </div>
-            <div class="g2">
-                <p class="areas">{{header.areas.intro}}</p>
-                {{#header.areas.items}}
-                    <span class="key"><span class="tag">{{id}}</span> {{name}}</span>
-                {{/header.areas.items}}
-            </div>
-        </header>
+        <section id="summary"></section>
 
-        <div class="cf"></div>
+        <section id="experience"></section>
 
-        {{#summary.section}}
-            <div class="g2">
-                <div class="separator">
-                    <hr />
-                    <h3>{{title}}</h3>
-                </div>
-                <ul>
-                    {{#items}}
-                        {{#degrees}}
-                            <li>{{{degrees}}} from the {{company}}, graduated {{period}}</li>
-                        {{/degrees}}
-                        {{#position}}
-                            <li><strong>{{position}}</strong> for {{company}}, {{period}}</li>
-                        {{/position}}
-                    {{/items}}
-                </ul>
-            </div>
-        {{/summary.section}}
-
-        {{#content.section}}
-            <div class="g4 separator">
-                <hr />
-                <h3>{{title}}</h3>
-            </div>
-            {{#items}}
-                <div class="g1">
-                    <div class="experience {{#image}}image{{/image}}">
-                        {{#image}}<img src="{{image}}" />{{/image}}
-                        <p>{{teaser}}</p>
-                        {{#more}}
-                            <p class="more"><a href="#">More</a></p>
-                            <div class="details">
-                                <ul>
-                                    {{#details}}
-                                        <li>{{{.}}}</li>
-                                    {{/details}}
-                                </ul>
-                            </div>
-                        {{/more}}
-                        <p class="tags">
-                            {{#tags}}
-                                <span class="tag">{{.}}</span>
-                            {{/tags}}
-                        </p>
-                    </div>
-                </div>
-            {{/items}}
-        {{/content.section}}
-
-        <footer class="g4 cf">
-            <p class="action">{{{header.action}}}</p>
-            
-            <div class="cf"></div>
-
-            {{#footer.items}}
-                <p><small>{{{.}}}</small></p>
-            {{/footer.items}}
-        </footer>
-
-    </script>
+        <footer class="g4 cf"></footer>
+    </div>
 
     <!-- Minimized jQuery from Google CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
     <!-- Mustache Templates -->
-    <script src="http://github.com/janl/mustache.js/raw/master/mustache.js"></script>
+    <script src="js/mustache.js"></script>
     <script src="js/content.js"></script>
 
     <!-- Custom Script -->

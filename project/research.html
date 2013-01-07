@@ -14,33 +14,14 @@
 
     <!-- Make it look awesome -->
     <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
-    <link href="css/base.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
 
 </head>
 
 <body>
     <div id="content">
-        <header>
-            <div class="g2">
-                <h1>{{header.name}}</h1>
-            </div>
-            <div class="g2">
-                <p class="action">{{{header.action}}}</p>
-            </div>
-            <div class="cf"></div>
-            <div class="g2">
-                <h5 class="slogan">{{{header.slogan}}}</h5>
-            </div>
-            <div class="g2">
-                <p class="areas">{{header.toc.intro}}</p>
-                {{#header.toc.items}}
-                    <span class="key"><a href="{{url}}">{{name}}</a></span>
-                {{/header.toc.items}}
-            </div>
-        </header>
-
-        <div class="cf"></div>
+        <section id="toc"></section>
 
         <div class="g4 separator"><hr /><h3>Research and Assessment</h3></div>
         <div class="g2">
@@ -95,26 +76,18 @@
             <p><a href="http://www.joelonsoftware.com/articles/GuerrillaInterviewing3.html">The Guerrilla Guide to Interviewing (version 3.0)</a>, <a href="http://www.joelonsoftware.com/articles/SortingResumes.html">Sorting Resumes</a>, <a href="http://sethgodin.typepad.com/seths_blog/2011/10/how-to-get-a-job-with-a-small-company.html">How to get a job with a small company</a> for writing about the hiring process from an employer's perspective.  <a href="http://jobs.37signals.com/">37signals Job Board</a> for collecting many relevant job postings into one place.</p>
         </div>
 
-        <footer class="g4 cf">
-            <p class="action">{{{header.action}}}</p>
-            
-            <div class="cf"></div>
-
-            {{#footer.items}}
-                <p><small>{{{.}}}</small></p>
-            {{/footer.items}}
-        </footer>
+        <footer class="g4 cf"></footer>
 
     </div>
 
     <!-- Minimized jQuery from Google CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
     <!-- Custom Script -->
     <script src="../js/scripts.js"></script>
 
     <!-- Mustache Templates -->
-    <script src="http://github.com/janl/mustache.js/raw/master/mustache.js"></script>
+    <script src="../js/mustache.js"></script>
     <script src="../js/content.js"></script>
 
     <!-- HTML5 IE Enabling Script -->

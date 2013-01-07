@@ -1,3 +1,6 @@
+/*jslint browser: true*/
+/*global $, jQuery, Mustache, console*/
+
 $(document).ready(function () {
     // http://stackoverflow.com/questions/1335851/what-does-use-strict-do-in-javascript-and-what-is-the-reasoning-behind-it
     'use strict';
@@ -56,7 +59,7 @@ $(document).ready(function () {
             items: [
                 {
                     name: 'Project Definition',
-                    url: '/'
+                    url: '/project'
                 },
                 {
                     name: 'Research and Assessment',
@@ -84,7 +87,7 @@ $(document).ready(function () {
 
     footer = {
         items: [
-            'Elsewhere on the web at <a href="https://github.com/tstapleton">GitHub</a>, <a href="http://www.linkedin.com/in/thomasstapleton">LinkedIn</a>, and <a href="https://twitter.com/thomasstapleton">Twitter</a>.',
+            'Elsewhere on the web at <a href="https://github.com/tstapleton">GitHub</a>, <a href="http://www.linkedin.com/in/thomasstapleton">LinkedIn</a>, <a href="https://twitter.com/thomasstapleton">Twitter</a>, and <a href="https://alpha.app.net/tstapleton">App.net</a>.',
             'Kicking it old school?  Here\'s a PDF version of my <a href="/files/Tom-Stapleton-Resume.pdf">resume</a>.',
             'Built with the <a href="http://fluidbaselinegrid.com/">Fluid Baseline Grid</a>, icons from <a href="http://pictos.cc/">Pictos</a>, and the <a href="http://www.google.com/webfonts/specimen/Lato">Lato</a> font family.  Site hosted at <a href="http://macminicolo.net/">Mac Mini Colo</a> and source code available at <a href="https://github.com/tstapleton/personal-site">GitHub</a>.'
         ]
@@ -96,9 +99,14 @@ $(document).ready(function () {
                 title: 'Work',
                 items: [
                     {
+                        position: 'Designer',
+                        company: 'Clevertech',
+                        period: 'May 2012 - January 2013'
+                    },
+                    {
                         position: 'Web Developer',
                         company: 'Baker Hughes',
-                        period: 'July 2011 - Present'
+                        period: 'July 2011 - May 2012'
                     },
                     {
                         position: 'Global Product Champion',
@@ -165,6 +173,52 @@ $(document).ready(function () {
             {
                 title: '2012',
                 items: [
+                    {
+                        image: 'images/abi' + imageSize,
+                        teaser: 'Brought related data to light in a redesign of a press release management application',
+                        tags: ['w', 'G', 'f'],
+                        more: true,
+                        details: [
+                            'ABI, a global B2B PR marketing and public relations firm, needed a new application to help them manage their work securing placements and their growing customer and media outlet contacts',
+                            'I met with employees to understand their current workflow and feature requests, and learned that they had difficulty seeing related data and many common tasks took too many steps to complete',
+                            'I designed functional mockups in HTML/CSS/JS that presented related data so the user had it available without leaving their current task and provided context-sensitive shortcuts that made working in the application faster and easier'
+                        ]
+                    },
+                    {
+                        image: 'images/idt' + imageSize,
+                        teaser: 'Analyzed existing data and workflow to help build a custom inventory management application',
+                        tags: ['U', 'w', 'f', 'b'],
+                        more: true,
+                        details: [
+                            'Ideal Diamond Trading needed an inventory management application to handle the workflow of producing jewelry and provide reports to understand inventory and forecast needs',
+                            'I reviewed source files to identify the needed entities for the new application, and defined attributes, statuses, and business rules of each entity',
+                            'I created wireframes to represent how the user would interact with the new application and make sure all scenarios were accounted for',
+                            'I handled data migration and cleaning from various Excel files into the consistent format needed'
+                        ]
+                    },
+                    {
+                        image: 'images/pv' + imageSize,
+                        teaser: 'Managed a team of 3 in creating a minimal viable product in 30 days of a financial registry website',
+                        tags: ['w', 'f'],
+                        more: true,
+                        details: [
+                            'The guys from Present Value had an idea for an event registry website focused on collecting money for registrants to reach their financial goals',
+                            'I managed the development process using 4 week-long iterations, daily calls with the developers to stay on track and clear blocks, and daily calls with the client to keep priorities aligned and progress transparent',
+                            'It was a daily struggle to provide maximum value for the clients while still maintaining clear expectations and releasing by the planned due date'
+                        ]
+                    },
+                    {
+                        image: 'images/slap' + imageSize,
+                        teaser: 'Designed and developed a business planning application to improve usability and performance',
+                        tags: ['w', 'G', 'f'],
+                        more: true,
+                        details: [
+                            'Silver Lining needed a redesign of their web app that helps small businesses set goals and create plans to achieve their goals',
+                            'Review of their previous site showed inconsistent design elements, unintuitive controls for adding and editing content, and an aging site architecture',
+                            'I created design components that could be reused throughout the site for a consistent UI and created functional mockups in HTML/CSS/JS using modern technologies like drag and drop, CSS3, font icons',
+                            'I lead a team of developers in implementing the mockups using backbone.js communicating with a backend Yii application'
+                        ]
+                    },
                     {
                         image: 'images/resume' + imageSize,
                         teaser: 'Created a project to learn new ideas in web development and build a website that highlights my experiences',
@@ -410,8 +464,32 @@ $(document).ready(function () {
         footer: footer
     };
 
-    template = $('#template').html();
-    html = Mustache.to_html(template, data);
-    $('#content').append().html(html).show();
+    $.get('../template/experience.html', function (template) {
+        html = Mustache.to_html(template, data);
+        $('#experience').html(html);
+        $('.separator hr').css('opacity', 1);
+    });
+
+    $.get('../template/footer.html', function (template) {
+        html = Mustache.to_html(template, data);
+        $('footer').html(html);
+    });
+
+    $.get('../template/header.html', function (template) {
+        html = Mustache.to_html(template, data);
+        $('header').html(html);
+    });
+
+    $.get('../template/summary.html', function (template) {
+        html = Mustache.to_html(template, data);
+        $('#summary').html(html);
+        $('.separator hr').css('opacity', 1);
+    });
+
+    $.get('../template/toc.html', function (template) {
+        html = Mustache.to_html(template, data);
+        $('#toc').html(html);
+        $('.separator hr').css('opacity', 1);
+    });
 
 });
