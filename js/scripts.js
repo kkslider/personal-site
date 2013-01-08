@@ -20,9 +20,61 @@ $(document).ready(function () {
 
     $('#experience').on('click', '.more a', function (e) {
         e.preventDefault();
-        var $this = $(this);
-        $this.parent().siblings('.details').toggle();
-        $this.text($this.text() === 'More' ? 'Less' : 'More');
+        var $this = $(this),
+            $experience = $this.parents('.experience').parent(),
+            $currentTeaser,
+            $newTeaser,
+            currentImage = $experience.find('img').attr('src'),
+            newImage;
+
+        if ($this.text() === 'More') {
+            // make the full width
+            $experience.addClass('g4').removeClass('g1');
+
+            // direct top of browser to that location
+
+            // change more link to less
+            $this.text('Less');
+
+            // change paragraph to header
+            $currentTeaser = $experience.find('p:first');
+            $newTeaser = $('<h4></h4>').append($currentTeaser.text());
+            $currentTeaser.replaceWith($newTeaser);
+
+            // display bullets
+            $this.parent().siblings('.details').show();
+
+            // switch image thumbnail
+            newImage = currentImage.replace('_small.jpg', '.png');
+            $experience.find('img').attr('src', newImage);
+
+        } else {
+
+            // make the full width
+            $experience.addClass('g1').removeClass('g4');
+
+            // direct top of browser to that location
+
+            // change less link to more
+            $this.text('More');
+
+            // change paragraph to header
+            $currentTeaser = $experience.find('h4');
+            $newTeaser = $('<p></p>').append($currentTeaser.text());
+            $currentTeaser.replaceWith($newTeaser);
+
+            // display bullets
+            $this.parent().siblings('.details').hide();
+
+            // switch image thumbnail
+            newImage = currentImage.replace('.png', '_large.jpg');
+            $experience.find('img').attr('src', newImage);
+
+        }
+
+        // move to the top
+        $.scrollTo($experience, { offset: -10 });
+
     });
 
 });

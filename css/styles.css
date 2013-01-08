@@ -154,6 +154,15 @@ footer {
   width: 92%;
 }
 
+.g4 .experience {
+  margin: 0 0 2em;
+  width: 99%;
+}
+
+.g4 .experience.image img {
+  margin: 0 auto 1em;
+}
+
 .experience img {
   box-shadow: 0 0 0 .2em #f8f9fa, 0 0 .1em .2em #7b8da1;
   margin-bottom: 0;
