@@ -18,63 +18,48 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 $(document).ready(function () {
     'use strict';
 
-    $('#experience').on('click', '.more a', function (e) {
+    $('#experience').on('click', '.g1 .experience', function (e) {
         e.preventDefault();
+        $('.experience').removeClass('viewing');
         var $this = $(this),
-            $experience = $this.parents('.experience').parent(),
+            $experience = $this.parents('.g1'),
+            $experienceLarge = $experience.clone(true),
+            $separator = $experience.prevAll('.separator:first'),
             $currentTeaser,
             $newTeaser,
             currentImage = $experience.find('img').attr('src'),
             newImage;
 
-        if ($this.text() === 'More') {
-            // make the full width
-            $experience.addClass('g4').removeClass('g1');
+        // make the full width
+        $experienceLarge.addClass('g4').removeClass('g1');
 
-            // direct top of browser to that location
+        // change paragraph to header
+        $currentTeaser = $experienceLarge.find('p:first');
+        $newTeaser = $('<h4></h4>').append($currentTeaser.text());
+        $currentTeaser.replaceWith($newTeaser);
 
-            // change more link to less
-            $this.text('Less');
+        // display bullets
+        $experienceLarge.find('.details').show();
 
-            // change paragraph to header
-            $currentTeaser = $experience.find('p:first');
-            $newTeaser = $('<h4></h4>').append($currentTeaser.text());
-            $currentTeaser.replaceWith($newTeaser);
+        // switch image thumbnail
+        newImage = currentImage.replace('_small.jpg', '.png');
+        $experienceLarge.find('img').attr('src', newImage);
 
-            // display bullets
-            $this.parent().siblings('.details').show();
+        // set class on only this one to show it is being viewed
+        $experience.children('.experience').addClass('viewing');
 
-            // switch image thumbnail
-            newImage = currentImage.replace('_small.jpg', '.png');
-            $experience.find('img').attr('src', newImage);
-
-        } else {
-
-            // make the full width
-            $experience.addClass('g1').removeClass('g4');
-
-            // direct top of browser to that location
-
-            // change less link to more
-            $this.text('More');
-
-            // change paragraph to header
-            $currentTeaser = $experience.find('h4');
-            $newTeaser = $('<p></p>').append($currentTeaser.text());
-            $currentTeaser.replaceWith($newTeaser);
-
-            // display bullets
-            $this.parent().siblings('.details').hide();
-
-            // switch image thumbnail
-            newImage = currentImage.replace('.png', '_large.jpg');
-            $experience.find('img').attr('src', newImage);
-
-        }
+        // insert the new one and delete any open ones
+        $('#experience .g4 .experience').remove();
+        $separator.after($experienceLarge);
 
         // move to the top
-        $.scrollTo($experience, { offset: -10 });
+        $.scrollTo($experienceLarge, { offset: -10 });
+    });
 
+    $('#experience').on('click', '.g4 .experience', function (e) {
+        e.preventDefault();
+        $(this).parents('.g4').remove();
+        $('#experience .experience').removeClass('viewing');
     });
 
 });

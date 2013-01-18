@@ -16,7 +16,7 @@ $(document).ready(function () {
     header = {
         name: 'Tom Stapleton',
         action: '<a href="mailto:tstapleton@gmail.com">Email Me</a>',
-        slogan: '...is an interface designer and front-end developer on a journey to establish the importance of design in enterprise applications.  Because even though our users <strong>have</strong> to use our applications, it doesn\'t mean that they shouldn\'t <strong>want</strong> to also.',
+        slogan: 'I\'m an interface designer and front-end developer looking for a career where I can focus on the development of a product - sweating the details, trying new things, learning from feedback, and sticking with it for the long haul.',
         areas: {
             intro: 'I have experience with:',
             items: [

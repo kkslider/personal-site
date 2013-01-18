@@ -1,0 +1,372 @@
+$font-sans: "Lato", "Helvetica", "Trebuchet MS", sans-serif;
+$font-mono: "Menlo", "Consolas", "DejaVu Sans Mono", "Monaco", monospace;
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+
+$color-blue:  rgb(107, 155, 209); // #6b9bd1
+$color-green: rgb( 88, 117, 110); // #58756e
+$color-teal:  rgb( 66, 104, 123); // #42687b
+$color-navy:  rgb( 60,  87, 117); // #3c5775
+$color-white: rgb(248, 249, 250); // #f8f9fa
+$color-gray:  rgb(123, 141, 161); // #7b8da1
+$color-black: rgb( 19,  28,  38); // #131c26
+
+/* Folding fluid grid
+ *  1 column         <  768px
+ *  2 columns  768px - 1023px
+ *  4 columns 1024px +
+ */
+
+$mobile-landscape:  480px;
+$tablet-small:      600px;
+$tablet-portrait:   768px;
+$tablet-landscape: 1024px;
+$desktop-wide:     1400px;
+
+$min-columns: 1;
+$max-columns: 4;
+$gutter: 2.0%;
+
+@mixin respond-to($val, $query) {
+  @media ($val: $query) {
+    @content;
+  }
+}
+
+@mixin box-shadow-single($top, $left, $blur, $spread, $color) {
+  -webkit-box-shadow: $top $left $blur $spread $color;
+  -moz-box-shadow: $top $left $blur $spread $color;
+  box-shadow: $top $left $blur $spread $color;
+}
+
+@mixin box-shadow-double($blur1, $spread1, $color1, $blur2, $spread2, $color2) {
+  -webkit-box-shadow: 0 0 $blur1 $spread1 $color1, 0 0 $blur2 $spread2 $color2;
+  -moz-box-shadow: 0 0 $blur1 $spread1 $color1, 0 0 $blur2 $spread2 $color2;
+  box-shadow: 0 0 $blur1 $spread1 $color1, 0 0 $blur2 $spread2 $color2;
+}
+
+@mixin transition($property, $duration, $timing) {
+  -moz-transition: $property $duration $timing;
+  -ms-transition: $property $duration $timing;
+  -o-transition: $property $duration $timing;
+  -webkit-transition: $property $duration $timing;
+  transition: $property $duration $timing;
+}
+
+%list-default {
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+%font-default {
+  font: $font-weight-normal normal 100%/1.5 $font-sans;
+}
+
+html {
+  border-top: 0.2em solid $color-gray;
+}
+
+body {
+  @extend %font-default;
+
+  background: url(../images/background.png) 0 0;
+  color: $color-black;
+  margin: 0 auto;
+  padding-top: 1em;
+  width: 92%;
+
+  @include respond-to(min-width, $desktop-wide) {
+    font-size: 116.75%;
+    max-width: 1440px;
+  }
+}
+
+@for $i from $min-columns through $max-columns {
+  .g#{$i} {
+    display: block;
+    margin: 0 $gutter / 2;
+    position: relative;
+    width: 100% - $gutter;
+
+    @include respond-to(min-width, $tablet-portrait) {
+      display: inline;
+      float: left;
+
+      @if $i <= 2 {
+        width: 50% - $gutter;
+      } @else {
+        width: 100% - $gutter;
+      }
+    }
+    @include respond-to(min-width, $tablet-landscape) {
+      width: ($i * 100.0% / $max-columns) - $gutter;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6, dt {
+  color: $color-navy;
+  font-family: $font-sans;
+  font-weight: $font-weight-bold;
+}
+
+header h1, section h1 {
+  font-size: 2.2em;
+  text-align: center;
+
+  @include respond-to(min-width, $mobile-landscape) {
+    font-size: 3em;
+  }
+
+  @include respond-to(min-width, $tablet-small) {
+    font-size: 3.25em;
+  }
+}
+
+a {
+  color: $color-blue;
+
+  &:active {
+    color: $color-gray;
+  }
+  
+  &:hover {
+    color: $color-green;
+    text-decoration: none;
+  }
+
+  h1 & {
+    color: $color-navy;
+  }
+}
+
+ul {
+  @extend %list-default;
+  list-style: circle inside;
+}
+
+ol {
+  @extend %list-default;
+}
+
+button, input, select, textarea {
+  @extend %font-default;
+}
+
+pre, code, kbd, samp {
+  font-family: $font-mono;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+mark, ins, ::-moz-selection, ::selection {
+  background: $color-green;
+}
+
+nav {
+  padding-top: 0.4em;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    font-weight: $font-weight-bold;
+    line-height: 1.3em;
+    margin: 1em 0;
+    padding: 0 5%;
+    width: 22%;
+
+    @include respond-to(min-width, $mobile-landscape) {
+      padding: 0 2%;
+      width: 28%;
+    }
+  }
+
+  p {
+    margin-bottom: 0.4em;
+  }
+}
+
+footer {
+  padding: 0.4em 0 3.0em;
+  text-align: center;
+
+  p {
+    margin-bottom: 0.4em;
+  }
+}
+
+table, th, td {
+  border: 0.1em solid $color-navy;
+  margin: 0 auto 1.5em;
+}
+
+tr, th, td {
+  padding: 0.2em 1.5em;
+  text-align: center;
+}
+
+.slogan {
+  @extend %font-default;
+  color: $color-gray;
+  font-size: 1.3125em;
+
+  strong {
+    color: $color-navy;
+  }
+}
+
+.action {
+  margin: 2em 0 1.6em;
+  text-align: center;
+
+  @include respond-to(min-width, $tablet-portrait) {
+    margin-top: 1.5em;
+  }
+
+  a {
+    @include box-shadow-single(0, 0, 0.1em, 0, $color-navy);
+
+    background: $color-green;
+    color: $color-white;
+    font-size: 1.4em;
+    padding: 0.3em 1em 0.34em;
+    text-shadow: 0 0 0.6em $color-navy;
+
+    @include respond-to(min-width, $mobile-landscape) {
+      font-size: 2.0em;
+    }
+
+    @include respond-to(min-width, $tablet-small) {
+      font-size: 2.2em;
+    }
+
+    &:active {
+      @include box-shadow-single(0, 0, 0.1em, 0.03em, $color-blue);
+      text-decoration: none;
+      text-shadow: 0 0 0.6em $color-blue;
+    }
+
+    &:hover {
+      text-decoration: none;
+      text-shadow: 0 0 0.6em $color-blue;
+    }
+  }
+}
+
+.areas {
+  margin: 0.4em 0 0.2em;
+}
+
+.key {
+  display: inline-block;
+  height: 2.4em;
+  width: 50.0% - $gutter;
+}
+
+.tag {
+  color: $color-teal;
+}
+
+.separator {
+  text-align: center;
+
+  h3 {
+    background: url(../images/background.png) 0 0;
+    display: inline-block;
+    padding: 0 0.6em;
+    position: relative;
+  }
+
+  hr {
+    background: $color-gray;
+    border: 0;
+    height: .14em;
+    margin: 0;
+    position: relative;
+    top: 1.7em;
+
+    /* let javascript fade in the lines */
+    opacity: 0;
+    @include transition(opacity, 1s, linear);
+  }
+}
+
+.experience {
+  @include box-shadow-single(0, 0, 0.2em, 0.1em, $color-navy);
+
+  background: $color-white;
+  cursor: pointer;
+  margin: 0 $gutter 2.0em;
+  padding: 0.6em;
+  width: 92.0%;
+
+  @include respond-to(min-width, $tablet-portrait) {
+    min-height: 19em;
+  }
+
+  @include respond-to(min-width, $tablet-landscape) {
+    min-height: 16em;
+  }
+
+  img {
+    @include box-shadow-double(0, 0.2em, $color-white, 0.1em, 0.2em, $color-gray);
+    display: block;
+    margin-bottom: 0.6em
+  }
+
+  .g4 & {
+    margin: 0 auto 2em;
+    max-width: 846px;
+
+    img {
+      margin: 0 auto 1em;
+    }
+  }
+
+  &.viewing {
+    opacity: 0.5;
+  }
+}
+
+.details {
+  display: none;
+
+  @include respond-to(min-width, $tablet-portrait) {
+    margin-bottom: 3.4em;
+  }
+}
+
+.tags {
+  margin-bottom: 0;
+  text-align: right;
+
+  .g1 & {
+    bottom: 0.9em;
+    margin-bottom: 1.5em;
+    position: absolute;
+    right: 0.1em;
+    text-align: left;
+  }
+}
+
+.tag {
+  display: inline-block;
+  font: normal 2em/1em "HeydingsCommonIconsRegular", sans-serif;
+  vertical-align: bottom;
+  width: 1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'HeydingsCommonIconsRegular';
+  src: url('../fonts/heydings_icons-webfont.eot');
+  src: url('../fonts/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/heydings_icons-webfont.woff') format('woff'),
+       url('../fonts/heydings_icons-webfont.ttf') format('truetype'),
+       url('../fonts/heydings_icons-webfont.svg#HeydingsCommonIconsRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
