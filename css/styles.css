@@ -228,6 +228,10 @@ tr, th, td {
   margin: 0 2% 2em;
   padding: 0.6em;
   width: 92.0%; }
+  .experience:hover {
+    -webkit-box-shadow: 0 0 0.4em 0.2em #58756e;
+    -moz-box-shadow: 0 0 0.4em 0.2em #58756e;
+    box-shadow: 0 0 0.4em 0.2em #58756e; }
   @media (min-width: 768px) {
     .experience {
       min-height: 19em; } }

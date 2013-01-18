@@ -303,6 +303,10 @@ tr, th, td {
   padding: 0.6em;
   width: 92.0%;
 
+  &:hover {
+    @include box-shadow-single(0, 0, 0.4em, 0.2em, $color-green);
+  }
+
   @include respond-to(min-width, $tablet-portrait) {
     min-height: 19em;
   }
