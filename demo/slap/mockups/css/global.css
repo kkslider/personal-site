@@ -1,0 +1,209 @@
+/*
+	Name: .com
+	Description: Main Stylesheet
+	Coder: Grae Joquico
+*/
+@import url('reset.css');
+@import url('http://fonts.googleapis.com/css?family=Arvo:400,700');
+
+@font-face { font-family:; src: url('/fonts/'); }
+
+h1,h2,h3,h4,h5,h6{font-family:'Arvo','Georgia',serif;}
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+    display: block;
+}
+
+body.home{background:#fafafa;font-family: "Helvetica Neue","Arial",sans-serif}
+body.user{background:url('../images/inBG.png');}
+.left{float:left !important}
+.right{float:right !important}
+
+/*Sticky Footer*/
+html,body{height:100%;font-family:'Helvetica Neue', 'Arial', 'sans-serif'}
+.wrapper{min-height:100%;height:auto !important;height:100%;margin: 0 auto -45px;}
+footer,.push{height:45px;}
+footer{float:left;}
+
+
+header#headerContainer{background:url("../images/headerBG.png") repeat-x;height:109px;width:100%;}
+.container{width:960px;margin:0 auto;text-align:center}
+footer{background:#393939;width:100%;height:45px;}
+
+/*HEADER & NAVIGATION*/
+#headerContent{background:url("../images/headerMidBG.png")top center no-repeat;height:109px;position:relative;float:left;width:100%}
+a#logo{background:url("../images/logo.png") no-repeat;height:53px;width:181px;float:left;text-indent: -9999px;top:31px;left:0;position:absolute;}
+nav#mainNav{float:right;margin-top:44px;}
+nav#mainNav ul{}
+nav#mainNav ul li{float:left;font-size:12px;padding:0px 15px;border-right:1px dotted #ccc;height:24px;height:36px}
+nav#mainNav ul li a{color:#5b5d58;text-decoration: none;padding-top:10px;float:left;}
+nav#mainNav ul li a:hover{color:#20849d;}
+nav#mainNav ul li#loginBtn{border:none;padding-right:0px;}
+nav#mainNav ul li#loginBtn a{color:#c2671d;}
+nav#mainNav ul li#buyBtn a{
+    padding:10px;
+    color:#fff !important;
+    font-weight:bold;
+    background-color: #5BB75B;
+    background-image: -ms-linear-gradient(top, #62C462, #51A351);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62C462), to(#51A351));
+    background-image: -webkit-linear-gradient(top, #62C462, #51A351);
+    background-image: -o-linear-gradient(top, #62C462, #51A351);
+    background-image: -moz-linear-gradient(top, #62C462, #51A351);
+    background-image: linear-gradient(top, #62C462, #51A351);
+    background-repeat: repeat-x;
+    border-color: #51A351 #51A351 #387038;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    border-radius:3px;
+    -moz-border-radius:3px;
+    border:1px solid #51a351;
+}
+
+
+.error { color: red; text-align: center; }
+.hide  { display: none; }
+
+nav#mainNav ul li#buyBtn a:hover{
+    background:##51A351;
+}
+div.bottomShadow{background:url("../images/bottomShadow.png")no-repeat top center;width:940px;height:13px;position:absolute;bottom:-13px;left:10px;}
+
+/* HEADER & NAVIGATION USER PAGE*/
+header#user-headerContainer{background:url("../images/headerInBG.png") repeat-x;height:48px;width:100%;}
+#user-headerContent{background:url("../images/headerMidBG.png")top center no-repeat;height:48px;position:relative;float:left;width:100%}
+a#smalllogo{background:url("../images/smallLogo.png") no-repeat;height:26px;width:87px;float:left;text-indent: -9999px;top:14px;left:0;position:absolute;}
+nav#userNav{position:absolute;top:7px;left:120px;}
+nav#userNav ul li{float:left;border-left:1px solid #e3e3e3;border-right:1px solid #fff;border-top:none;border-bottom:none;padding:11px 10px}
+nav#userNav ul li a{color:#236a7c;text-decoration:none;font-size:12px;font-weight:bold;}
+
+/*BUY PAGES*/
+#buyContainer{text-align:center;margin-top:55px;}
+#buyContainer p{font-size:13px;color:#acacac;margin:10px 0px;}
+#buyContainer p.required{font-size:12px;color:#da7256;float:left;}
+#buyLeftContent{background:#fff;width:310px;float:left;height:100%;min-height:480px;}
+#buyRightContent{width:650px;float:left;height:auto;}
+#buyContentBox{width:960px;float:left;background:#fafafa;border:1px solid #ccc;min-height:480px;}
+#buyLeftContent ul li{float:left;color:#6a6a6a;}
+#buyLeftContent ul li.title{background:url("../images/titleBG.png");padding:20px 0px;color:#fff;font-family:'Arvo';font-weight:700;text-shadow:0px 1px 2px #519fc6;width:100%;}
+#buyLeftContent ul li.title a{font-family:'Helvetica','Arial',sans-serif;color:#fff;text-decoration: none;font-size:13px;text-align: left;float:left;margin-left:24px;}
+#buyLeftContent ul li.planTitle,#buyLeftContent ul li.planTotal,#buyLeftContent ul li.planTotalTitle{padding:15px 0px;text-align: left;border-bottom:1px dotted #ccc;float:left;width:100%;}
+#buyLeftContent ul li.planTotal{border:none;}
+#buyLeftContent ul li.planTotalTitle{border:none;}
+#buyLeftContent ul li.planTotalTitle ul li.planType,#buyLeftContent ul li.planTotalTitle ul li.planType span.planAmt{color:#538187;font-size:18px;}
+li.planCheckBox{margin:0px 20px;}
+span.req{color:#b03229;}
+span.planType{width:100%;float:left;font-weight: bold;font-size:15px;}
+span.planAmt{width:100%;float:left;font-size:12px;}
+.planType .planAmt { width:auto; float: right;}
+span.planCrossAmt {text-decoration:line-through;}
+#buyRightContentBox{margin:40px;width:570px;float:left;text-align:left;color:#424242;}
+#buyRightContentBox h3{font-family: 'Helvetica Neue','Arial', sans-serif;font-size:24px;}
+#buyRightContentBox hr{border:none;border-top:1px solid #ccc;border-bottom:1px solid #fff;float:left;width:100%;}
+#buyRightContentBox p{font-size:13px;color:#6a6a6a;line-height: 18px;}
+#buyRightContentBox ul.planScreenshots{background:#dcdcdc;float:left;width:100%;padding:10px 0px;}
+#buyRightContentBox ul.planScreenshots li{background:#fff;padding:5px;float:left;margin:11px;}
+li.planBill ul li{padding:0 20px}
+div.billingContent{width:280px;}
+div.billingContent ul li label,#couponBox label{width:100%;float:left;font-size:14px;font-weight: bold;color:424242;margin:10px 0;}
+div.billingContent ul li input,#couponBox input{padding:8px 2px;background:#fff url("../images/formBG.png")top left repeat-x;border:1px solid #d0d0d0}
+#couponBox label{width:auto;margin-right:5px;float:left;}
+#couponBox input{float:left;}
+div.billingContent ul li select{}
+
+/* CONTENT */
+#couponBox{float:left;width:300px;margin-top:10px;}
+h2{font-size:22px;color:#424242;}
+section#createAccountContainer p,section#publicContainer p{font-size:13px;color:#acacac;margin:10px 0px;}
+section#publicContainer p{line-height:18px;color:#424242;}
+section#publicContainer h2{font-size:18px;}
+section#publicContainer h2 a{text-decoration: none;font-size:14px;padding-top:50px;color:#424242}
+section#publicContainer h2 a:hover{color:#888;}
+section#createAccountContainer{background:#fff;float:left;padding:23px;width:914px;margin-top:55px;position:relative;text-align:left;}
+section#publicContainer{flot:left;padding:23px;background:#fff;width:914px;margin-top:55px;position:relative;margin-bottom:55px;text-align:left;}
+section#createFormsContainer{background:#f7f7f7;float:left;width:824px;padding:25px 45px;}
+div.createFormsBox{width:390px;margin:0px 10px;float:left;}
+div.createFormsBox ul li{float:left;}
+div.createFormsBox ul li label,section#loginForms label{width:100%;float:left;font-size:14px;font-weight: bold;color:424242;margin:10px 0;}
+section#loginForms label{margin-top:15px}
+div.createFormsBox ul li input,section#loginForms input.textbox{float:left;padding:15px 2px;background:#fff url("../images/formBG.png")top left repeat-x;border:1px solid #d0d0d0}
+div.affiliateForms ul li input{padding:10px 2px;}
+section#loginForms input.textbox{width:100%;}
+section#createAccountContainer p.required{font-size:12px;color:#da7256;float:left;}
+a.nextBtn,input#loginSubmit{
+    cursor: pointer;
+    margin:10px 0px;
+    padding:10px;
+    color:#fff !important;
+    font-weight:bold;
+    background-color: #0074CC;
+    text-decoration:none;
+    font-size:12px;
+    background-image: -ms-linear-gradient(top, #08C, #05C);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08C), to(#05C));
+    background-image: -webkit-linear-gradient(top, #08C, #05C);
+    background-image: -o-linear-gradient(top, #08C, #05C);
+    background-image: -moz-linear-gradient(top, #08C, #05C);
+    background-image: linear-gradient(top, #08C, #05C);
+    background-repeat: repeat-x;
+    border-color: #05C #05C #003580;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#0088cc', endColorstr='#0055cc', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    border-radius:3px;
+    -moz-border-radius:3px;
+    border:1px solid #003580;
+}
+section#publicContainer hr{border:none;border-bottom:1px dotted #ccc;margin-bottom:20px;}
+section#publicContainer hr.bottomContentShadow{margin-top:30px;border:none;border-top:1px dotted #ccc;background:url('../images/contentBottomShadow.png') bottom center no-repeat;height:6px}
+div#faqContent{width:100%;float:left;}
+div#faqContent hr.bottomContentShadow{float:left;width:100%;}
+ul.faqListContainer li{float:left;margin-right:10px;}
+ul.faqList li{float:none;margin-bottom:10px;list-style: disc;list-style-position: inside;}
+ul.faqList li a{color:#32b5d6;font-family:'Arvo','Georgia',serif;text-decoration: none;font-weight: 700;font-size:13px;padding-left:10px;}
+ul.faqList li a:hover{color:#71ccee;}
+#loginContainer{width:570px;margin:0 auto;margin-top:55px}
+#loginWrapper{width:100%;background:#fff;float:left;padding-bottom:10px;box-shadow:0px 0px 10px #ccc}
+#loginForms{width:530px;padding:20px;float:left;}
+#loginForms hr{width:100%;border:none;border-top:1px dotted #ccc;float:left;}
+ul#loginFormsContainer{margin-top:10px;float:left}
+ul#loginFormsContainer ul{float:left;width:100%;text-align:center;margin:0 auto;}
+ul#loginFormsContainer li.loginFormsList{float:left;width:100%;}
+ul#loginFormsContainer ul.loginFormsContent{margin:5px 0px;margin-left:93px;float:left;}
+ul.loginFormsContent li.loginLabel{width:70px;margin-right:10px;float:left;text-align:right}
+ul.loginFormsContent li.loginForm{width:285px;float:left;}
+span#registerSpill{font-size:12px;color:#b3b3b3;padding-top:8px;}
+span#registerSpill a{color:#c2671d;text-decoration: none;}
+span#registerSpill a:hover{color:#be4a16}
+a#forgotPass{color:#20849d;text-decoration: none;font-size:12px;padding-left:20px;}
+span.errorLogin{padding-right:20px;color:red;font-size:12px;font-weight: bold}
+li.couponProduct{font-size:11px;margin-top:10px;color:#bbb !important;}
+li.couponProduct input{background:#fff url("../images/formBG.png")top left repeat-x;border:1px solid #ccc;margin-left:5px;padding:5px 2px;width:95px;margin-top:-23px;float:left}
+#buyLeftContent ul li.planTotal{border-bottom:1px dotted #eee;width:100%;}
+li.title ul li.right{font-family:"Helvetica Neue","Arial",sans-serif;padding-right:22px;color:#d0effe !important;font-size:12px;}
+
+/* success confirmation page */
+#loginContainer.success { width: 770px; }
+.success #loginForms { width: 730px; }
+.success #loginFormsContainer { width: 470px; margin-top: 50px; }
+.success #nextSteps { height: 360px; width: 240px; text-align: center; float: left; margin: 20px 60px 0; }
+.success #loginSubmit { padding: 20px; margin: 160px 0 0 -10px; }
+
+/* add gray text to initial state of buy inputs */
+#createAccountContainer input,
+#buyRightContent input {
+  box-sizing: border-box;
+  padding-left: 6px;
+}
+#createAccountContainer .inactive, #buyRightContent .inactive { color: #D0D0D0; }
+
+/*FOOTER*/
+footer div.container{padding-top:10px;}
+footer p{font-weight:bold;font-size:12px;color:#fff;}
+footer ul li{float:left;}
+footer ul li a{color:#d3d3d3;border-right:1px dotted #606060;padding:5px 10px;font-size:12px;font-weight: normal;text-decoration: none;}
+footer ul li a.last{border:none;padding-right:0px;}
+footer ul li a:hover{color:#fff;}
