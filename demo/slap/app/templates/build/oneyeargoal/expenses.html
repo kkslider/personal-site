@@ -1,0 +1,50 @@
+<div class="wrapper">
+  <section id="contentContainer" class="container_12">
+    <div class="grid_8">
+      <h1 class="page-personal">Personal expenses</h1>
+      <h1 class="page-business">Fixed Costs</h1>
+      <div class="instruction">
+        <p class="page-personal">Yes, you are an entrepreneur, but you also need a paycheck. Let's do a little work and figure out what you'll need to pay yourself. Take a moment to write down all of your personal expenses. And be honest - this exercise only works if you don't hold back. Do not fudge the numbers!</p>
+        <p class="page-business">These are the costs of doing business. Remember, these are not your variable costs associated with your units of sale. These are your hard fixed costs; the ones that you are liable for even if you do not open up for business that year! We will explore your variable costs on the next page, but for now concentrate hard on capturing all of your fixed costs (e.g. rent, insurance, payroll, etc.). These should also be forward looking. For example: If you expect rent to go up by $50 for the coming year, input the price including the increase.</p>
+        <p class="page-business">Again, be honest with these numbers and spend time thinking of everything. This only works if you are honest.</p>
+      </div>
+      <div class="heading title">Title</div>
+      <div class="heading monthly">Monthly</div>
+      <div class="heading units">&nbsp;</div>
+      <div class="heading yearly">Yearly</div>
+      <ul class="sortable">
+        <li class="new">
+          <div class="title"><input type="text" class="input_xlarge" placeholder="Add another"/></div>
+          <div class="monthly">$ <input type="text" class="input_tiny" /></div>
+          <div class="units"><span class="sub">x 12 =</span></div>
+          <div class="yearly">&nbsp;</div>
+        </li>
+        <li class="incidentals">
+          <div class="title">Incidentals for <input type="text" id="incidentals" name="incidentals" class="input_tiny incidentals" value="" />%</div>
+          <div class="monthly">$ <span></span></div>
+          <div class="units"><span class="sub">x 12 =</span></div>
+          <div class="yearly">$ <span></span></div>
+        </li>
+        <li class="total">
+          <div class="title">Total expenses</div>
+          <div class="monthly">$ <span></span></div>
+          <div class="units"><span class="sub">x 12 =</span></div>
+          <div class="yearly">$ <span></span></div>
+        </li>
+      </ul>
+    </div>
+    <div class="grid_4">
+      <div class="help" id="snapEngage" onClick="return SnapABug.startLink();"><span>I'd like some help</span><img src="/myslap/app/img/help-hand.png" /></div>
+      <div id="videoPlayer"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="controls">
+      <div class="grid_12 buttons">
+        <a id="prev" class="submit" data-phase="2" data-step="2">&lt;&lt; Back</a>
+        <a id="next" class="submit" data-phase="2" data-step="2">Next &gt;&gt;</a>
+        <span class="saved">Saved just now</span>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </section>
+</div>
