@@ -1,0 +1,136 @@
+<div class="wrapper">
+  <section id="contentContainer" class="container_12">
+    <div class="grid_8">
+      <h1>Personal expenses</h1>
+      <div class="instruction">
+        <p>Yes, you are an entrepreneur, but you also need a paycheck.  Let's do a little work and figure out what you'll need to pay yourself.  Take a moment to write down all your personal expenses - and be honest.  This exercise only works if you don't hold back and don't fudge the numbers.</p>
+      </div>
+      <div class="heading title">Title</div>
+      <div class="heading monthly">Monthly</div>
+      <div class="heading units">&nbsp;</div>
+      <div class="heading yearly">Yearly</div>
+      <ul class="sortable costs">
+        <!--<li class="sort">-->
+          <!--<i class="icon-resize-vertical"></i>-->
+          <!--<div class="title"><input type="text" class="input_xlarge" value="First personal expense" /></div>-->
+          <!--<div class="monthly">$ <input type="text" class="input_tiny" value="20" /></div>-->
+          <!--<div class="units"><span>x 12 =</span></div>-->
+          <!--<div class="yearly">$ 20000</div>-->
+          <!--<i class="icon-remove"></i>-->
+        <!--</li>-->
+        <!--<li class="sort">-->
+          <!--<i class="icon-resize-vertical"></i>-->
+          <!--<div class="title"><input type="text" class="input_xlarge" value="Second personal expense" /></div>-->
+          <!--<div class="monthly">$ <input type="text" class="input_tiny" value="20" /></div>-->
+          <!--<div class="units"><span>x 12 =</span></div>-->
+          <!--<div class="yearly">$ 20000</div>-->
+          <!--<i class="icon-remove"></i>-->
+        <!--</li>-->
+        <!--<li class="new">-->
+          <!--<div class="title"><input type="text" class="input_xlarge" placeholder="Add another"/></div>-->
+          <!--<div class="monthly">$ <input type="text" class="input_tiny" /></div>-->
+          <!--<div class="units"><span>x 12 =</span></div>-->
+          <!--<div class="yearly">&nbsp;</div>-->
+        <!--</li>-->
+        <!--<li class="incidentals">-->
+          <!--<div class="title">Incidentals for <input type="text" class="input_tiny" value="10" />%</div>-->
+          <!--<div class="monthly">$ 300</div>-->
+          <!--<div class="units"><span>x 12 =</span></div>-->
+          <!--<div class="yearly">$ 3600</div>-->
+        <!--</li>-->
+        <!--<li class="total">-->
+          <!--<div class="title">Total personal expenses</div>-->
+          <!--<div class="monthly">$ 50</div>-->
+          <!--<div class="units"><span>x 12 =</span></div>-->
+          <!--<div class="yearly">$ 1200</div>-->
+        <!--</li>-->
+      </ul>
+
+
+<!--
+      <ul class="costs">
+          
+       <!-- <li>
+          <i class="icon-resize-vertical"></i>
+          <div class="title"><input type="text" class="input_xlarge" value="First expense" /></div>
+          <div class="amount monthly">$ <input type="text" class="input_tiny" value="20" /> <span>x 12 =</span></div>
+          <div class="amount yearly">$ <input type="text" class="input_tiny" value="240" /></div>
+          <i class="icon-remove"></i>
+        </li>
+        <li>
+          <i class="icon-resize-vertical"></i>
+          <div class="title"><input type="text" class="input_xlarge" value="Second expense" /></div>
+          <div class="amount monthly">$ <input type="text" class="input_tiny" value="1000" /> <span>x 12 =</span></div>
+          <div class="amount yearly">$ <input type="text" class="input_tiny" value="12000" /></div>
+          <i class="icon-remove"></i>
+        </li>
+        <li class="new-cost">
+          <div class="title"><input type="text" class="input_xlarge" placeholder="Add an expense"/></div>
+          <div class="amount monthly">$ <input type="text" class="input_tiny" /> <span>x 12 =</span></div>
+          <div class="amount yearly">$ <input type="text" class="input_tiny" /></div>
+        </li>
+        <li class="incidentals">
+          <div class="title">Incidentals for <input type="text" class="input_tiny" value="10" /> %<a href="#" rel="popover" data-original-title="Incidentals" data-content="Some help text about incidentals."><i class="icon-question-sign"></i></a></div>
+          <div class="amount monthly">$ 200 <span>x 12 =</span></div>
+          <div class="amount yearly">$ 2400</div>
+        </li>
+        <li class="new">
+          <div class="title"><input type="text" class="input_xlarge" placeholder="Add another"/></div>
+          <div class="monthly">$ <input type="text" class="input_tiny" /></div>
+          <div class="units"><span>x 12 =</span></div>
+          <div class="yearly">&nbsp;</div>
+        </li>         
+      </ul>
+      <div class="grid_4 item net">Total personal expenses</div>
+      <div class="grid_2 monthly net">$ 7500</div>
+      <div class="grid_2 yearly net">$ 90000</div>
+ -->
+    </div>
+    <div class="grid_4">
+      <div class="buttons"><a id="help" class="help">I'd like some help</a></div>
+      <div id="videoPlayer"></div>
+    </div>
+    <div class="clear"></div>
+    <div class="controls">
+      <div class="grid_12 buttons">
+        <a id="prev" class="submit">&lt;&lt; Back</a>
+        <a id="next" href="#" class="submit">Next &gt;&gt;</a>
+        <span class="saved">Saved just now</span>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </section>
+</div>
+
+
+
+<script>
+  $(document).ready(function(){
+    /*
+    $('#next').live('click', function() {
+      $('.promote').fadeIn('slow');
+      $(this).parent().parent().hide();
+    });
+
+    // setup help
+    $('.support, a[rel="popover"]').hide();
+    $('a[rel="popover"]').popover();    
+    $('#help').bind('click', function() {
+      $('.support').fadeIn('slow');
+      $('a[rel="popover"]').fadeIn('slow');
+    });
+
+    // progress bar
+    $('.pages ul').hide();
+  	$('.pages ul[data-phase="2"]').show();
+  	$('.phase').bind('click', function() {
+      var $this = $(this),
+    	    phase = $this.data('phase');
+      $('.phase').removeClass('active');
+      $('.phase[data-phase="' + phase + '"]').addClass('active');
+    	$('.pages ul').hide();
+    	$('.pages ul[data-phase="' + phase + '"]').show();
+  	});
+    */
+  });
+</script>

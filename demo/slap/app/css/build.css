@@ -1,0 +1,1200 @@
+/*******************************************************************************
+ *
+ * colors
+ *
+ * #FFFFFF  white         content background
+ *                        button text
+ *                        costs in even rows border
+ * #FAFAFA  almost white  body background
+ * #F4F4F4  lighter gray  help background
+ * #EEEEEE  light gray    phase background
+ *                        revenue stream odd rows background
+ *                        costs in odd rows border
+ * #ACACAC  medium gray   input placeholder
+ *                        input bottom border
+ *                        textarea border
+ *                        net revenue old text
+ *                        net revenue capacity
+ * #757575  dark gray     instruction text
+ *                        phase inactive text
+ *                        pages incomplete text
+ *                        form label text
+ *                        saved text
+ *                        net revenue stream text
+ * #242424  almost black  promote text
+ *                        phase active text
+ *                        pages complete text
+ *                        pages active text
+ *                        net revenue failure text
+ *                        input text
+ * #c9e3f1  light blue    promote background
+ *                        phase active background
+ *                        pages background
+ * #2994ca  light blue    nav a
+ *                        input focus border
+ * #22697b  teal green    nav a hover and border
+ * #39708b  medium teal   completion percentage text
+ *                        net revenue success text
+ * blue and teal shades   button background and borders
+ *
+ ******************************************************************************/
+
+body {
+  background-color: #FAFAFA;
+  color: #242424;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+a {
+  border-bottom: none;
+  color: #2994ca;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 1px solid #22697b;
+  color: #22697b;
+}
+
+body > .wrapper > #contentContainer {
+  padding-bottom: 90px;
+}
+
+#contentContainer .page {
+  background-color: #FFF;
+  text-align: left;
+}
+
+#build #headerContainer {
+  margin-bottom: 40px;
+}
+
+#build .wrapper + #contentContainer {
+  padding-bottom: 80px;
+}
+
+#contentContainer p {
+  margin-bottom: 12px;
+}
+
+.invalid {
+  border-color: lightCoral !important;
+}
+
+.instruction {
+  color: #757575;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#contentContainer .instruction p {
+  margin-bottom: 6px;
+}
+
+#contentContainer textarea,
+#contentContainer select,
+#contentContainer input[type="date"],
+#contentContainer input[type="datetime"],
+#contentContainer input[type="datetime-local"],
+#contentContainer input[type="email"],
+#contentContainer input[type="month"],
+#contentContainer input[type="number"],
+#contentContainer input[type="password"],
+#contentContainer input[type="search"],
+#contentContainer input[type="tel"],
+#contentContainer input[type="text"],
+#contentContainer input[type="time"],
+#contentContainer input[type="url"],
+#contentContainer input[type="week"] {
+  border-color: #FFF #FFF #ACACAC #FFF;
+  color: #242424;
+  font-size: 16px;
+  margin-top: -2px;
+}
+
+/* disabled styles for owner's salary expense */
+#contentContainer input[type="text"][disabled] {
+  background-color: #fff;
+  color: #242424;
+}
+
+#contentContainer input:focus,
+#contentContainer button:focus,
+#contentContainer select:focus,
+#contentContainer textarea:focus {
+  -webkit-box-shadow: #2994ca 0 0 5px 0;
+  -moz-box-shadow: #2994ca 0 0 5px 0;
+  box-shadow: #2994ca 0 0 5px 0;
+  z-index: 1;
+}
+
+#contentContainer textarea {
+  border-color: #ACACAC;
+  margin: 0 0 12px 0;
+}
+
+
+#contentContainer input::-webkit-input-placeholder,
+#contentContainer textarea::-webkit-input-placeholder {
+  color: #ACACAC;
+}
+
+#contentContainer input:-moz-placeholder,
+#contentContainer textarea:-moz-placeholder {
+  color: #ACACAC;
+}
+
+#contentContainer input.placeholder_text,
+#contentContainer textarea.placeholder_text {
+  color: #ACACAC;
+}
+
+.buttons {
+  text-align: right;
+}
+
+.buttons a {
+  cursor: pointer;
+  margin: 10px 0 10px 10px;
+  padding: 10px 14px;
+  color:#fff !important;
+  font-weight:600;
+  text-decoration:none;
+  font-size:12px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  border:1px solid #003580;
+  display: inline-block;
+}
+
+.buttons a.submit {
+  background-color: #0074CC;
+  background-image: -ms-linear-gradient(top, #08C, #05C);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#08C), to(#05C));
+  background-image: -webkit-linear-gradient(top, #08C, #05C);
+  background-image: -o-linear-gradient(top, #08C, #05C);
+  background-image: -moz-linear-gradient(top, #08C, #05C);
+  background-image: linear-gradient(top, #08C, #05C);
+  background-repeat: repeat-x;
+  border-color: #05C #05C #003580;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#0088cc', endColorstr='#0055cc', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.buttons a.help {
+  background-color: #49AFCD;
+  background-image: -ms-linear-gradient(top, #5BC0DE, #2F96B4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5BC0DE), to(#2F96B4));
+  background-image: -webkit-linear-gradient(top, #5BC0DE, #2F96B4);
+  background-image: -o-linear-gradient(top, #5BC0DE, #2F96B4);
+  background-image: -moz-linear-gradient(top, #5BC0DE, #2F96B4);
+  background-image: linear-gradient(top, #5BC0DE, #2F96B4);
+  background-repeat: repeat-x;
+  border-color: #2F96B4 #2F96B4 #1F6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#5BC0DE', endColorstr='#2F96B4', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.promote {
+  background-color: #c9e3f1;
+  padding: 10px 10px 0;
+  margin: 0 10px 10px;
+  float: left;
+  width: 920px;
+  color: #242424;
+}
+
+.promote, .controls {
+  margin-top: 20px;
+}
+
+.saved {
+  font-size: 12px;
+  color: #757575;
+  margin-left: 4px;
+}
+
+.error {
+  color: lightCoral;
+}
+
+.confirm {
+    text-align: center;
+    color: #008000;
+    margin-bottom: 10px;
+}
+
+#errorMessage {
+  margin-bottom: 10px;
+}
+
+
+/*******************************************************************************
+ *
+ * subscription upgrading
+ *
+ ******************************************************************************/
+#shade {
+    background-color: #242424;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: .95;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+#overlay {
+	background-color: red;
+	height: 600px;
+	width: 980px;
+	left: 50%;
+	margin-left: -490px; /* half of the width to center it */
+	position: absolute;
+	top: 120px;
+	z-index: 100;	
+}
+
+/*******************************************************************************
+ *
+ * expenses, revenues, costs, etc
+ *
+ ******************************************************************************/
+.heading {
+  color: #ACACAC;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.title,
+.amount,
+.units,
+.percent,
+.revenue,
+.monthly,
+.yearly {
+  display: inline-block;
+}
+.title {
+  margin-right: 6px;
+  padding-left: 30px;
+  width: 270px;
+}
+.amount,
+.monthly {
+  margin-right: 2px;
+  width: 84px;
+}
+.units {
+  margin-right: 2px;
+  width: 80px;
+}
+.percent,
+.revenue,
+.yearly {
+  padding-right: 10px;
+  width: 106px; /* 124px; */
+}
+.units .sub,
+.revenue .sub {
+  color: #ACACAC;
+  font-size: 13px;
+}
+
+/* need some extra space for large numbers with percent in total revenue */
+.total-revenue .units {
+  width: 56px;
+}
+.total-revenue .revenue {
+  width: 130px;
+}
+
+/* spacing between rows */
+ul li {
+  padding: 6px 0;
+}
+
+/* total rows should be highlighted */
+.total {
+  color: #757575;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-top: 10px;
+}
+
+/* headings and totals should align with left side of input field text */
+.heading.title,
+.total .title,
+.totals .title,
+.incidentals .title {
+  padding-left: 36px;
+  width: 264px;
+}
+
+/* total amounts should be right aligned with input fields */
+.amount input {
+  text-align: right;
+}
+.total .amount {
+  margin-right: 28px;
+  text-align: right;
+  width: 58px;
+}
+
+/* sub rows should be indented a bit and not as long */
+ul ul {
+  margin: -6px 0 -6px 30px;
+}
+ul ul li {
+  width: 380px;
+}
+ul ul .title {
+  width: 240px;
+}
+ul ul .amount {
+  width: 70px;
+}
+
+/* set widths on input fields */
+ul .input_xlarge {
+  width: 270px;
+}
+ul .input_xxlarge {
+    width: 550px;
+}
+ul ul .input_xlarge {
+  width: 240px;
+}
+
+/* display the row icons on hover */
+.sortable .sort:hover {
+  -moz-box-shadow: #2994ca 0 0 5px 0;
+  -webkit-box-shadow: #2994ca 0 0 5px 0;
+  box-shadow: #2994ca 0 0 5px 0;
+}
+.sortable .sort i {
+  display: none;
+}
+.sortable .sort:hover i {
+  display: inline-block;
+}
+.sortable .sort:hover i + .title {
+  padding-left: 12px;
+}
+
+/* formula for revenue */
+.formula {
+  margin-bottom: -6px;
+}
+.formula span {
+  color: #757575;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+}
+.formula span:nth-child(1) {
+  margin-left: 344px;
+}
+.formula span:nth-child(2) {
+  margin-left: 35px;
+}
+.formula span:nth-child(3) {
+  margin-left: 38px;
+}
+.formula span:nth-child(4) {
+  margin-left: 34px;
+}
+.formula span:nth-child(5) {
+  margin-left: 30px;
+}
+
+.goal-check {
+  color: #39708b;
+  margin-top: 30px;
+}
+
+
+/*******************************************************************************
+ *
+ * icons
+ *
+ ******************************************************************************/
+
+[class^="icon-"],
+[class*=" icon-"] {
+  background-image: url("images/glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 14px;
+  line-height: 14px;
+  *margin-right: .3em;
+  vertical-align: text-top;
+  width: 14px;
+}
+[class^="icon-"]:last-child,
+[class*=" icon-"]:last-child {
+  *margin-left: 0;
+}
+.icon-pencil {
+  background-position: 0 -72px;
+}
+.icon-remove {
+  background-position: -312px 0;
+}
+.icon-resize-vertical {
+  background-position: -432px -119px;
+}
+.icon-question-sign {
+  background-position: -96px -96px;
+}
+
+/* positions in lists */
+.icon-resize-vertical {
+  left: 14px;
+  position: relative;
+  top: 4px;
+}
+.icon-remove {
+  float: right;
+  right: 4px;
+  position: relative;
+  top: 4px;
+}
+.actions .icon-pencil {
+  right: 24px;
+  position: relative;
+  top: 3px;
+}
+
+/* there is some extra space on the right for action items */
+.actions .icon-remove {
+  right: -8px;
+}
+
+
+/*******************************************************************************
+ *
+ * popover help
+ *
+ ******************************************************************************/
+
+.tooltip {
+  position: absolute;
+  z-index: 1020;
+  display: block;
+  padding: 5px;
+  font-size: 11px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: visible;
+}
+
+.tooltip.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.tooltip.top {
+  margin-top: -2px;
+}
+
+.tooltip.right {
+  margin-left: 2px;
+}
+
+.tooltip.bottom {
+  margin-top: 2px;
+}
+
+.tooltip.left {
+  margin-left: -2px;
+}
+
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top: 5px solid #000000;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #000000;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #000000;
+  border-left: 5px solid transparent;
+}
+
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid #000000;
+  border-bottom: 5px solid transparent;
+}
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000000;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+  display: none;
+  padding: 5px;
+}
+
+.popover.top {
+  margin-top: -5px;
+}
+
+.popover.right {
+  margin-left: 5px;
+}
+
+.popover.bottom {
+  margin-top: 5px;
+}
+
+.popover.left {
+  margin-left: -5px;
+}
+
+.popover.top .arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top: 5px solid #000000;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.popover.right .arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid #000000;
+  border-bottom: 5px solid transparent;
+}
+
+.popover.bottom .arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #000000;
+  border-left: 5px solid transparent;
+}
+
+.popover.left .arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #000000;
+}
+
+.popover .arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.popover-inner {
+  width: 280px;
+  padding: 3px;
+  overflow: hidden;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.popover-title {
+  padding: 9px 15px;
+  line-height: 1;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #eee;
+  -webkit-border-radius: 3px 3px 0 0;
+     -moz-border-radius: 3px 3px 0 0;
+          border-radius: 3px 3px 0 0;
+}
+
+.popover-content {
+  padding: 14px;
+  background-color: #ffffff;
+  -webkit-border-radius: 0 0 3px 3px;
+     -moz-border-radius: 0 0 3px 3px;
+          border-radius: 0 0 3px 3px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+}
+
+.popover-content p,
+.popover-content ul,
+.popover-content ol {
+  margin-bottom: 0;
+}
+
+
+/*******************************************************************************
+ *
+ * navigation
+ *
+ ******************************************************************************/
+#nav {
+  margin-top: 6px;
+  text-align: right;
+}
+#nav li {
+  display: inline-block;
+  font-size: 13px;
+  padding-bottom: 0;
+}
+#nav li a {
+  margin-left: 6px;
+}
+
+/*******************************************************************************
+ *
+ * progress bar
+ *
+ ******************************************************************************/
+#progress {
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 1px;
+  width: 688px;
+}
+#progress .phase {
+  background: #EEE;
+  color: #757575;
+  display: inline-block;
+  font-size: 14px;
+  height: 24px; /* 28px; */
+  padding-top: 4px; /* 8px; */
+  width: 130px;
+  cursor: pointer;
+}
+#progress .phase:nth-child(1) {
+  width: 151px; /* 152px is perfect on webkit, but wraps on firefox */
+}
+#progress .active {
+  background: #c9e3f1;
+  color: #242424;
+  font-weight: 600;
+}
+.pages {
+  background: #c9e3f1;
+  color: #242424;
+  height: 40px; /* 52px; */
+}
+.pages ul {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+.pages ul li {
+  display: inline-block;
+  font-size: 12px;
+  height: 37px;
+  margin-right: -4px;
+  padding: 3px 2px 0;
+  vertical-align: middle;
+}
+.pages ul li:last-child {
+  margin-right: 0;
+}
+.pages ul.incomplete {
+  color: #757575;
+}
+.point {
+  background: black;
+  border-radius: 10px;
+  display: block;
+  height: 10px;
+  margin: 4px auto;
+  width: 10px;
+}
+#completion {
+  color: #39708b;
+  display: inline-block;
+  float: right;
+  margin: -3px 4px 0 0;
+}
+#completion .percent {
+  font-size: 24px;
+  text-align: right;
+}
+#completion .complete {
+  display: block;
+  font-size: 12px;
+  margin-top: -10px;
+}
+.number {
+  border: 2px solid;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 11px;
+  height: 16px;
+  margin-right: 6px;
+  width: 16px;
+}
+.phase-page {
+  display: inline-block;
+  text-align: left;
+  cursor: pointer;  
+}
+#progress i {
+  margin: -10px 6px;
+  display: inline-block;
+}
+.icon-adjust {
+  background-position: -48px -72px;
+}
+.icon-off {
+  background-position: -384px 0;
+}
+.icon-ok {
+  background-position: -288px 0;
+}
+.pages ul[data-phase="1"] li:nth-child(1) .phase-page {
+  width: 102px;
+}
+.pages ul[data-phase="2"] li:nth-child(1) .phase-page,
+.pages ul[data-phase="2"] li:nth-child(2) .phase-page,
+.pages ul[data-phase="2"] li:nth-child(3) .phase-page {
+  width: 68px;
+}
+.pages ul[data-phase="2"] li:nth-child(4) .phase-page {
+  width: 84px;
+}
+.pages ul[data-phase="2"] li:nth-child(5) .phase-page {
+  width: 52px;
+}
+.pages ul[data-phase="2"] li:nth-child(6) .phase-page,
+.pages ul[data-phase="2"] li:nth-child(7) .phase-page {
+  width: 58px;
+}
+
+.pages ul[data-phase="3"] li:nth-child(1) .phase-page {
+  width: 102px;
+}
+.pages ul[data-phase="3"] li:nth-child(2) .phase-page {
+  width: 100px;
+}
+.pages ul[data-phase="4"] li:nth-child(1) .phase-page {
+  width: 56px;
+}
+.pages ul[data-phase="4"] li:nth-child(2) .phase-page {
+  width: 74px;
+}
+.pages ul[data-phase="4"] li:nth-child(3) .phase-page {
+  width: 74px;
+}
+.pages ul[data-phase="4"] li:nth-child(4) .phase-page {
+  width: 74px;
+}
+.pages ul[data-phase="4"] li:nth-child(5) .phase-page {
+  width: 74px;
+}
+.pages ul[data-phase="4"] li:nth-child(6) .phase-page {
+  width: 46px;
+}
+.pages ul[data-phase="5"] li:nth-child(1) .phase-page {
+  width: 74px;
+}
+
+
+
+/*******************************************************************************
+ *
+ * profile and ideal client
+ *
+ ******************************************************************************/
+label {
+  color: #757575;
+  display: block;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 6px 0;
+}
+label input[type="text"],
+label input[type="url"],
+label select {
+  float: right;
+}
+label input[type="file"] {
+  float: right;
+}
+label .input_large {
+  width: 190px;
+}
+fieldset {
+  height: 160px;
+}
+fieldset legend {
+  font-weight: 700;
+}
+.name {
+  margin-top: 30px;
+}
+
+
+/*******************************************************************************
+ *
+ * landing pages
+ *
+ ******************************************************************************/
+.landing .grid_10 h1 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.landing i {
+  margin: 6px 6px 0 0;
+}
+.landing .grid_3 ul.nav {
+  margin-top: 50px;
+}
+.landing .grid_8 ul.nav {
+  margin: 30px 0 30px 30px;
+}
+.landing .nav li {
+  font-size: 20px;
+}
+.landing .grid_3 .buttons {
+  text-align: left;
+  margin: 20px 0 80px 26px;
+}
+.instruction ol {
+  list-style: decimal;
+  margin: 12px 0 12px 22px;
+}
+
+
+
+
+
+.container_12 .support {
+  background: #f4f4f4;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 920px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background: blue;
+  display: block;
+  margin: 0 auto;
+}
+
+.support p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.support li {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/*******************************************************************************
+ *
+ * action plan
+ *
+ ******************************************************************************/
+.quarter {
+  margin-bottom: 8px;
+}
+.quarter h2 {
+  margin-bottom: -2px;
+}
+#contentContainer .quarter p {
+  color: #ACACAC;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+.quarter a {
+  float: right;
+  font-size: 12px;
+  font-style: normal;
+}
+
+/* event list for a month */
+.events {
+  display: inline-block;
+  margin: 0 9px 10px 0;
+  vertical-align: top;
+  width: 197px;
+}
+.events:last-child {
+  margin-right: 0;
+}
+.events ul li {
+  font-size: 14px;
+  padding: 2px 0 2px 4px;
+}
+.events li:hover {
+  -moz-box-shadow: #2994ca 0 0 5px 0;
+  -webkit-box-shadow: #2994ca 0 0 5px 0;
+  box-shadow: #2994ca 0 0 5px 0;
+}
+.events li i {
+  display: none;
+}
+.events li:hover i {
+  display: inline-block;
+  float: right;
+}
+
+/* add an event */
+.new-event a {
+  margin-left: 6px;
+}
+
+/* quarterly goals */
+.stream,
+.quarter-units,
+.yearly-total,
+.yearly-target {
+  display: inline-block;
+}
+.stream {
+  width: 236px;
+}
+.quarter-units {
+  width: 60px;
+}
+.yearly-total,
+.yearly-target {
+  width: 59px;
+}
+ul + .quarter {
+  margin-top: 30px;
+}
+
+/* action items */
+.actions h4 {
+  margin-top: 20px;
+}
+.actions span a {
+  float: right;
+  font-size: 12px;
+  margin-top: -20px;
+}
+.actions ul,
+.commit {
+  list-style: square inside;
+}
+.actions ul li,
+.commit li {
+  font-size: 14px;
+  padding: 2px 0 2px 4px;
+}
+.commit li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.actions li:hover {
+  -moz-box-shadow: #2994ca 0 0 5px 0;
+  -webkit-box-shadow: #2994ca 0 0 5px 0;
+  box-shadow: #2994ca 0 0 5px 0;
+}
+.actions li i {
+  display: none;
+}
+.actions li:hover i {
+  display: inline-block;
+  float: right;
+}
+.actions li .due {
+  color: #ACACAC;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 16px;
+  margin-bottom: 2px;
+}
+.actions li span:nth-child(1) {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  width: 470px;
+}
+.commit + .buttons {
+  text-align: center;
+}
+
+/* connection strategies */
+#target + h3 {
+  margin-top: 20px;
+}
+#target .placeholder,
+h2 .placeholder {
+  color: #ACACAC;
+}
+#target .placeholder:hover,
+.single .placeholder:hover {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#target {
+  list-style: decimal inside;
+}
+#available li {
+  display: inline-block;
+  width: 288px;
+  margin-right: 8px;
+}
+#available li,
+#target li {
+  padding: 6px;
+}
+h2 ul li {
+  padding: 0;
+}
+
+#diagram {
+  color: #242424;
+  height: 550px;
+  position: relative;
+  text-align: center;
+  width: 620px;
+  background-image: url('../img/connect-background.png');
+}
+
+/* fix issue with being able to render two different el's within a single view */
+#diagram li {
+  list-style: none;
+}
+
+.connection {
+  height: 124px;
+  width: 124px;
+  background: #EEEEEE;
+  position: absolute;
+  float: left;
+  display: table;
+  text-align: center;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.connection div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#strategy-1 { top:  10px; left: 250px; }
+#strategy-2 { top:  50px; left:  80px; }
+#strategy-3 { top:  50px; left: 420px; }
+#strategy-4 { top: 210px; left:  20px; }
+#strategy-5 { top: 210px; left: 480px; }
+#strategy-6 { top: 370px; left:  80px; }
+#strategy-7 { top: 370px; left: 420px; }
+#strategy-0 { top: 410px; left: 250px; }
+#client     { top: 210px; left: 250px; }
+
+.connection img {
+  margin-top: 6px;
+  text-align: center;
+}
+
+.connection span {
+  display: inline-block;
+  margin-bottom: 12px;
+  margin-top: -10px;
+  text-align: center;
+  width: 100px;
+}
+
+.connection:hover,
+.connection.active,
+#client {
+  background-color: #c9e3f1;
+  -moz-transform: scale(1.2);
+  -moz-transform-origin: 50% 50%;
+  -webkit-transform: scale(1.2);
+  -webkit-transform-origin: 50% 50%;
+}
+
+
+/*******************************************************************************
+ *
+ * help
+ *
+ ******************************************************************************/
+.help {
+  height: 60px;
+}
+.help img {
+  float: right;
+  margin-right: -14px;
+}
+.help span {
+  color: #2994ca;
+  float: left;
+  font-size: 12px;
+  margin: 22px 0 0 156px;  
+}
+.help span:hover {
+  border-bottom: 1px solid #22697b;
+  color: #22697b;
+}

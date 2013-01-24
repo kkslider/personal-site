@@ -1,0 +1,159 @@
+  <div class="wrapper">
+
+ <!--   <header id="headerContainer">
+      <div class="container">
+        <section id="headerContent">
+          <a id="logo" href="#">SLAP</a>
+          <ul id="nav">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Build</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+          <div id="progress">
+            <div class="phases">
+              <div class="phase" data-phase="1"><span class="number">1</span>SLAPstatement</div>
+              <div class="phase active" data-phase="2"><span class="number">2</span>1 Year Goal</div>
+              <div class="phase" data-phase="3"><span class="number">3</span>Ideal Client</div>
+              <div class="phase" data-phase="4"><span class="number">4</span>Action Plan</div>
+              <div class="phase" data-phase="5"><span class="number">5</span>Commit</div>
+            </div>
+            <div class="pages">
+              <ul data-phase="1">
+                <li><i class="icon-adjust"></i><span class="page">Write Your Vision Statement</span></li>
+              </ul>
+              <ul data-phase="2">
+                <li><i class="icon-ok"></i><span class="page">Personal Expenses</span></li>
+                <li><i class="icon-adjust"></i><span class="page">Business Expenses</span></li>
+                <li><i class="icon-off"></i><span class="page incomplete">Revenue Streams</span></li>
+                <li><i class="icon-off"></i><span class="page incomplete">Average Selling Price</span></li>
+                <li><i class="icon-off"></i><span class="page incomplete">Hard Costs</span></li>
+                <li><i class="icon-off"></i><span class="page incomplete">Final Review</span></li>
+              </ul>
+              <ul data-phase="3">
+                <li><i class="icon-ok"></i><span class="page">Identifying Your Ideal Client</span></li>
+                <li><i class="icon-ok"></i><span class="page">Name Your Ideal Client</span></li>
+              </ul>
+              <ul data-phase="4">
+                <li><i class="icon-ok"></i><span class="page">World Events</span></li>
+                <li><i class="icon-ok"></i><span class="page">Ideal Client Events</span></li>
+                <li><i class="icon-ok"></i><span class="page">Connection Strategies</span></li>
+                <li><i class="icon-ok"></i><span class="page">Quarterly Strategies</span></li>
+                <li><i class="icon-ok"></i><span class="page">Quarterly Goals</span></li>
+                <li><i class="icon-ok"></i><span class="page">Action Items</span></li>
+              </ul>
+              <ul data-phase="5">
+                <li><i class="icon-ok"></i><span class="page">Make Your Commitment</span></li>
+              </ul>
+              <span id="completion"><span class="percent">65%</span><span class="complete">complete</span></span>
+            </div>
+          </div>
+          <div class="bottomShadow"></div>
+        </section>
+      </div>
+    </header>-->
+    <section id="contentContainer" class="container_12">
+      <div class="grid_8">
+        <h1>Business expenses</h1>
+        <div class="instruction">
+          <p>There is a cost to doing business.  Again, be honest with these numbers and try to think of everything.  This only works if you are honest.</p>
+        </div>
+        <div class="grid_8 alpha omega headings">
+          <div class="grid_4 alpha item">Item</div>
+          <div class="grid_2 amount">Monthly</div>
+          <div class="grid_2 omega amount">Yearly</div>
+        </div>
+        <ul class="costs"></ul>
+        <div class="personal">
+          <div class="grid_4 item net">Total personal expenses</div>
+          <div class="grid_2 monthly net">$ 7500</div>
+          <div class="grid_2 yearly net">$ 90000</div>
+        </div>
+        <div class="grid_4 item net">Total business expenses</div>
+          <div class="grid_2 monthly net monthly_net">$ 0</div>
+          <div class="grid_2 yearly net yearly_net">$ 0</div>
+          <input type="hidden" id="monthly_net" value="0">
+          <input type="hidden" id="yearly_net" value="0">
+        <div class="breakeven">
+          <div class="grid_4 item net">Total expenses</div>
+          <div class="grid_2 monthly net">$ 13700</div>
+          <div class="grid_2 yearly net">$ 164400</div>        
+        </div>
+
+      </div>
+      <div class="grid_4">
+        <img src="../images/video.png" />
+      </div>
+      <div class="clear"></div>
+      <div class="promote">
+        <p>Congratulations! Your break even point is $164,400.</p>
+        <div class="buttons">
+          <a id="dismiss" class="submit">Adjust expenses</a>
+          <a href="complete-2.html" class="submit">Next &gt;&gt;</a>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="grid_12 buttons">
+          <!-- <span class="saved">Saved just now</span> -->
+          <span class="saved">Last saved 1 minute ago</span>
+          <!-- <span class="saved">Last saved June 25, 2012 at 10:00 AM</span> -->
+          <a id="prev" href="personal-expenses.html" class="submit">&lt;&lt; Back</a>
+          <a id="help" class="help">I'd like some help</a>
+          <a id="next" class="submit">Next &gt;&gt;</a>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="support grid_12">
+        <p>Have a question? We are here to help! Contact us by</p>
+        <ul>
+          <li><div class="icon">&nbsp;</div>123.456.789</li>
+          <li><div class="icon">&nbsp;</div><a href="#">Live chat</a> is online</li>
+          <li><div class="icon">&nbsp;</div><a href="#">support@slapcenter.com</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </section>
+  </div>
+
+
+<script>
+  $(document).ready(function(){
+
+    $('.promote, .personal, .breakeven').hide();
+    $('#next').live('click', function() {
+      $('.costs, .instruction').hide();
+      $('.promote, .personal, .breakeven').fadeIn('slow');
+      $('h1').text('Breakeven Point');
+      $('.grid_8 .net').css('font-weight', '400');
+      $('.grid_8 .breakeven .net').css('font-weight', '600');
+      $(this).parent().parent().hide();
+    });
+    $('#dismiss').live('click', function() {
+      $('.promote, .personal, .breakeven').hide();
+      $('h1').text('Business expenses');
+      $('.grid_8 .net').css('font-weight', '600');
+      $('.controls, .costs, .instruction').show();
+    });
+
+    // setup help
+    $('.support, a[rel="popover"]').hide();
+    $('a[rel="popover"]').popover();    
+    $('#help').bind('click', function() {
+      $('.support').fadeIn('slow');
+      $('a[rel="popover"]').fadeIn('slow');
+    });
+
+    // progress bar
+    $('.pages ul').hide();
+  	$('.pages ul[data-phase="2"]').show();
+  	$('.phase').bind('click', function() {
+      var $this = $(this),
+    	    phase = $this.data('phase');
+      $('.phase').removeClass('active');
+      $('.phase[data-phase="' + phase + '"]').addClass('active');
+    	$('.pages ul').hide();
+    	$('.pages ul[data-phase="' + phase + '"]').show();
+  	});
+    
+  });
+</script>
